@@ -12,6 +12,6 @@ O objetivo deste trabalho é implementar um sistema desktop Java, utilizando o p
 
 ##### Informações sobre o trabalho: 
 
-[Informações sobre os outros grupos e demais trabalhos ](https://github.com/wagnerrodrigo/Laboratorio-de-Interface-com-o-Usuario/blob/master/Arquivos/Especifica%C3%A7%C3%B5es_Trabalho_1_2018.pdf)
+[Informações sobre os outros grupos e demais trabalhos ](https://github.com/Hack-Imobiliaria/Hack_Imoveis/blob/master/Arquivos/Especifica%C3%A7%C3%B5es_Trabalho_1_2018.pdf)
 
-[Requisito levantados](https://github.com/wagnerrodrigo/Laboratorio-de-Interface-com-o-Usuario/blob/master/Arquivos/Requisitos%20da%20Imobili%C3%A1ria.md) <--- Sera modificado
+[Requisito levantados](https://github.com/Hack-Imobiliaria/Hack_Imoveis/blob/master/Arquivos/Requisitos%20da%20Imobili%C3%A1ria.md) <--- Sera modificado
