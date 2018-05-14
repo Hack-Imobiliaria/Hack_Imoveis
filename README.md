@@ -6,9 +6,9 @@ O objetivo deste trabalho é implementar um sistema desktop Java, utilizando o p
 
 ##### Integrantes
 
-> _Wagner Rodrigo da Silva_
->
-> [_*Denner Rondinely da Silva*_](_https://github.com/dennerrondinely)
+ _Wagner Rodrigo da Silva_
+
+ [Denner Rondinely da Silva](https://github.com/dennerrondinely)
 
 ##### Informações sobre o trabalho: 
 
