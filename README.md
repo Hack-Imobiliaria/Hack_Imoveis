@@ -8,7 +8,7 @@ O objetivo deste trabalho é implementar um sistema desktop Java, utilizando o p
 
 > _Wagner Rodrigo da Silva_
 >
-> _Walkiria da Conceição Alves Negreiros_
+> [_*Denner Rondinely da Silva*_](_https://github.com/dennerrondinely)
 
 ##### Informações sobre o trabalho: 
 
