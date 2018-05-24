@@ -24,7 +24,7 @@
 
 
 
-####Classes
+### Classes
 
 _**Cliente**_
 
@@ -34,6 +34,13 @@ _**Aluguel**_
 
 _**Venda**_
 
+### Formularios
+- _**formulario venda**_ 
+- _**formulario  alugue**_
+- _**formulario login**_ 
+- _**formulario cadastro cliente**_
+- _**formulario cadastro imovel**_
+- _**formula principal**_
 
 
 
