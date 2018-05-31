@@ -119,7 +119,7 @@ public class login extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "senha ou usuário incorreto!");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    
     private void jUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jUsuarioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jUsuarioActionPerformed
