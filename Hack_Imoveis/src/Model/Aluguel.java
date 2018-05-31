@@ -4,11 +4,16 @@
  * and open the template in the editor.
  */
 package Model;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
  * @author wagner
  */
-public class Aluguel {
+public class Aluguel extends Venda {
+    private Endereco endereco; // objeto endereco
+    private List<Cliente> alugeulCliente; // lista de cliente que aluga imoveil
+    
     
 }
