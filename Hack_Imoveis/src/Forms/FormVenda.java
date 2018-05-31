@@ -9,12 +9,12 @@ package Forms;
  *
  * @author wagner
  */
-public class FormPrincipal extends javax.swing.JFrame {
+public class FormVenda extends javax.swing.JFrame {
 
     /**
      * Creates new form FormPrincipal
      */
-    public FormPrincipal() {
+    public FormVenda() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -41,7 +41,7 @@ public class FormPrincipal extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Home");
+        setTitle("Venda");
 
         jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(1));
 
@@ -175,7 +175,7 @@ public class FormPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jVendaActionPerformed
 
     private void jHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jHomeActionPerformed
-        FormPrincipal p = new FormPrincipal();
+        FormVenda p = new FormVenda();
         this.dispose();
         p.setVisible(true);
     }//GEN-LAST:event_jHomeActionPerformed
@@ -221,20 +221,21 @@ public class FormPrincipal extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FormPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormVenda.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FormPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormVenda.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FormPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormVenda.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FormPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormVenda.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FormPrincipal().setVisible(true);
+                new FormVenda().setVisible(true);
             }
         });
     }
