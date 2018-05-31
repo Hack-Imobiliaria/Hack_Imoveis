@@ -10,5 +10,34 @@ package Model;
  * @author wagner
  */
 public class Imovel {
+    private Endereco endereco;
+    private float valorImovel;
+    private String nome;
+    
+
+    
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
+    public float getValorImovel() {
+        return valorImovel;
+    }
+
+    public void setValorImovel(float valorImovel) {
+        this.valorImovel = valorImovel;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }    
     
 }
