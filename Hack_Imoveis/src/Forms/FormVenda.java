@@ -199,9 +199,9 @@ public class FormVenda extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jFormattedTextField_CPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jbt_Cpf, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jbt_Cpf, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel_DadoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(67, Short.MAX_VALUE))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
 
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -211,7 +211,7 @@ public class FormVenda extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Venda", "Endereço", "Tamanho", "Valor"
+                "Tipo do Contrato", "Endereço", "Tamanho", "Valor"
             }
         ) {
             Class[] types = new Class [] {
@@ -237,7 +237,7 @@ public class FormVenda extends javax.swing.JFrame {
             jTable1.getColumnModel().getColumn(3).setResizable(false);
         }
 
-        jLabel9.setText("Informaçoes do Imovel");
+        jLabel9.setText("Informaçoes do Contrato");
 
         jb_Sair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Logout-48.png"))); // NOI18N
         jb_Sair.addActionListener(new java.awt.event.ActionListener() {

@@ -97,11 +97,11 @@
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="jFormattedTextField_CPF" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jbt_Cpf" min="-2" pref="29" max="-2" attributes="0"/>
+                          <Component id="jbt_Cpf" min="-2" pref="48" max="-2" attributes="0"/>
                       </Group>
                       <Component id="jPanel_DadoCliente" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="67" max="32767" attributes="0"/>
+                  <EmptySpace pref="54" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -352,7 +352,7 @@
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="4" rowCount="0">
-                    <Column editable="false" title="Venda" type="java.lang.Integer"/>
+                    <Column editable="false" title="Tipo do Contrato" type="java.lang.Integer"/>
                     <Column editable="false" title="Endere&#xe7;o" type="java.lang.String"/>
                     <Column editable="false" title="Tamanho" type="java.lang.String"/>
                     <Column editable="false" title="Valor" type="java.lang.Integer"/>
@@ -391,7 +391,7 @@
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel9">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Informa&#xe7;oes do Imovel"/>
+            <Property name="text" type="java.lang.String" value="Informa&#xe7;oes do Contrato"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="jb_Sair">
