@@ -16,7 +16,7 @@ public class Venda {
     private Cliente cliente;
     private float valorVenda;
     private Date dataVenda;
-    private List<Aluguel> lista;
+    private List<Aluguel> lista; // mudar para imovle > listaAluguel
     private List<Imovel> listaVenda;
 
     
