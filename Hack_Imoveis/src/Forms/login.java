@@ -116,8 +116,11 @@ public class login extends javax.swing.JFrame {
         f.setVisible(true);
         this.dispose();
         }else{
+            this.dispose();
             JOptionPane.showMessageDialog(null, "senha ou usuário incorreto!");
+             this.setVisible(true);
         }
+       
     }//GEN-LAST:event_jButton1ActionPerformed
     
     private void jUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jUsuarioActionPerformed

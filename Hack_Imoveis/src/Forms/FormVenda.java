@@ -34,7 +34,6 @@ public class FormVenda extends javax.swing.JFrame {
         jl_CPF = new javax.swing.JLabel();
         jFormattedTextField_CPF = new javax.swing.JFormattedTextField();
         jPanel_DadoCliente = new javax.swing.JPanel();
-        Jl_ComprasAnter = new javax.swing.JLabel();
         jl_Endereco = new javax.swing.JLabel();
         Print_Endereco = new javax.swing.JLabel();
         jl_Nome = new javax.swing.JLabel();
@@ -43,8 +42,6 @@ public class FormVenda extends javax.swing.JFrame {
         Print_Telefone = new javax.swing.JLabel();
         jl_Email = new javax.swing.JLabel();
         Print_Email = new javax.swing.JLabel();
-        jrb_CompSim = new javax.swing.JRadioButton();
-        jrb_CompNao = new javax.swing.JRadioButton();
         jLabel8 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -78,8 +75,6 @@ public class FormVenda extends javax.swing.JFrame {
 
         jPanel_DadoCliente.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
 
-        Jl_ComprasAnter.setText("Compras anteriores");
-
         jl_Endereco.setText("Endereço");
 
         Print_Endereco.setText(":");
@@ -96,17 +91,6 @@ public class FormVenda extends javax.swing.JFrame {
 
         Print_Email.setText(":");
 
-        buttonGroup1.add(jrb_CompSim);
-        jrb_CompSim.setText("Sim");
-        jrb_CompSim.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jrb_CompSimActionPerformed(evt);
-            }
-        });
-
-        buttonGroup1.add(jrb_CompNao);
-        jrb_CompNao.setText("Não");
-
         javax.swing.GroupLayout jPanel_DadoClienteLayout = new javax.swing.GroupLayout(jPanel_DadoCliente);
         jPanel_DadoCliente.setLayout(jPanel_DadoClienteLayout);
         jPanel_DadoClienteLayout.setHorizontalGroup(
@@ -115,42 +99,27 @@ public class FormVenda extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel_DadoClienteLayout.createSequentialGroup()
-                        .addComponent(Jl_ComprasAnter)
+                        .addComponent(jl_Nome)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jrb_CompSim)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jrb_CompNao))
+                        .addComponent(Print_Nome, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel_DadoClienteLayout.createSequentialGroup()
-                        .addGroup(jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel_DadoClienteLayout.createSequentialGroup()
-                                .addComponent(jl_Nome)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Print_Nome, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel_DadoClienteLayout.createSequentialGroup()
-                                .addComponent(jl_Endereco)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Print_Endereco, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(238, 238, 238)
-                        .addGroup(jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel_DadoClienteLayout.createSequentialGroup()
-                                .addComponent(jl_Telefone)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Print_Telefone, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel_DadoClienteLayout.createSequentialGroup()
-                                .addComponent(jl_Email)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Print_Email, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(43, Short.MAX_VALUE))
+                        .addComponent(jl_Endereco)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Print_Endereco, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(309, 309, 309)
+                        .addComponent(jl_Telefone)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Print_Telefone, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel_DadoClienteLayout.createSequentialGroup()
+                        .addComponent(jl_Email)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(Print_Email, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(254, Short.MAX_VALUE))
         );
         jPanel_DadoClienteLayout.setVerticalGroup(
             jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel_DadoClienteLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Jl_ComprasAnter, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jrb_CompSim)
-                    .addComponent(jrb_CompNao))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(16, 16, 16)
                 .addGroup(jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jl_Endereco)
                     .addComponent(Print_Endereco)
@@ -159,10 +128,12 @@ public class FormVenda extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jl_Nome, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Print_Nome)
+                    .addComponent(Print_Nome))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jl_Email)
                     .addComponent(Print_Email))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(13, Short.MAX_VALUE))
         );
 
         jLabel8.setText("Dados Cliente");
@@ -275,7 +246,7 @@ public class FormVenda extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jb_PagamentoDinheiro, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jb_CompraCartao))
                 .addGap(49, 49, 49))
@@ -310,7 +281,7 @@ public class FormVenda extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(12, 12, 12)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 113, Short.MAX_VALUE)
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
@@ -350,10 +321,6 @@ public class FormVenda extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jb_SairActionPerformed
 
-    private void jrb_CompSimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrb_CompSimActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jrb_CompSimActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -391,7 +358,6 @@ public class FormVenda extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Jl_ComprasAnter;
     private javax.swing.JLabel Print_Email;
     private javax.swing.JLabel Print_Endereco;
     private javax.swing.JLabel Print_Nome;
@@ -416,7 +382,5 @@ public class FormVenda extends javax.swing.JFrame {
     private javax.swing.JLabel jl_Endereco;
     private javax.swing.JLabel jl_Nome;
     private javax.swing.JLabel jl_Telefone;
-    private javax.swing.JRadioButton jrb_CompNao;
-    private javax.swing.JRadioButton jrb_CompSim;
     // End of variables declaration//GEN-END:variables
 }
