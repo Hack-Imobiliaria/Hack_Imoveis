@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author wagner
  */
-public class Aluguel extends Venda {
+public class Aluguel {
     /*
         a class aluguel nao precisa de um objeto enderecoe 
     * ele vendo da class imoveil
