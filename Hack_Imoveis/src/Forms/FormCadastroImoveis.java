@@ -956,7 +956,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         Imovel imovel = new Imovel();
-        
+        // endereco
         imovel.setNome(jtf_NomeImov.getText());
         imovel.getEndereco().setLogradouro(jtf_Endereco.getText());
         imovel.getEndereco().setBairro(jtf_Bairro.getText());
@@ -964,6 +964,19 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         imovel.getEndereco().setCidade(jtf_Cidade.getText());
         imovel.getEndereco().setCep(jtf_Cep.getText());
         imovel.getEndereco().setEstado(jcb_estado.getSelectedItem().toString());
+        //casa
+        imovel.setSala(jftf_Sala.getText());
+        imovel.setQuartos(jftf_Quarto.getText());
+        imovel.setCozinha(jftf_Cozinha.getText());
+        imovel.setBanheiro(jftf_Banheiro.getText());
+        imovel.setGaragem(jftf_Garagem.getText());
+        imovel.setPorao(jftf_Porão.getText());
+        imovel.setTerraco(jftf_Terraço.getText());
+        imovel.setQuital(jftf_Quintal.getText());
+        imovel.setJardim(jftf_Jardim.getText());
+        imovel.setPicina(jftf_Picina.getText());
+        imovel.setQuadraEsporte(jftf_Quadra.getText());
+        imovel.setAreaServico(jftf_AreaSer.getText());
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
