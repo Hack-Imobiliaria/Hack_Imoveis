@@ -59,6 +59,9 @@ public class Aluguel {
     public void setDiasAlugados(float diasAlugados) {
         this.diasAlugados = diasAlugados;
     }
+     public int getNumero() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
 
 }
