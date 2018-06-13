@@ -72,17 +72,10 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jl_metrosQua2 = new javax.swing.JLabel();
         jftf_Terraço = new javax.swing.JFormattedTextField();
         jl_metrosQua3 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
-        jRadioButton5 = new javax.swing.JRadioButton();
         jftf_AreaSer = new javax.swing.JFormattedTextField();
         jl_metrosQua4 = new javax.swing.JLabel();
         jftf_Picina = new javax.swing.JFormattedTextField();
-        jRadioButton6 = new javax.swing.JRadioButton();
         jl_metrosQua5 = new javax.swing.JLabel();
-        jRadioButton7 = new javax.swing.JRadioButton();
         jftf_Quadra = new javax.swing.JFormattedTextField();
         jl_metrosQua6 = new javax.swing.JLabel();
         jl_VagaGar = new javax.swing.JLabel();
@@ -113,19 +106,13 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jl_Andares = new javax.swing.JLabel();
         jftf_Picina1 = new javax.swing.JFormattedTextField();
         jl_metrosQua7 = new javax.swing.JLabel();
-        jRadioButton8 = new javax.swing.JRadioButton();
         jftf_Terraço1 = new javax.swing.JFormattedTextField();
         jl_metrosQua8 = new javax.swing.JLabel();
         jRadioButton9 = new javax.swing.JRadioButton();
         jftf_AreaSer1 = new javax.swing.JFormattedTextField();
         jl_metrosQua9 = new javax.swing.JLabel();
-        jRadioButton10 = new javax.swing.JRadioButton();
         jftf_Jardim1 = new javax.swing.JFormattedTextField();
         jl_metrosQua10 = new javax.swing.JLabel();
-        jRadioButton11 = new javax.swing.JRadioButton();
-        jRadioButton12 = new javax.swing.JRadioButton();
-        jRadioButton13 = new javax.swing.JRadioButton();
-        jRadioButton14 = new javax.swing.JRadioButton();
         jRadioButton15 = new javax.swing.JRadioButton();
         jftf_AreaSer2 = new javax.swing.JFormattedTextField();
         jl_metrosQua11 = new javax.swing.JLabel();
@@ -352,22 +339,6 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         }
 
         jl_metrosQua3.setText("M²");
-
-        jRadioButton1.setText("Sim");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
-            }
-        });
-
-        jRadioButton2.setText("Sim");
-
-        jRadioButton3.setText("Sim");
-
-        jRadioButton4.setText("Sim");
-
-        jRadioButton5.setText("Sim");
-
         try {
             jftf_AreaSer.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
         } catch (java.text.ParseException ex) {
@@ -382,11 +353,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
             ex.printStackTrace();
         }
 
-        jRadioButton6.setText("Sim");
-
         jl_metrosQua5.setText("M²");
-
-        jRadioButton7.setText("Sim");
 
         try {
             jftf_Quadra.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
@@ -414,40 +381,6 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                        .addComponent(jl_Picina)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jftf_Picina, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jl_metrosQua5)
-                        .addGap(18, 18, 18)
-                        .addComponent(jRadioButton6))
-                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel_CasaLayout.createSequentialGroup()
-                                .addComponent(jl_Sala)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jftf_Sala, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel_CasaLayout.createSequentialGroup()
-                                .addComponent(jl_quarto)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jftf_Quarto, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jl_QuantidadeQuar)
-                            .addComponent(jl_QuantidadeSala)))
-                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                        .addComponent(jl_Cozinha)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jftf_Cozinha, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jl_QuantidadeCozi))
-                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                        .addComponent(jl_banheiro)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jftf_Banheiro, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jl_Quantidade1))
-                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
                         .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(jPanel_CasaLayout.createSequentialGroup()
                                 .addComponent(jl_AreaServi)
@@ -458,55 +391,76 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jftf_Quadra, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                                .addComponent(jl_metrosQua6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jRadioButton7))
+                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jl_metrosQua6, javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel_CasaLayout.createSequentialGroup()
                                 .addComponent(jl_metrosQua4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jRadioButton5))))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(jPanel_CasaLayout.createSequentialGroup()
                         .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jl_Garagem)
-                            .addComponent(jl_Porao)
-                            .addComponent(jl_terraço)
-                            .addComponent(jl_Jardim)
-                            .addComponent(jl_Quintal))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jftf_Jardim, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jftf_Quintal, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jl_Picina)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jl_metrosQua1)
-                                    .addComponent(jl_metrosQua))
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jRadioButton4)
-                                    .addComponent(jRadioButton2)))
-                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                                .addComponent(jftf_Garagem, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jftf_Picina, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jl_VagaGar))
+                                .addComponent(jl_metrosQua5))
                             .addGroup(jPanel_CasaLayout.createSequentialGroup()
                                 .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                                        .addComponent(jftf_Porão, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jl_metrosQua2))
-                                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                                        .addComponent(jftf_Terraço, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jl_metrosQua3)))
-                                .addGap(18, 18, 18)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel_CasaLayout.createSequentialGroup()
+                                        .addComponent(jl_Sala)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jftf_Sala, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel_CasaLayout.createSequentialGroup()
+                                        .addComponent(jl_quarto)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jftf_Quarto, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jRadioButton3)
-                                    .addComponent(jRadioButton1))))))
-                .addContainerGap(242, Short.MAX_VALUE))
+                                    .addComponent(jl_QuantidadeQuar)
+                                    .addComponent(jl_QuantidadeSala)))
+                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                .addComponent(jl_Cozinha)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jftf_Cozinha, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jl_QuantidadeCozi))
+                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                .addComponent(jl_banheiro)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jftf_Banheiro, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jl_Quantidade1))
+                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jl_Garagem)
+                                    .addComponent(jl_Porao)
+                                    .addComponent(jl_terraço)
+                                    .addComponent(jl_Jardim)
+                                    .addComponent(jl_Quintal))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jftf_Jardim, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jftf_Quintal, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jl_metrosQua1)
+                                            .addComponent(jl_metrosQua)))
+                                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                        .addComponent(jftf_Garagem, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jl_VagaGar))
+                                    .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                            .addComponent(jftf_Porão, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(jl_metrosQua2))
+                                        .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                            .addComponent(jftf_Terraço, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(jl_metrosQua3))))))
+                        .addContainerGap(411, Short.MAX_VALUE))))
         );
         jPanel_CasaLayout.setVerticalGroup(
             jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -537,17 +491,14 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                     .addComponent(jftf_Garagem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jl_VagaGar, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(8, 8, 8)
-                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jftf_Porão, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jl_metrosQua2, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jl_Porao))
-                    .addComponent(jRadioButton1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jftf_Porão, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jl_metrosQua2, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jl_Porao))
+                .addGap(11, 11, 11)
                 .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jftf_Terraço, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jl_metrosQua3, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jRadioButton3)
                     .addComponent(jl_terraço))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -555,37 +506,32 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                     .addGroup(jPanel_CasaLayout.createSequentialGroup()
                         .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jftf_Quintal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jl_metrosQua, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jRadioButton2))
-                        .addGap(10, 10, 10)
+                            .addComponent(jl_metrosQua, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(13, 13, 13)
                         .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jftf_Jardim, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jl_metrosQua1)
-                            .addComponent(jRadioButton4)
                             .addComponent(jl_Jardim))))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel_CasaLayout.createSequentialGroup()
                         .addComponent(jl_Picina)
-                        .addGap(8, 8, 8))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(16, 16, 16))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_CasaLayout.createSequentialGroup()
                         .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jftf_Picina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jl_metrosQua5))
-                        .addComponent(jRadioButton6)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(10, 10, 10)))
                 .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jl_QuadraEsp)
-                    .addComponent(jRadioButton7)
                     .addComponent(jftf_Quadra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jl_metrosQua6))
-                .addGap(4, 4, 4)
+                .addGap(7, 7, 7)
                 .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jl_AreaServi)
                     .addComponent(jftf_AreaSer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jRadioButton5)
                     .addComponent(jl_metrosQua4))
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Casa", jPanel_Casa);
@@ -662,8 +608,6 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
 
         jl_metrosQua7.setText("M²");
 
-        jRadioButton8.setText("Sim");
-
         try {
             jftf_Terraço1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
         } catch (java.text.ParseException ex) {
@@ -682,8 +626,6 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
 
         jl_metrosQua9.setText("M²");
 
-        jRadioButton10.setText("Sim");
-
         try {
             jftf_Jardim1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
         } catch (java.text.ParseException ex) {
@@ -691,14 +633,6 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         }
 
         jl_metrosQua10.setText("M²");
-
-        jRadioButton11.setText("Sim");
-
-        jRadioButton12.setText("sim");
-
-        jRadioButton13.setText("sim");
-
-        jRadioButton14.setText("Sim");
 
         jRadioButton15.setText("Sim");
 
@@ -747,8 +681,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                             .addComponent(jl_AreaServi1))
                         .addGap(19, 19, 19)
                         .addComponent(jl_metrosQua7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jRadioButton8))
+                        .addGap(53, 53, 53))
                     .addGroup(jPanel_PredioLayout.createSequentialGroup()
                         .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel_PredioLayout.createSequentialGroup()
@@ -775,7 +708,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                                         .addComponent(jftf_Cozinha1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(19, 19, 19)
                                         .addComponent(jl_QuantidadeCozina)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 191, Short.MAX_VALUE)
                                 .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel_PredioLayout.createSequentialGroup()
                                         .addComponent(jl_Elevador)
@@ -793,20 +726,13 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                         .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel_PredioLayout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jl_metrosQua9)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jRadioButton14))
+                                .addComponent(jl_metrosQua9))
                             .addGroup(jPanel_PredioLayout.createSequentialGroup()
                                 .addGap(5, 5, 5)
                                 .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                                        .addComponent(jl_metrosQua11)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jRadioButton10))
-                                    .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                                        .addComponent(jl_metrosQua8)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jRadioButton13))))))
+                                    .addComponent(jl_metrosQua11)
+                                    .addComponent(jl_metrosQua8))))
+                        .addGap(65, 65, 65))
                     .addGroup(jPanel_PredioLayout.createSequentialGroup()
                         .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel_PredioLayout.createSequentialGroup()
@@ -837,18 +763,14 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                                     .addGroup(jPanel_PredioLayout.createSequentialGroup()
                                         .addComponent(jftf_Picina1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(29, 29, 29)
-                                        .addComponent(jl_metrosQua12)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jRadioButton12))
+                                        .addComponent(jl_metrosQua12))
                                     .addGroup(jPanel_PredioLayout.createSequentialGroup()
                                         .addComponent(jftf_Andar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jl_QuantidadeAndars)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 332, Short.MAX_VALUE)))
                         .addComponent(jl_metrosQua10)
-                        .addGap(18, 18, 18)
-                        .addComponent(jRadioButton11)))
-                .addContainerGap())
+                        .addGap(65, 65, 65))))
         );
         jPanel_PredioLayout.setVerticalGroup(
             jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -861,10 +783,8 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                         .addComponent(jl_QuantidadeSa)
                         .addComponent(jl_QuadraEsp1)
                         .addComponent(jftf_QuadraEspor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jRadioButton14)
-                        .addComponent(jl_metrosQua9)))
-                .addGap(30, 30, 30)
+                    .addComponent(jl_metrosQua9))
+                .addGap(33, 33, 33)
                 .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel_PredioLayout.createSequentialGroup()
                         .addGap(2, 2, 2)
@@ -895,10 +815,9 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                         .addComponent(jl_QuantidadeBanheiro))
                     .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jl_Varanda)
-                        .addComponent(jRadioButton10)
                         .addComponent(jftf_AreaSer2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jl_metrosQua11)))
-                .addGap(36, 36, 36)
+                .addGap(38, 38, 38)
                 .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jl_Garagem1)
@@ -907,9 +826,8 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                         .addComponent(jl_Terraco))
                     .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jl_metrosQua8, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jftf_Terraço1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jRadioButton13)))
-                .addGap(36, 36, 36)
+                        .addComponent(jftf_Terraço1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(39, 39, 39)
                 .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_PredioLayout.createSequentialGroup()
                         .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -920,21 +838,18 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jl_Jardim1)
                         .addComponent(jftf_Jardim1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jl_metrosQua10)
-                        .addComponent(jRadioButton11)))
-                .addGap(29, 29, 29)
+                        .addComponent(jl_metrosQua10)))
+                .addGap(30, 30, 30)
                 .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jl_Picina1)
                         .addComponent(jftf_Picina1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jRadioButton12)
                         .addComponent(jl_metrosQua12, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jl_AreaServi1)
                         .addComponent(jftf_AreaSer1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jl_metrosQua7)
-                        .addComponent(jRadioButton8)))
-                .addContainerGap(57, Short.MAX_VALUE))
+                        .addComponent(jl_metrosQua7)))
+                .addContainerGap(63, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Predio", jPanel_Predio);
@@ -1078,20 +993,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel_Descrição;
     private javax.swing.JPanel jPanel_Endereco;
     private javax.swing.JPanel jPanel_Predio;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton10;
-    private javax.swing.JRadioButton jRadioButton11;
-    private javax.swing.JRadioButton jRadioButton12;
-    private javax.swing.JRadioButton jRadioButton13;
-    private javax.swing.JRadioButton jRadioButton14;
     private javax.swing.JRadioButton jRadioButton15;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JRadioButton jRadioButton6;
-    private javax.swing.JRadioButton jRadioButton7;
-    private javax.swing.JRadioButton jRadioButton8;
     private javax.swing.JRadioButton jRadioButton9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
