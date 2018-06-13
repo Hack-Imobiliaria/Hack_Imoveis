@@ -86,5 +86,9 @@ public static int getAutoIncremento() {
     public void setListaVenda(List<Imovel> listaVenda) {
         this.listaVenda = listaVenda;
     }
+
+    public int getNumero() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
         
 }
