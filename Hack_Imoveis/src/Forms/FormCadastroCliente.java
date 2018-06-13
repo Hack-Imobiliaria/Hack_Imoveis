@@ -512,6 +512,11 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         cliente.getEnderecoCli().setEstado(jComboBox1.getSelectedItem().toString());
         cliente.getEnderecoCli().setCep(tfCep.getText());
         
+        cliente.getCartaoCli().setNomeTitular(jtf_NomeTitular.getText());
+        cliente.getCartaoCli().setNumeroCartao(Integer.parseInt(jftf_NunCartao.getText()));
+        cliente.getCartaoCli().setNomeTitular(jDataValidade.getText());
+        cliente.getCartaoCli().setNomeTitular(jCodigoValidacao.getText());
+        
         
         
     }//GEN-LAST:event_jButton1ActionPerformed
