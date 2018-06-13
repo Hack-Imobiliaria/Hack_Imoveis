@@ -67,7 +67,8 @@ public class FormAluguel extends javax.swing.JFrame {
         jExit = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        jmi_CadastraCliente = new javax.swing.JMenuItem();
+        jmi_novoAluguel = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Aluguel");
@@ -376,13 +377,16 @@ public class FormAluguel extends javax.swing.JFrame {
 
         jMenu1.setText("Cadastro");
 
-        jMenuItem1.setText("Novo Aluguel");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jmi_CadastraCliente.setText("Cadastrar cliente");
+        jMenu1.add(jmi_CadastraCliente);
+
+        jmi_novoAluguel.setText("Novo Aluguel");
+        jmi_novoAluguel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jmi_novoAluguelActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        jMenu1.add(jmi_novoAluguel);
 
         jMenuBar1.add(jMenu1);
 
@@ -411,9 +415,9 @@ public class FormAluguel extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jExitActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void jmi_novoAluguelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmi_novoAluguelActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_jmi_novoAluguelActionPerformed
 
     /**
      * @param args the command line arguments
@@ -472,7 +476,6 @@ public class FormAluguel extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -492,5 +495,7 @@ public class FormAluguel extends javax.swing.JFrame {
     private javax.swing.JLabel jl_Estado;
     private javax.swing.JLabel jl_EstadoCivil;
     private javax.swing.JLabel jl_Telefone;
+    private javax.swing.JMenuItem jmi_CadastraCliente;
+    private javax.swing.JMenuItem jmi_novoAluguel;
     // End of variables declaration//GEN-END:variables
 }

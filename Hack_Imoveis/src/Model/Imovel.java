@@ -52,6 +52,9 @@ public class Imovel {
         this.escada = escada;
         this.elevador = elevador;
     }
+    public Imovel(){
+        endereco = new Endereco();
+    }
 
     
     // metodo toString
