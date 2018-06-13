@@ -5,6 +5,8 @@
  */
 package Forms;
 
+import Model.Cliente;
+
 /**
  *
  * @author wagner
@@ -94,6 +96,11 @@ public class FormCadastroCliente extends javax.swing.JFrame {
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Teacher-02-48.png"))); // NOI18N
         jButton1.setText("Cadastra");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jtf_Nome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -188,25 +195,22 @@ public class FormCadastroCliente extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel_DadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel_DadosPessoaisLayout.createSequentialGroup()
-                        .addGroup(jPanel_DadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel_DadosPessoaisLayout.createSequentialGroup()
-                                .addComponent(jb_Nome)
-                                .addGap(2, 2, 2)
-                                .addComponent(jtf_Nome, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel_DadosPessoaisLayout.createSequentialGroup()
-                                .addComponent(jl_CPF)
-                                .addGap(1, 1, 1)
-                                .addComponent(jftf_CPF, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel_DadosPessoaisLayout.createSequentialGroup()
-                                .addComponent(jl_EstadoCivil)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(230, Short.MAX_VALUE))
+                        .addComponent(jb_Nome)
+                        .addGap(2, 2, 2)
+                        .addComponent(jtf_Nome, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel_DadosPessoaisLayout.createSequentialGroup()
+                        .addComponent(jl_CPF)
+                        .addGap(1, 1, 1)
+                        .addComponent(jftf_CPF, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel_DadosPessoaisLayout.createSequentialGroup()
+                        .addComponent(jl_EstadoCivil)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel_DadosPessoaisLayout.createSequentialGroup()
                         .addComponent(jl_Telefone)
                         .addGap(4, 4, 4)
-                        .addComponent(jftf_Telefone, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addComponent(jftf_Telefone, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel_DadosPessoaisLayout.setVerticalGroup(
             jPanel_DadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -235,7 +239,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
 
         jTabbedPane.addTab("Dados Pessoais", jPanel_DadosPessoais);
 
-        jl_Endereco.setText("Endereco:");
+        jl_Endereco.setText("Rua:");
 
         jl_Bairro.setText("Bairro:");
 
@@ -279,7 +283,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(tfCidade, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 131, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 159, Short.MAX_VALUE)
                         .addComponent(jLabel9)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(tfCep, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -306,7 +310,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
                 .addGap(31, 31, 31)
                 .addGroup(jPanel_EnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jtf_Endereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jl_Endereco))
+                    .addComponent(jl_Endereco, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel_EnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jl_Bairro)
@@ -325,7 +329,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
                 .addGroup(jPanel_EnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jl_Estado)
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(55, Short.MAX_VALUE))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
 
         jTabbedPane.addTab("Endereço", jPanel_Endereco);
@@ -488,6 +492,21 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        Cliente cliente = new Cliente();
+        cliente.setNome(jtf_Nome.getText());
+        cliente.setCpf(jftf_CPF.getText());
+        cliente.setTelefone(jftf_Telefone.getText());
+        cliente.setEstadoCivil(btnGrup.getSelection().getActionCommand());
+        
+        cliente.getEnderecoCli().setLogradouro(jl_Endereco.getText());
+        cliente.getEnderecoCli().setComplemento(jl_Complemento.getText());
+        cliente.getEnderecoCli().setCidade(tfCidade.getText());
+        cliente.getEnderecoCli().setEstado(jComboBox1.getSelectedItem().toString());
+        cliente.getEnderecoCli().setCep(tfCep.getText());
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
