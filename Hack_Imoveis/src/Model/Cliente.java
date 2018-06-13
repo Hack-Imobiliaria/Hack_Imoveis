@@ -16,6 +16,7 @@ public class Cliente {
     private String email;
     private String estadoCivil;
     private Endereco enderecoCli;   // atual entereco do cliente
+    private Cartoes cartaoCli;
 
     public Cliente(String cpf, String nome, String telefone, String email, String estadoCivil, Endereco enderecoCli) {
         this.cpf = cpf;
@@ -96,6 +97,12 @@ public class Cliente {
 
     public void setEnderecoCli(Endereco enderecoCli) {
         this.enderecoCli = enderecoCli;
+    }
+    public Cartoes getCartaoCli() {
+        return cartaoCli;
+    }
+    public void setCartaoCli(Cartoes cartaoCli) {
+        this.cartaoCli = cartaoCli;
     }
     
    

@@ -5,6 +5,7 @@
  */
 package Forms;
 
+import DAO.ClienteDAO;
 import java.awt.Toolkit;
 
 /**
@@ -12,6 +13,7 @@ import java.awt.Toolkit;
  * @author wagner
  */
 public class FormPrincipal extends javax.swing.JFrame {
+    public static ClienteDAO daoCliente = null; 
 
     /**
      * Creates new form FormPrincipal
