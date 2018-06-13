@@ -6,6 +6,7 @@
 package Forms;
 
 import Model.Cliente;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -494,7 +495,8 @@ public class FormCadastroCliente extends javax.swing.JFrame {
     }//GEN-LAST:event_jftf_NunCartaoActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+        FormPrincipal f = new FormPrincipal();
+        f.setVisible(true);        // TODO add your handling code here:
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -516,6 +518,10 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         cliente.getCartaoCli().setNumeroCartao(Integer.parseInt(jftf_NunCartao.getText()));
         cliente.getCartaoCli().setNomeTitular(jDataValidade.getText());
         cliente.getCartaoCli().setNomeTitular(jCodigoValidacao.getText());
+        
+        FormPrincipal.daoCliente.inserirCliente(cliente);
+        JOptionPane.showMessageDialog(null, "Cliente cadastrado com sucesso!");
+        this.limpar();
         
         
         

@@ -927,8 +927,10 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jExitActionPerformed
-  
+        FormPrincipal f = new FormPrincipal();
+        f.setVisible(true);
         this.dispose();
+        
     }//GEN-LAST:event_jExitActionPerformed
 
     private void jtf_BairroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtf_BairroActionPerformed

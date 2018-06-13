@@ -330,7 +330,8 @@ public class FormVenda extends javax.swing.JFrame {
     }//GEN-LAST:event_jFormattedTextField_CPFActionPerformed
 
     private void jb_SairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_SairActionPerformed
-        // TODO add your handling code here:
+        FormPrincipal f = new FormPrincipal();
+        f.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jb_SairActionPerformed
 
