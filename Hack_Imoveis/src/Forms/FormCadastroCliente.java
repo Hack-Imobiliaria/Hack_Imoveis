@@ -70,10 +70,10 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jftf_NunCartao = new javax.swing.JFormattedTextField();
         jLabel3 = new javax.swing.JLabel();
-        jFormattedTextField1 = new javax.swing.JFormattedTextField();
+        jDataValidade = new javax.swing.JFormattedTextField();
         jLabel4 = new javax.swing.JLabel();
         jl_CodVerificacao = new javax.swing.JLabel();
-        jFormattedTextField2 = new javax.swing.JFormattedTextField();
+        jCodigoValidacao = new javax.swing.JFormattedTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cadastro Clientes");
@@ -90,6 +90,11 @@ public class FormCadastroCliente extends javax.swing.JFrame {
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Clean-48.png"))); // NOI18N
         jButton3.setText("Limpar");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Document-Edit-48.png"))); // NOI18N
         jButton2.setText("Atualizar");
@@ -352,7 +357,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         jLabel3.setText("Data de Validade");
 
         try {
-            jFormattedTextField1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/####")));
+            jDataValidade.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/####")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
@@ -362,7 +367,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         jl_CodVerificacao.setText("Codigo de verificação:");
 
         try {
-            jFormattedTextField2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###")));
+            jCodigoValidacao.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
@@ -385,14 +390,14 @@ public class FormCadastroCliente extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jDataValidade, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jl_CodVerificacao)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jFormattedTextField2)
+                                .addComponent(jCodigoValidacao)
                                 .addGap(38, 38, 38)))))
                 .addContainerGap(221, Short.MAX_VALUE))
         );
@@ -410,11 +415,11 @@ public class FormCadastroCliente extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jDataValidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(4, 4, 4)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jl_CodVerificacao)
-                    .addComponent(jFormattedTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jCodigoValidacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(35, Short.MAX_VALUE))
@@ -500,14 +505,42 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         cliente.setTelefone(jftf_Telefone.getText());
         cliente.setEstadoCivil(btnGrup.getSelection().getActionCommand());
         
-        cliente.getEnderecoCli().setLogradouro(jl_Endereco.getText());
-        cliente.getEnderecoCli().setComplemento(jl_Complemento.getText());
+        cliente.getEnderecoCli().setLogradouro(jtf_Endereco.getText());
+        cliente.getEnderecoCli().setComplemento(jtf_Complemento.getText());
+        cliente.getEnderecoCli().setBairro(jtf_Bairro.getText());
         cliente.getEnderecoCli().setCidade(tfCidade.getText());
         cliente.getEnderecoCli().setEstado(jComboBox1.getSelectedItem().toString());
         cliente.getEnderecoCli().setCep(tfCep.getText());
         
+        
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        this.limpar();
+    }//GEN-LAST:event_jButton3ActionPerformed
+private void limpar()
+    {       
+       jftf_CPF.setText("");
+       jtf_Nome.setText("");
+       jftf_Telefone.setText("");
+       jtf_Endereco.setText("");
+       jtf_Bairro.setText("");
+       jtf_Complemento.setText("");
+       tfCidade.setText("");
+       tfCep.setText("");
+       
+       jComboBox1.setSelectedIndex(-1);
+       btnGrup.clearSelection();
+       jftf_CPF.requestFocus();
+       jTabbedPane.setSelectedIndex(0);
+       
+       jtf_NomeTitular.setText("");
+       jftf_NunCartao.setText("");
+       jDataValidade.setText("");
+       jCodigoValidacao.setText("");
+
+    }
     /**
      * @param args the command line arguments
      */
@@ -550,9 +583,9 @@ public class FormCadastroCliente extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JFormattedTextField jCodigoValidacao;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JFormattedTextField jFormattedTextField1;
-    private javax.swing.JFormattedTextField jFormattedTextField2;
+    private javax.swing.JFormattedTextField jDataValidade;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
