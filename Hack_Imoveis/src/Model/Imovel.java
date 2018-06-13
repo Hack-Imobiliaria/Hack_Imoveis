@@ -78,8 +78,8 @@ public class Imovel {
         str = str + "\n:Tamanho do Area de Serviço -->"+areaServico;
         str = str + "\n:Numer de Andares -->"+andar;
         str = str + "\n:Tamanho do Varanda -->"+varanda;
-        str = str + "\n: -->"+escada;
-        str = str + "\n: -->"+elevador;
+        str = str + "\n:Possui Escadas -->"+escada;
+        str = str + "\n:Possui Elevador -->"+elevador;
         
         return str;
     }
