@@ -1359,7 +1359,7 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Descri&#xe7;&#xe3;o:"/>
+                <Property name="text" type="java.lang.String" value="Descri&#xe7;&#xe3;o imovel:"/>
               </Properties>
             </Component>
             <Container class="javax.swing.JScrollPane" name="jScrollPane1">

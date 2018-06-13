@@ -934,7 +934,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Predio", jPanel_Predio);
 
-        jLabel2.setText("Descrição:");
+        jLabel2.setText("Descrição imovel:");
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
