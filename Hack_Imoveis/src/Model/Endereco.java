@@ -82,5 +82,7 @@ public class Endereco {
         this.cep = cep;
         this.bairro = bairro;
     }
+    public Endereco(){
+    }
     
 }
