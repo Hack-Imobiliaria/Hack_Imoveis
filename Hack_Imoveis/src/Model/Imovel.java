@@ -13,6 +13,15 @@ public class Imovel {
     private Endereco endereco;
     private float valorImovel;
     private String nome;
+    private int numeroImovel;
+
+    public int getNumeroImovel() {
+        return numeroImovel;
+    }
+
+    public void setNumeroImovel(int numeroImovel) {
+        this.numeroImovel = numeroImovel;
+    }
     
 
     
