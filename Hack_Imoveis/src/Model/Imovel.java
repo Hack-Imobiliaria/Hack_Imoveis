@@ -13,6 +13,7 @@ public class Imovel {
     private Endereco endereco;
     private float valorImovel;
     private String nome;
+    private int numeroImovel;
     private int sala;
     private int quartos;
     private int cozinha;
@@ -52,7 +53,6 @@ public class Imovel {
         this.elevador = elevador;
     }
 
-   
     
     // metodo toString
     @Override
@@ -202,6 +202,12 @@ public class Imovel {
     public void setAreaServico(int areaServico) {
         this.areaServico = areaServico;
     }
-    
+     public int getNumeroImovel() {
+        return numeroImovel;
+    }
+
+    public void setNumeroImovel(int numeroImovel) {
+        this.numeroImovel = numeroImovel;
+    }
     
 }
