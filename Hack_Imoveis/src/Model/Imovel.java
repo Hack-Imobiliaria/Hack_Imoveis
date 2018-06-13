@@ -28,10 +28,10 @@ public class Imovel {
     private String areaServico;
     private String andar;
     private String varanda;
-    private boolean escada;
-    private boolean elevador;
+    private String escada;
+    private String elevador;
 
-    public Imovel(Endereco endereco, float valorImovel, String nome, String sala, String quartos, String cozinha, String banheiro, String garagem, String porao, String terraco, String quital, String jardim, String picina, String quadraEsporte, String areaServico, String andar, String varanda, boolean escada, boolean elevador) {
+    public Imovel(Endereco endereco, float valorImovel, String nome, String sala, String quartos, String cozinha, String banheiro, String garagem, String porao, String terraco, String quital, String jardim, String picina, String quadraEsporte, String areaServico, String andar, String varanda, String escada, String elevador) {
         this.endereco = endereco;
         this.valorImovel = valorImovel;
         this.nome = nome;
@@ -84,8 +84,39 @@ public class Imovel {
         return str;
     }
     
-    
-    // metodos get e set 
+    public String getAndar() {
+        return andar;
+    }    
+
+    public void setAndar(String andar) {
+        this.andar = andar;
+    }
+
+    public String getVaranda() {
+        return varanda;
+    }
+
+    public void setVaranda(String varanda) {
+        this.varanda = varanda;
+    }
+
+    public String isEscada() {
+        return escada;
+    }
+
+    public void setEscada(String escada) {
+        this.escada = escada;
+    }
+
+    public String isElevador() {
+        return elevador;
+    }
+
+    // metodos get e set
+    public void setElevador(String elevador) {
+        this.elevador = elevador;
+    }
+
     public Endereco getEndereco() {
         return endereco;
     }
@@ -212,5 +243,6 @@ public class Imovel {
     public void setNumeroImovel(String numeroImovel) {
         this.numeroImovel = numeroImovel;
     }
+    
     
 }

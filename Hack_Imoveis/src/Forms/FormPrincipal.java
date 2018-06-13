@@ -6,14 +6,17 @@
 package Forms;
 
 import DAO.ClienteDAO;
+import DAO.ImovelDAO;
 import java.awt.Toolkit;
 
 /**
  *
  * @author wagner
+ * @author Denner
  */
 public class FormPrincipal extends javax.swing.JFrame {
     public static ClienteDAO daoCliente = null; 
+    public static ImovelDAO daoImovel = null;
 
     /**
      * Creates new form FormPrincipal

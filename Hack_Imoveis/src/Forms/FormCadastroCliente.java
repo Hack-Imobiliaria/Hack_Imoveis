@@ -11,6 +11,7 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author wagner
+ * @author Denner
  */
 public class FormCadastroCliente extends javax.swing.JFrame {
 

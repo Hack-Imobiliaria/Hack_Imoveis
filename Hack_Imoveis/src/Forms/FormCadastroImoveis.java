@@ -5,9 +5,11 @@
  */
 package Forms;
 import Model.Imovel;
+import javax.swing.JOptionPane;
 /**
  *
  * @author wagner
+ * @author denner
  */
 public class FormCadastroImoveis extends javax.swing.JFrame {
 
@@ -97,24 +99,24 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jl_Picina1 = new javax.swing.JLabel();
         jl_AreaServi1 = new javax.swing.JLabel();
         jl_QuadraEsp1 = new javax.swing.JLabel();
-        jftf_Sala1 = new javax.swing.JFormattedTextField();
-        jftf_Quarto1 = new javax.swing.JFormattedTextField();
-        jftf_Cozinha1 = new javax.swing.JFormattedTextField();
-        jftf_Banheiro1 = new javax.swing.JFormattedTextField();
-        jftf_Garagem1 = new javax.swing.JFormattedTextField();
+        jftf_SalaPre = new javax.swing.JFormattedTextField();
+        jftf_QuartoPre = new javax.swing.JFormattedTextField();
+        jftf_CozinhaPre = new javax.swing.JFormattedTextField();
+        jftf_BanheiroPre = new javax.swing.JFormattedTextField();
+        jftf_GaragemPre = new javax.swing.JFormattedTextField();
         jftf_Andar = new javax.swing.JFormattedTextField();
         jl_Andares = new javax.swing.JLabel();
-        jftf_Picina1 = new javax.swing.JFormattedTextField();
+        jftf_PicinaPre = new javax.swing.JFormattedTextField();
         jl_metrosQua7 = new javax.swing.JLabel();
-        jftf_Terraço1 = new javax.swing.JFormattedTextField();
+        jftf_TerraçoPre = new javax.swing.JFormattedTextField();
         jl_metrosQua8 = new javax.swing.JLabel();
-        jRadioButton9 = new javax.swing.JRadioButton();
-        jftf_AreaSer1 = new javax.swing.JFormattedTextField();
+        jrb_Elevador = new javax.swing.JRadioButton();
+        jftf_AreaSerPre = new javax.swing.JFormattedTextField();
         jl_metrosQua9 = new javax.swing.JLabel();
-        jftf_Jardim1 = new javax.swing.JFormattedTextField();
+        jftf_JardimPre = new javax.swing.JFormattedTextField();
         jl_metrosQua10 = new javax.swing.JLabel();
-        jRadioButton15 = new javax.swing.JRadioButton();
-        jftf_AreaSer2 = new javax.swing.JFormattedTextField();
+        jrb_Escada = new javax.swing.JRadioButton();
+        jftf_VarandaPre = new javax.swing.JFormattedTextField();
         jl_metrosQua11 = new javax.swing.JLabel();
         jl_QuantidadeSa = new javax.swing.JLabel();
         jl_QuantidadeQuartos = new javax.swing.JLabel();
@@ -123,7 +125,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jl_QuantidadeGaragem = new javax.swing.JLabel();
         jl_QuantidadeAndars = new javax.swing.JLabel();
         jl_metrosQua12 = new javax.swing.JLabel();
-        jftf_QuadraEspor = new javax.swing.JFormattedTextField();
+        jftf_QuadraEsporPre = new javax.swing.JFormattedTextField();
         jPanel_Descrição = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -561,31 +563,31 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jl_QuadraEsp1.setText("Quadra de esporte");
 
         try {
-            jftf_Sala1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_SalaPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
 
         try {
-            jftf_Quarto1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_QuartoPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
 
         try {
-            jftf_Cozinha1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_CozinhaPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
 
         try {
-            jftf_Banheiro1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_BanheiroPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
 
         try {
-            jftf_Garagem1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_GaragemPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
@@ -599,7 +601,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jl_Andares.setText("Andares");
 
         try {
-            jftf_Picina1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_PicinaPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
@@ -607,17 +609,18 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jl_metrosQua7.setText("M²");
 
         try {
-            jftf_Terraço1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_TerraçoPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
 
         jl_metrosQua8.setText("M²");
 
-        jRadioButton9.setText("Sim");
+        buttonGroup1.add(jrb_Elevador);
+        jrb_Elevador.setText("Sim");
 
         try {
-            jftf_AreaSer1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_AreaSerPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
@@ -625,17 +628,18 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jl_metrosQua9.setText("M²");
 
         try {
-            jftf_Jardim1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_JardimPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
 
         jl_metrosQua10.setText("M²");
 
-        jRadioButton15.setText("Sim");
+        buttonGroup1.add(jrb_Escada);
+        jrb_Escada.setText("Sim");
 
         try {
-            jftf_AreaSer2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_VarandaPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
@@ -657,7 +661,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jl_metrosQua12.setText("M²");
 
         try {
-            jftf_QuadraEspor.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_QuadraEsporPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
@@ -675,7 +679,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                         .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel_PredioLayout.createSequentialGroup()
                                 .addGap(108, 108, 108)
-                                .addComponent(jftf_AreaSer1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jftf_AreaSerPre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jl_AreaServi1))
                         .addGap(19, 19, 19)
                         .addComponent(jl_metrosQua7)
@@ -685,25 +689,25 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                             .addGroup(jPanel_PredioLayout.createSequentialGroup()
                                 .addComponent(jl_Sala1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jftf_Sala1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jftf_SalaPre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jl_QuantidadeSa)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
                                 .addComponent(jl_QuadraEsp1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jftf_QuadraEspor, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jftf_QuadraEsporPre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel_PredioLayout.createSequentialGroup()
                                 .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel_PredioLayout.createSequentialGroup()
                                         .addComponent(jl_quarto1)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jftf_Quarto1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jftf_QuartoPre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(jl_QuantidadeQuartos))
                                     .addGroup(jPanel_PredioLayout.createSequentialGroup()
                                         .addComponent(jl_Cozinha1)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jftf_Cozinha1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jftf_CozinhaPre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(19, 19, 19)
                                         .addComponent(jl_QuantidadeCozina)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 191, Short.MAX_VALUE)
@@ -711,11 +715,11 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                                     .addGroup(jPanel_PredioLayout.createSequentialGroup()
                                         .addComponent(jl_Elevador)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jRadioButton9))
+                                        .addComponent(jrb_Elevador))
                                     .addGroup(jPanel_PredioLayout.createSequentialGroup()
                                         .addComponent(jl_Escada)
                                         .addGap(24, 24, 24)
-                                        .addComponent(jRadioButton15))
+                                        .addComponent(jrb_Escada))
                                     .addComponent(jl_Varanda)
                                     .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                         .addComponent(jl_Jardim1)
@@ -740,26 +744,26 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                                 .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel_PredioLayout.createSequentialGroup()
                                         .addGap(18, 18, 18)
-                                        .addComponent(jftf_Garagem1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jftf_GaragemPre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(jl_QuantidadeGaragem))
                                     .addGroup(jPanel_PredioLayout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jftf_Banheiro1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jftf_BanheiroPre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(19, 19, 19)
                                         .addComponent(jl_QuantidadeBanheiro)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jftf_Terraço1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jftf_AreaSer2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jftf_Jardim1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jftf_TerraçoPre, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jftf_VarandaPre, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jftf_JardimPre, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(36, 36, 36))
                             .addGroup(jPanel_PredioLayout.createSequentialGroup()
                                 .addComponent(jl_Andares)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                                        .addComponent(jftf_Picina1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jftf_PicinaPre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(29, 29, 29)
                                         .addComponent(jl_metrosQua12))
                                     .addGroup(jPanel_PredioLayout.createSequentialGroup()
@@ -776,55 +780,55 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                 .addGap(41, 41, 41)
                 .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jftf_Sala1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jftf_SalaPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jl_Sala1)
                         .addComponent(jl_QuantidadeSa)
                         .addComponent(jl_QuadraEsp1)
-                        .addComponent(jftf_QuadraEspor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jftf_QuadraEsporPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jl_metrosQua9))
                 .addGap(33, 33, 33)
                 .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel_PredioLayout.createSequentialGroup()
                         .addGap(2, 2, 2)
                         .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jftf_Quarto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jftf_QuartoPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jl_quarto1)
                             .addComponent(jl_QuantidadeQuartos)))
                     .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jRadioButton15)
+                        .addComponent(jrb_Escada)
                         .addComponent(jl_Escada)))
                 .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel_PredioLayout.createSequentialGroup()
                         .addGap(20, 20, 20)
                         .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jl_Cozinha1)
-                            .addComponent(jftf_Cozinha1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jftf_CozinhaPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jl_QuantidadeCozina)))
                     .addGroup(jPanel_PredioLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jl_Elevador)
-                            .addComponent(jRadioButton9))))
+                            .addComponent(jrb_Elevador))))
                 .addGap(30, 30, 30)
                 .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jftf_Banheiro1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jftf_BanheiroPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jl_banheiro1)
                         .addComponent(jl_QuantidadeBanheiro))
                     .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jl_Varanda)
-                        .addComponent(jftf_AreaSer2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jftf_VarandaPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jl_metrosQua11)))
                 .addGap(38, 38, 38)
                 .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jl_Garagem1)
-                        .addComponent(jftf_Garagem1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jftf_GaragemPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jl_QuantidadeGaragem)
                         .addComponent(jl_Terraco))
                     .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jl_metrosQua8, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jftf_Terraço1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jftf_TerraçoPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(39, 39, 39)
                 .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_PredioLayout.createSequentialGroup()
@@ -835,17 +839,17 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                         .addGap(2, 2, 2))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jl_Jardim1)
-                        .addComponent(jftf_Jardim1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jftf_JardimPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jl_metrosQua10)))
                 .addGap(30, 30, 30)
                 .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jl_Picina1)
-                        .addComponent(jftf_Picina1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jftf_PicinaPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jl_metrosQua12, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jl_AreaServi1)
-                        .addComponent(jftf_AreaSer1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jftf_AreaSerPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jl_metrosQua7)))
                 .addContainerGap(63, Short.MAX_VALUE))
         );
@@ -977,7 +981,25 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         imovel.setPicina(jftf_Picina.getText());
         imovel.setQuadraEsporte(jftf_Quadra.getText());
         imovel.setAreaServico(jftf_AreaSer.getText());
+        //predio
+        imovel.setSala(jftf_SalaPre.getText());
+        imovel.setQuartos(jftf_QuartoPre.getText());
+        imovel.setCozinha(jftf_CozinhaPre.getText());
+        imovel.setBanheiro(jftf_BanheiroPre.getText());
+        imovel.setGaragem(jftf_GaragemPre.getText());
+        imovel.setAndar(jftf_Andar.getText());
+        imovel.setTerraco(jftf_TerraçoPre.getText());
+        imovel.setPicina(jftf_PicinaPre.getText());
+        imovel.setQuadraEsporte(jftf_QuadraEsporPre.getText());
+        imovel.setEscada(buttonGroup1.getSelection().getActionCommand());
+        imovel.setElevador(buttonGroup1.getSelection().getActionCommand()); // sera?
+        imovel.setVaranda(jftf_VarandaPre.getText());
+        imovel.setTerraco(jftf_TerraçoPre.getText()); 
+        imovel.setJardim(jftf_JardimPre.getText());   
+        imovel.setAreaServico(jftf_AreaSerPre.getText());
         
+        FormPrincipal.daoCliente.inserirCliente(cliente);
+        JOptionPane.showMessageDialog(null, "Cliente cadastrado com sucesso!");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -1034,36 +1056,34 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel_Descrição;
     private javax.swing.JPanel jPanel_Endereco;
     private javax.swing.JPanel jPanel_Predio;
-    private javax.swing.JRadioButton jRadioButton15;
-    private javax.swing.JRadioButton jRadioButton9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JComboBox<String> jcb_estado;
     private javax.swing.JFormattedTextField jftf_Andar;
     private javax.swing.JFormattedTextField jftf_AreaSer;
-    private javax.swing.JFormattedTextField jftf_AreaSer1;
-    private javax.swing.JFormattedTextField jftf_AreaSer2;
+    private javax.swing.JFormattedTextField jftf_AreaSerPre;
     private javax.swing.JFormattedTextField jftf_Banheiro;
-    private javax.swing.JFormattedTextField jftf_Banheiro1;
+    private javax.swing.JFormattedTextField jftf_BanheiroPre;
     private javax.swing.JFormattedTextField jftf_Cozinha;
-    private javax.swing.JFormattedTextField jftf_Cozinha1;
+    private javax.swing.JFormattedTextField jftf_CozinhaPre;
     private javax.swing.JFormattedTextField jftf_Garagem;
-    private javax.swing.JFormattedTextField jftf_Garagem1;
+    private javax.swing.JFormattedTextField jftf_GaragemPre;
     private javax.swing.JFormattedTextField jftf_Jardim;
-    private javax.swing.JFormattedTextField jftf_Jardim1;
+    private javax.swing.JFormattedTextField jftf_JardimPre;
     private javax.swing.JFormattedTextField jftf_Picina;
-    private javax.swing.JFormattedTextField jftf_Picina1;
+    private javax.swing.JFormattedTextField jftf_PicinaPre;
     private javax.swing.JFormattedTextField jftf_Porão;
     private javax.swing.JFormattedTextField jftf_Quadra;
-    private javax.swing.JFormattedTextField jftf_QuadraEspor;
+    private javax.swing.JFormattedTextField jftf_QuadraEsporPre;
     private javax.swing.JFormattedTextField jftf_Quarto;
-    private javax.swing.JFormattedTextField jftf_Quarto1;
+    private javax.swing.JFormattedTextField jftf_QuartoPre;
     private javax.swing.JFormattedTextField jftf_Quintal;
     private javax.swing.JFormattedTextField jftf_Sala;
-    private javax.swing.JFormattedTextField jftf_Sala1;
+    private javax.swing.JFormattedTextField jftf_SalaPre;
     private javax.swing.JFormattedTextField jftf_Terraço;
-    private javax.swing.JFormattedTextField jftf_Terraço1;
+    private javax.swing.JFormattedTextField jftf_TerraçoPre;
+    private javax.swing.JFormattedTextField jftf_VarandaPre;
     private javax.swing.JLabel jl_Andares;
     private javax.swing.JLabel jl_AreaServi;
     private javax.swing.JLabel jl_AreaServi1;
@@ -1118,6 +1138,8 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
     private javax.swing.JLabel jl_quarto;
     private javax.swing.JLabel jl_quarto1;
     private javax.swing.JLabel jl_terraço;
+    private javax.swing.JRadioButton jrb_Elevador;
+    private javax.swing.JRadioButton jrb_Escada;
     private javax.swing.JTextField jtf_Bairro;
     private javax.swing.JFormattedTextField jtf_Cep;
     private javax.swing.JTextField jtf_Cidade;

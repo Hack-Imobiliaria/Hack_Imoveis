@@ -8,6 +8,7 @@ package Forms;
 /**
  *
  * @author wagner
+ * @author Denner
  */
 public class FormVenda extends javax.swing.JFrame {
 
