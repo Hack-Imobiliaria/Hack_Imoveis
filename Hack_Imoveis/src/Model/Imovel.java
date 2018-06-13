@@ -13,25 +13,25 @@ public class Imovel {
     private Endereco endereco;
     private float valorImovel;
     private String nome;
-    private int numeroImovel;
-    private int sala;
-    private int quartos;
-    private int cozinha;
-    private int banheiro;
-    private int garagem;
-    private int porao;
-    private int terraco;
-    private int quital;
-    private int jardim;
-    private int picina;
-    private int quadraEsporte;
-    private int areaServico;
-    private int andar;
-    private int varanda;
+    private String numeroImovel;
+    private String sala;
+    private String quartos;
+    private String cozinha;
+    private String banheiro;
+    private String garagem;
+    private String porao;
+    private String terraco;
+    private String quital;
+    private String jardim;
+    private String picina;
+    private String quadraEsporte;
+    private String areaServico;
+    private String andar;
+    private String varanda;
     private boolean escada;
     private boolean elevador;
 
-    public Imovel(Endereco endereco, float valorImovel, String nome, int sala, int quartos, int cozinha, int banheiro, int garagem, int porao, int terraco, int quital, int jardim, int picina, int quadraEsporte, int areaServico, int andar, int varanda, boolean escada, boolean elevador) {
+    public Imovel(Endereco endereco, float valorImovel, String nome, String sala, String quartos, String cozinha, String banheiro, String garagem, String porao, String terraco, String quital, String jardim, String picina, String quadraEsporte, String areaServico, String andar, String varanda, boolean escada, boolean elevador) {
         this.endereco = endereco;
         this.valorImovel = valorImovel;
         this.nome = nome;
@@ -71,7 +71,7 @@ public class Imovel {
         str = str + "\n:Numero de vagas na Garagem -->"+garagem;
         str = str + "\n:Tamanho do Porão -->"+porao;
         str = str + "\n:Tamanho do Terraço -->"+terraco;
-        str = str + "\n:Tamanho do Quintal -->"+quital;
+        str = str + "\n:Tamanho do QuStringal -->"+quital;
         str = str + "\n:Tamanho do Jardim -->"+jardim;
         str = str + "\n:Tamanho do Picina -->"+picina;
         str = str + "\n:Tamanho do Quadra de Esportes -->"+quadraEsporte;
@@ -110,106 +110,106 @@ public class Imovel {
         this.nome = nome;
     }
 
-    public int getSala() {
+    public String getSala() {
         return sala;
     }
 
-    public void setSala(int sala) {
+    public void setSala(String sala) {
         this.sala = sala;
     }
 
-    public int getQuartos() {
+    public String getQuartos() {
         return quartos;
     }
 
-    public void setQuartos(int quartos) {
+    public void setQuartos(String quartos) {
         this.quartos = quartos;
     }
 
-    public int getCozinha() {
+    public String getCozinha() {
         return cozinha;
     }
 
-    public void setCozinha(int cozinha) {
+    public void setCozinha(String cozinha) {
         this.cozinha = cozinha;
     }
 
-    public int getBanheiro() {
+    public String getBanheiro() {
         return banheiro;
     }
 
-    public void setBanheiro(int banheiro) {
+    public void setBanheiro(String banheiro) {
         this.banheiro = banheiro;
     }
 
-    public int getGaragem() {
+    public String getGaragem() {
         return garagem;
     }
 
-    public void setGaragem(int garagem) {
+    public void setGaragem(String garagem) {
         this.garagem = garagem;
     }
 
-    public int getPorao() {
+    public String getPorao() {
         return porao;
     }
 
-    public void setPorao(int porao) {
+    public void setPorao(String porao) {
         this.porao = porao;
     }
 
-    public int getTerraco() {
+    public String getTerraco() {
         return terraco;
     }
 
-    public void setTerraco(int terraco) {
+    public void setTerraco(String terraco) {
         this.terraco = terraco;
     }
 
-    public int getQuital() {
+    public String getQuital() {
         return quital;
     }
 
-    public void setQuital(int quital) {
+    public void setQuital(String quital) {
         this.quital = quital;
     }
 
-    public int getJardim() {
+    public String getJardim() {
         return jardim;
     }
 
-    public void setJardim(int jardim) {
+    public void setJardim(String jardim) {
         this.jardim = jardim;
     }
 
-    public int getPicina() {
+    public String getPicina() {
         return picina;
     }
 
-    public void setPicina(int picina) {
+    public void setPicina(String picina) {
         this.picina = picina;
     }
 
-    public int getQuadraEsporte() {
+    public String getQuadraEsporte() {
         return quadraEsporte;
     }
 
-    public void setQuadraEsporte(int quadraEsporte) {
+    public void setQuadraEsporte(String quadraEsporte) {
         this.quadraEsporte = quadraEsporte;
     }
 
-    public int getAreaServico() {
+    public String getAreaServico() {
         return areaServico;
     }
 
-    public void setAreaServico(int areaServico) {
+    public void setAreaServico(String areaServico) {
         this.areaServico = areaServico;
     }
-     public int getNumeroImovel() {
+     public String getNumeroImovel() {
         return numeroImovel;
     }
 
-    public void setNumeroImovel(int numeroImovel) {
+    public void setNumeroImovel(String numeroImovel) {
         this.numeroImovel = numeroImovel;
     }
     
