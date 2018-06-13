@@ -279,7 +279,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
 
         jl_Quintal.setText("Quintal");
 
-        jl_QuadraEsp.setText("Quadrada de esporte");
+        jl_QuadraEsp.setText("Quadra de esporte");
 
         jl_Garagem.setText("Garagem");
 
@@ -443,14 +443,14 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jl_Quantidade1))
                     .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(jPanel_CasaLayout.createSequentialGroup()
                                 .addComponent(jl_AreaServi)
                                 .addGap(52, 52, 52)
                                 .addComponent(jftf_AreaSer, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel_CasaLayout.createSequentialGroup()
                                 .addComponent(jl_QuadraEsp)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jftf_Quadra, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -568,19 +568,19 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                             .addComponent(jftf_Picina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jl_metrosQua5))
                         .addComponent(jRadioButton6)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jl_QuadraEsp)
                     .addComponent(jRadioButton7)
                     .addComponent(jftf_Quadra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jl_metrosQua6))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(4, 4, 4)
                 .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jl_AreaServi)
                     .addComponent(jftf_AreaSer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jRadioButton5)
                     .addComponent(jl_metrosQua4))
-                .addContainerGap(48, Short.MAX_VALUE))
+                .addContainerGap(46, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Casa", jPanel_Casa);
@@ -609,7 +609,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
 
         jl_AreaServi1.setText("Area de serviço");
 
-        jl_QuadraEsp1.setText("Quadrada de esporte");
+        jl_QuadraEsp1.setText("Quadra de esporte");
 
         try {
             jftf_Sala1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
@@ -752,7 +752,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                                 .addComponent(jftf_Sala1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jl_QuantidadeSa)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
                                 .addComponent(jl_QuadraEsp1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jftf_QuadraEspor, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
