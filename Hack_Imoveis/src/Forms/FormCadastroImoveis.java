@@ -354,6 +354,11 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jl_metrosQua3.setText("M²");
 
         jRadioButton1.setText("Sim");
+        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton1ActionPerformed(evt);
+            }
+        });
 
         jRadioButton2.setText("Sim");
 
@@ -1014,6 +1019,10 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
     private void jtf_BairroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtf_BairroActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jtf_BairroActionPerformed
+
+    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     /**
      * @param args the command line arguments
