@@ -5,9 +5,13 @@
  */
 package Forms;
 
+import DAO.AluguelDAO;
 import DAO.ClienteDAO;
+import DAO.EnderecoDAO;
 import DAO.ImovelDAO;
+import DAO.VendaDAO;
 import java.awt.Toolkit;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -17,11 +21,20 @@ import java.awt.Toolkit;
 public class FormPrincipal extends javax.swing.JFrame {
     public static ClienteDAO daoCliente = null; 
     public static ImovelDAO daoImovel = null;
+    public static EnderecoDAO daoEndereco = null;
+    public static AluguelDAO daoAluguel = null;
+    public static VendaDAO daoVenda = null;
 
     /**
      * Creates new form FormPrincipal
      */
     public FormPrincipal() {
+        daoCliente = new ClienteDAO();
+        daoImovel = new ImovelDAO();
+        daoEndereco = new EnderecoDAO();
+        daoAluguel = new AluguelDAO();
+        daoVenda = new VendaDAO();
+        
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -223,8 +236,10 @@ public class FormPrincipal extends javax.swing.JFrame {
 
     private void jExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jExitActionPerformed
         login l = new login();
-        l.setVisible(true);        
-        this.dispose();
+        l.setVisible(true); 
+        int sair = JOptionPane.showConfirmDialog(null, "Deseja realmente sair do sistema?", "Confirmação",JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
+        if(sair == JOptionPane.YES_OPTION)
+            this.dispose();
     }//GEN-LAST:event_jExitActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened

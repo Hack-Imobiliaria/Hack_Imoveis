@@ -998,7 +998,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         imovel.setJardim(jftf_JardimPre.getText());   
         imovel.setAreaServico(jftf_AreaSerPre.getText());
         
-        FormPrincipal.daoCliente.inserirCliente(cliente);
+        FormPrincipal.daoCliente;
         JOptionPane.showMessageDialog(null, "Cliente cadastrado com sucesso!");
     }//GEN-LAST:event_jButton1ActionPerformed
 
