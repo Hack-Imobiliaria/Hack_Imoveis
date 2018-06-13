@@ -58,23 +58,23 @@ public class Imovel {
     @Override
     public String toString(){
         String str = "";
-        str = str + "\n: -->"+endereco;
-        str = str + "\n: -->"+valorImovel;
-        str = str + "\n: -->"+nome;
-        str = str + "\n: -->"+sala;
-        str = str + "\n: -->"+quartos;
-        str = str + "\n: -->"+cozinha;
-        str = str + "\n: -->"+banheiro;
-        str = str + "\n: -->"+garagem;
-        str = str + "\n: -->"+porao;
-        str = str + "\n: -->"+terraco;
-        str = str + "\n: -->"+quital;
-        str = str + "\n: -->"+jardim;
-        str = str + "\n: -->"+picina;
-        str = str + "\n: -->"+quadraEsporte;
-        str = str + "\n: -->"+areaServico;
-        str = str + "\n: -->"+andar;
-        str = str + "\n: -->"+varanda;
+        str = str + "\n:endereço -->"+endereco;
+        str = str + "\n:Valor do Imovel -->"+valorImovel;
+        str = str + "\n:Nome -->"+nome;
+        str = str + "\n:Quantidade de Salas -->"+sala;
+        str = str + "\n:Quantidade de Quartos -->"+quartos;
+        str = str + "\n:Quantidade de Cozinhas -->"+cozinha;
+        str = str + "\n:Quantidade de Banheiros -->"+banheiro;
+        str = str + "\n:Numero de vagas na Garagem -->"+garagem;
+        str = str + "\n:Tamanho do Porão -->"+porao;
+        str = str + "\n:Tamanho do Terraço -->"+terraco;
+        str = str + "\n:Tamanho do Quintal -->"+quital;
+        str = str + "\n:Tamanho do Jardim -->"+jardim;
+        str = str + "\n:Tamanho do Picina -->"+picina;
+        str = str + "\n:Tamanho do Quadra de Esportes -->"+quadraEsporte;
+        str = str + "\n:Tamanho do Area de Serviço -->"+areaServico;
+        str = str + "\n:Numer de Andares -->"+andar;
+        str = str + "\n:Tamanho do Varanda -->"+varanda;
         str = str + "\n: -->"+escada;
         str = str + "\n: -->"+elevador;
         
