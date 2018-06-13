@@ -360,7 +360,7 @@
                               <Component id="jl_Quantidade1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
                                       <Component id="jl_AreaServi" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
@@ -368,7 +368,7 @@
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <Component id="jl_QuadraEsp" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                       <Component id="jftf_Quadra" min="-2" pref="35" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -524,21 +524,21 @@
                               <Component id="jRadioButton6" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jl_QuadraEsp" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jRadioButton7" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jftf_Quadra" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jl_metrosQua6" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jl_AreaServi" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jftf_AreaSer" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jRadioButton5" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jl_metrosQua4" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="48" max="32767" attributes="0"/>
+                      <EmptySpace pref="46" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -576,7 +576,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jl_QuadraEsp">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Quadrada de esporte"/>
+                <Property name="text" type="java.lang.String" value="Quadra de esporte"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jl_Garagem">
@@ -823,7 +823,7 @@
                                       <Component id="jftf_Sala1" min="-2" pref="35" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="jl_QuantidadeSa" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace pref="65" max="32767" attributes="0"/>
+                                      <EmptySpace pref="82" max="32767" attributes="0"/>
                                       <Component id="jl_QuadraEsp1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jftf_QuadraEspor" min="-2" pref="35" max="-2" attributes="0"/>
@@ -1125,7 +1125,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jl_QuadraEsp1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Quadrada de esporte"/>
+                <Property name="text" type="java.lang.String" value="Quadra de esporte"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JFormattedTextField" name="jftf_Sala1">
@@ -1359,7 +1359,7 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Descri&#xe7;&#xe3;o:"/>
+                <Property name="text" type="java.lang.String" value="Descri&#xe7;&#xe3;o imovel:"/>
               </Properties>
             </Component>
             <Container class="javax.swing.JScrollPane" name="jScrollPane1">
