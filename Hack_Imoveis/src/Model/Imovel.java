@@ -13,7 +13,7 @@ public class Imovel {
     private Endereco endereco;
     private float valorImovel;
     private String nome;
-    private String numeroImovel;
+    private int numeroImovel;
     private String sala;
     private String quartos;
     private String cozinha;
@@ -236,11 +236,11 @@ public class Imovel {
     public void setAreaServico(String areaServico) {
         this.areaServico = areaServico;
     }
-     public String getNumeroImovel() {
+     public int getNumeroImovel() {
         return numeroImovel;
     }
 
-    public void setNumeroImovel(String numeroImovel) {
+    public void setNumeroImovel(int numeroImovel) {
         this.numeroImovel = numeroImovel;
     }
     

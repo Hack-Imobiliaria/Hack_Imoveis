@@ -19,6 +19,10 @@ public class Cartoes {
 
     // construtor
 
+    public Cartoes() {
+    }
+    
+    
     public Cartoes(String nomeTitular, int numeroCartao, Date dataValidade, int codigoVerificacao) {
         this.nomeTitular = nomeTitular;
         this.numeroCartao = numeroCartao;

@@ -7,6 +7,7 @@ package Forms;
 
 import Model.Cliente;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 /**
  *
@@ -507,6 +508,8 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         cliente.setCpf(jftf_CPF.getText());
         cliente.setTelefone(jftf_Telefone.getText());
         cliente.setEstadoCivil(btnGrup.getSelection().getActionCommand());
+        String teste = jtf_Endereco.getText();
+        System.out.printf(teste);
         
         cliente.getEnderecoCli().setLogradouro(jtf_Endereco.getText());
         cliente.getEnderecoCli().setComplemento(jtf_Complemento.getText());

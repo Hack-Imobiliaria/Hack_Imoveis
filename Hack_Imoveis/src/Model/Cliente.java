@@ -28,6 +28,8 @@ public class Cliente {
     }
 
     public Cliente() {
+        enderecoCli = new Endereco();
+        cartaoCli = new Cartoes();
     }
     
     // metodo toString

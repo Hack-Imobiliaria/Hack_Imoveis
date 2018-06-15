@@ -30,7 +30,7 @@ public class ImovelDAO {
         Imovel imovel = null;
         for(Imovel imo: lista)
         {
-            if(imo.getNumeroImovel()== numero)
+            if(imo.getNumeroImovel() == numero)
                 imovel = imo;
         }
         
