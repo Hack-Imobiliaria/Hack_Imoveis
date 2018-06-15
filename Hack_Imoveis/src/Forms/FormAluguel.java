@@ -14,6 +14,8 @@ public class FormAluguel extends javax.swing.JFrame {
 
     /**
      * Creates new form FormPrincipal
+     * o formular de alugeum leva junto o cliente mais o imovel!!!!
+     * na hora de aluguar!!!!
      */
     public FormAluguel() {
         initComponents();
