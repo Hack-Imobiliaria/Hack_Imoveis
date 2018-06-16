@@ -5,6 +5,8 @@
  */
 package Forms;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author wagner
@@ -94,6 +96,11 @@ public class FormCadastroCliente extends javax.swing.JFrame {
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Teacher-02-48.png"))); // NOI18N
         jButton1.setText("Cadastra");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jtf_Nome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -188,25 +195,22 @@ public class FormCadastroCliente extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel_DadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel_DadosPessoaisLayout.createSequentialGroup()
-                        .addGroup(jPanel_DadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel_DadosPessoaisLayout.createSequentialGroup()
-                                .addComponent(jb_Nome)
-                                .addGap(2, 2, 2)
-                                .addComponent(jtf_Nome, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel_DadosPessoaisLayout.createSequentialGroup()
-                                .addComponent(jl_CPF)
-                                .addGap(1, 1, 1)
-                                .addComponent(jftf_CPF, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel_DadosPessoaisLayout.createSequentialGroup()
-                                .addComponent(jl_EstadoCivil)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(230, Short.MAX_VALUE))
+                        .addComponent(jb_Nome)
+                        .addGap(2, 2, 2)
+                        .addComponent(jtf_Nome, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel_DadosPessoaisLayout.createSequentialGroup()
+                        .addComponent(jl_CPF)
+                        .addGap(1, 1, 1)
+                        .addComponent(jftf_CPF, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel_DadosPessoaisLayout.createSequentialGroup()
+                        .addComponent(jl_EstadoCivil)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel_DadosPessoaisLayout.createSequentialGroup()
                         .addComponent(jl_Telefone)
                         .addGap(4, 4, 4)
-                        .addComponent(jftf_Telefone, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addComponent(jftf_Telefone, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel_DadosPessoaisLayout.setVerticalGroup(
             jPanel_DadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -488,6 +492,17 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        int cadCli = JOptionPane.showConfirmDialog(null, "Inserindo cliente atomaticamente","Cadastro de Clientes",JOptionPane.YES_NO_CANCEL_OPTION);
+        if (cadCli == JOptionPane.YES_OPTION)
+        {
+            // metodo
+            JOptionPane.showMessageDialog(null, "Cliente inseridos com sucesso!","Atenção",JOptionPane.INFORMATION_MESSAGE);
+        }
+                
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
