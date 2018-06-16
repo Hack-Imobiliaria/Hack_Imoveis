@@ -513,7 +513,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         cliente.setCpf(jftf_CPF.getText());
         cliente.setTelefone(jftf_Telefone.getText());
         cliente.setEstadoCivil(btnGrup.getSelection().getActionCommand());
-        
+        cliente.setEmail("denner@denner");
         cliente.getEnderecoCli().setLogradouro(jtf_Endereco.getText());
         cliente.getEnderecoCli().setComplemento(jtf_Complemento.getText());
         cliente.getEnderecoCli().setBairro(jtf_Bairro.getText());
@@ -526,9 +526,10 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         cliente.getCartaoCli().setNomeTitular(jDataValidade.getText());
         cliente.getCartaoCli().setNomeTitular(jCodigoValidacao.getText());
         
+        System.out.println(cliente);
         FormPrincipal.daoCliente.inserirCliente(cliente);
         JOptionPane.showMessageDialog(null, "Cliente cadastrado com sucesso!");
-        //this.limpar();
+        this.limpar();
         
         
         
@@ -542,6 +543,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         String cpf = jftf_CPF.getText();
         FormPrincipal.daoCliente.alterarCliente(cpf);
         JOptionPane.showMessageDialog(null, "Cliente alterado com sucesso!");
+        this.limpar();
     }//GEN-LAST:event_jButton2ActionPerformed
 private void limpar()
     {       
