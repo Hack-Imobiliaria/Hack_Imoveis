@@ -101,6 +101,11 @@ public class FormCadastroCliente extends javax.swing.JFrame {
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Document-Edit-48.png"))); // NOI18N
         jButton2.setText("Atualizar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Teacher-02-48.png"))); // NOI18N
         jButton1.setText("Cadastra");
@@ -532,6 +537,12 @@ public class FormCadastroCliente extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         this.limpar();
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        String cpf = jftf_CPF.getText();
+        FormPrincipal.daoCliente.alterarCliente(cpf);
+        JOptionPane.showMessageDialog(null, "Cliente alterado com sucesso!");
+    }//GEN-LAST:event_jButton2ActionPerformed
 private void limpar()
     {       
        jftf_CPF.setText("");
