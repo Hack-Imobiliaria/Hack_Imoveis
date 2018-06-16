@@ -346,7 +346,7 @@ public class FormVenda extends javax.swing.JFrame {
     }//GEN-LAST:event_jb_SairActionPerformed
 
     private void jb_CancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_CancelarActionPerformed
-        // TODO add your handling code here:
+        limpar();
     }//GEN-LAST:event_jb_CancelarActionPerformed
 
     private void jbt_CpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbt_CpfActionPerformed
@@ -363,6 +363,13 @@ public class FormVenda extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Cliente não encontrado!");
     }//GEN-LAST:event_jbt_CpfActionPerformed
 
+    private void limpar()
+    {       
+       Print_Endereco.setText("");
+       Print_Nome.setText("");
+       Print_Email.setText("");
+       Print_Telefone.setText("");
+    }
     /**
      * @param args the command line arguments
      */

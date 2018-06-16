@@ -523,7 +523,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         
         FormPrincipal.daoCliente.inserirCliente(cliente);
         JOptionPane.showMessageDialog(null, "Cliente cadastrado com sucesso!");
-        this.limpar();
+        //this.limpar();
         
         
         
