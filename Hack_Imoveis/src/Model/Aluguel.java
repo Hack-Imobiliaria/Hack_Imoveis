@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ *aluguem tem que levar o cliente mais o imovel na hora do aluguem!!!!!!
  * @author wagner
  */
 public class Aluguel {
@@ -17,7 +17,7 @@ public class Aluguel {
     * ele vendo da class imoveil
     */
     //private Endereco endereco; // objeto endereco 
-    private List<Cliente> alugeulCliente; // lista de cliente que aluga imoveil
+    private Cliente alugeulCliente; // lista de cliente que aluga imoveil
     private Imovel imovel;
     private float valorAlugel;
     private float diasAlugados;
@@ -28,11 +28,11 @@ public class Aluguel {
         valorAlugel = imovel.getValorImovel() * diasAlugados ;
     }
 // get e set
-    public List<Cliente> getAlugeulCliente() {
+    public Cliente getAlugeulCliente() {
         return alugeulCliente;
     }
 
-    public void setAlugeulCliente(List<Cliente> alugeulCliente) {
+    public void setAlugeulCliente(Cliente alugeulCliente) {
         this.alugeulCliente = alugeulCliente;
     }
 
