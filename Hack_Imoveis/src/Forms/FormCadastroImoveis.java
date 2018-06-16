@@ -87,52 +87,22 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jl_Quantidade1 = new javax.swing.JLabel();
         jl_QuantidadeQuar = new javax.swing.JLabel();
         jl_QuantidadeSala = new javax.swing.JLabel();
-        jPanel_Predio = new javax.swing.JPanel();
-        jl_Varanda = new javax.swing.JLabel();
-        jl_Terraco = new javax.swing.JLabel();
-        jl_Elevador = new javax.swing.JLabel();
         jl_Escada = new javax.swing.JLabel();
-        jl_Sala1 = new javax.swing.JLabel();
-        jl_quarto1 = new javax.swing.JLabel();
-        jl_Cozinha1 = new javax.swing.JLabel();
-        jl_banheiro1 = new javax.swing.JLabel();
-        jl_Garagem1 = new javax.swing.JLabel();
-        jl_Jardim1 = new javax.swing.JLabel();
-        jl_Picina1 = new javax.swing.JLabel();
-        jl_AreaServi1 = new javax.swing.JLabel();
-        jl_QuadraEsp1 = new javax.swing.JLabel();
-        jftf_SalaPre = new javax.swing.JFormattedTextField();
-        jftf_QuartoPre = new javax.swing.JFormattedTextField();
-        jftf_CozinhaPre = new javax.swing.JFormattedTextField();
-        jftf_BanheiroPre = new javax.swing.JFormattedTextField();
-        jftf_GaragemPre = new javax.swing.JFormattedTextField();
-        jftf_Andar = new javax.swing.JFormattedTextField();
-        jl_Andares = new javax.swing.JLabel();
-        jftf_PicinaPre = new javax.swing.JFormattedTextField();
-        jl_metrosQua7 = new javax.swing.JLabel();
-        jftf_TerraçoPre = new javax.swing.JFormattedTextField();
-        jl_metrosQua8 = new javax.swing.JLabel();
-        jrb_Elevador = new javax.swing.JRadioButton();
-        jftf_AreaSerPre = new javax.swing.JFormattedTextField();
-        jl_metrosQua9 = new javax.swing.JLabel();
-        jftf_JardimPre = new javax.swing.JFormattedTextField();
-        jl_metrosQua10 = new javax.swing.JLabel();
         jrb_Escada = new javax.swing.JRadioButton();
+        jl_Elevador = new javax.swing.JLabel();
+        jrb_Elevador = new javax.swing.JRadioButton();
+        jftf_Andar = new javax.swing.JFormattedTextField();
+        jl_QuantidadeAndars = new javax.swing.JLabel();
+        jl_Andares = new javax.swing.JLabel();
+        jl_Varanda = new javax.swing.JLabel();
         jftf_VarandaPre = new javax.swing.JFormattedTextField();
         jl_metrosQua11 = new javax.swing.JLabel();
-        jl_QuantidadeSa = new javax.swing.JLabel();
-        jl_QuantidadeQuartos = new javax.swing.JLabel();
-        jl_QuantidadeCozina = new javax.swing.JLabel();
-        jl_QuantidadeBanheiro = new javax.swing.JLabel();
-        jl_QuantidadeGaragem = new javax.swing.JLabel();
-        jl_QuantidadeAndars = new javax.swing.JLabel();
-        jl_metrosQua12 = new javax.swing.JLabel();
-        jftf_QuadraEsporPre = new javax.swing.JFormattedTextField();
         jPanel_Descrição = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jLabel4 = new javax.swing.JLabel();
+        jbt_Cada = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -379,220 +349,15 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
 
         jl_QuantidadeSala.setText("Quantidade");
 
-        javax.swing.GroupLayout jPanel_CasaLayout = new javax.swing.GroupLayout(jPanel_Casa);
-        jPanel_Casa.setLayout(jPanel_CasaLayout);
-        jPanel_CasaLayout.setHorizontalGroup(
-            jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                                .addComponent(jl_AreaServi)
-                                .addGap(52, 52, 52)
-                                .addComponent(jftf_AreaSer, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                                .addComponent(jl_QuadraEsp)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jftf_Quadra, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jl_metrosQua6, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jl_metrosQua4, javax.swing.GroupLayout.Alignment.LEADING)))
-                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                        .addComponent(jl_Picina)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jftf_Picina, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jl_metrosQua5))
-                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel_CasaLayout.createSequentialGroup()
-                                .addComponent(jl_Sala)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jftf_Sala, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel_CasaLayout.createSequentialGroup()
-                                .addComponent(jl_quarto)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jftf_Quarto, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jl_QuantidadeQuar)
-                            .addComponent(jl_QuantidadeSala)))
-                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                        .addComponent(jl_Cozinha)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jftf_Cozinha, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jl_QuantidadeCozi))
-                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                        .addComponent(jl_banheiro)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jftf_Banheiro, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jl_Quantidade1))
-                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jl_Garagem)
-                            .addComponent(jl_Porao)
-                            .addComponent(jl_terraço)
-                            .addComponent(jl_Jardim)
-                            .addComponent(jl_Quintal))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jftf_Jardim, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jftf_Quintal, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jl_metrosQua1)
-                                    .addComponent(jl_metrosQua)))
-                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                                .addComponent(jftf_Garagem, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jl_VagaGar))
-                            .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                                    .addComponent(jftf_Porão, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jl_metrosQua2))
-                                .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                                    .addComponent(jftf_Terraço, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jl_metrosQua3))))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel_CasaLayout.setVerticalGroup(
-            jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jl_Sala)
-                    .addComponent(jftf_Sala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jl_QuantidadeSala, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jl_quarto)
-                    .addComponent(jftf_Quarto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jl_QuantidadeQuar, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jl_Cozinha)
-                    .addComponent(jftf_Cozinha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jl_QuantidadeCozi, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(14, 14, 14)
-                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jl_banheiro)
-                    .addComponent(jftf_Banheiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jl_Quantidade1, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jl_Garagem)
-                    .addComponent(jftf_Garagem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jl_VagaGar, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(8, 8, 8)
-                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jftf_Porão, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jl_metrosQua2, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jl_Porao))
-                .addGap(11, 11, 11)
-                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jftf_Terraço, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jl_metrosQua3, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jl_terraço))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jl_Quintal)
-                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jftf_Quintal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jl_metrosQua, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(13, 13, 13)
-                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jftf_Jardim, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jl_metrosQua1)
-                            .addComponent(jl_Jardim))))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                        .addComponent(jl_Picina)
-                        .addGap(16, 16, 16))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_CasaLayout.createSequentialGroup()
-                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jftf_Picina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jl_metrosQua5))
-                        .addGap(10, 10, 10)))
-                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jl_QuadraEsp)
-                    .addComponent(jftf_Quadra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jl_metrosQua6))
-                .addGap(7, 7, 7)
-                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jl_AreaServi)
-                    .addComponent(jftf_AreaSer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jl_metrosQua4))
-                .addContainerGap(50, Short.MAX_VALUE))
-        );
+        jl_Escada.setText("Escada");
 
-        jTabbedPane1.addTab("Casa", jPanel_Casa);
-
-        jl_Varanda.setText("Varanda");
-
-        jl_Terraco.setText("Terraço");
+        buttonGroup1.add(jrb_Escada);
+        jrb_Escada.setText("Sim");
 
         jl_Elevador.setText("Elevador");
 
-        jl_Escada.setText("Escada");
-
-        jl_Sala1.setText("Sala");
-
-        jl_quarto1.setText("Quartos");
-
-        jl_Cozinha1.setText("Cozinha");
-
-        jl_banheiro1.setText("Banheiro");
-
-        jl_Garagem1.setText("Garagem");
-
-        jl_Jardim1.setText("Jardim");
-
-        jl_Picina1.setText("Picina");
-
-        jl_AreaServi1.setText("Area de serviço");
-
-        jl_QuadraEsp1.setText("Quadra de esporte");
-
-        try {
-            jftf_SalaPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-
-        try {
-            jftf_QuartoPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-
-        try {
-            jftf_CozinhaPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-
-        try {
-            jftf_BanheiroPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-
-        try {
-            jftf_GaragemPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
+        buttonGroup1.add(jrb_Elevador);
+        jrb_Elevador.setText("Sim");
 
         try {
             jftf_Andar.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
@@ -600,45 +365,11 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
             ex.printStackTrace();
         }
 
+        jl_QuantidadeAndars.setText("Quantidade");
+
         jl_Andares.setText("Andares");
 
-        try {
-            jftf_PicinaPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-
-        jl_metrosQua7.setText("M²");
-
-        try {
-            jftf_TerraçoPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-
-        jl_metrosQua8.setText("M²");
-
-        buttonGroup1.add(jrb_Elevador);
-        jrb_Elevador.setText("Sim");
-
-        try {
-            jftf_AreaSerPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-
-        jl_metrosQua9.setText("M²");
-
-        try {
-            jftf_JardimPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-
-        jl_metrosQua10.setText("M²");
-
-        buttonGroup1.add(jrb_Escada);
-        jrb_Escada.setText("Sim");
+        jl_Varanda.setText("Varanda");
 
         try {
             jftf_VarandaPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
@@ -648,215 +379,217 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
 
         jl_metrosQua11.setText("M²");
 
-        jl_QuantidadeSa.setText("Quantidade");
-
-        jl_QuantidadeQuartos.setText("Quantidade");
-
-        jl_QuantidadeCozina.setText("Quantidade");
-
-        jl_QuantidadeBanheiro.setText("Quantidade");
-
-        jl_QuantidadeGaragem.setText("Quantidade");
-
-        jl_QuantidadeAndars.setText("Quantidade");
-
-        jl_metrosQua12.setText("M²");
-
-        try {
-            jftf_QuadraEsporPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-
-        javax.swing.GroupLayout jPanel_PredioLayout = new javax.swing.GroupLayout(jPanel_Predio);
-        jPanel_Predio.setLayout(jPanel_PredioLayout);
-        jPanel_PredioLayout.setHorizontalGroup(
-            jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_PredioLayout.createSequentialGroup()
+        javax.swing.GroupLayout jPanel_CasaLayout = new javax.swing.GroupLayout(jPanel_Casa);
+        jPanel_Casa.setLayout(jPanel_CasaLayout);
+        jPanel_CasaLayout.setHorizontalGroup(
+            jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel_CasaLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                        .addComponent(jl_Picina1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                                .addGap(108, 108, 108)
-                                .addComponent(jftf_AreaSerPre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jl_AreaServi1))
-                        .addGap(19, 19, 19)
-                        .addComponent(jl_metrosQua7)
-                        .addGap(53, 53, 53))
-                    .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                        .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                                .addComponent(jl_Sala1)
+                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                .addComponent(jl_Sala)
+                                .addGap(43, 43, 43)
+                                .addComponent(jftf_Sala, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jftf_SalaPre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jl_QuantidadeSala))
+                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                .addComponent(jl_banheiro)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jftf_Banheiro, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jl_Quantidade1))
+                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jl_Garagem)
+                                    .addComponent(jl_Porao))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                        .addComponent(jftf_Garagem, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jl_VagaGar))
+                                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                        .addComponent(jftf_Porão, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jl_metrosQua2))))
+                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                .addComponent(jl_Elevador)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jl_QuantidadeSa)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
-                                .addComponent(jl_QuadraEsp1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jftf_QuadraEsporPre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                                .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                                        .addComponent(jl_quarto1)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jftf_QuartoPre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jl_QuantidadeQuartos))
-                                    .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                                        .addComponent(jl_Cozinha1)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jftf_CozinhaPre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(19, 19, 19)
-                                        .addComponent(jl_QuantidadeCozina)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 191, Short.MAX_VALUE)
-                                .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                                        .addComponent(jl_Elevador)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jrb_Elevador))
-                                    .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                                        .addComponent(jl_Escada)
-                                        .addGap(24, 24, 24)
-                                        .addComponent(jrb_Escada))
-                                    .addComponent(jl_Varanda)
-                                    .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jl_Jardim1)
-                                        .addComponent(jl_Terraco)))
-                                .addGap(30, 30, 30)))
-                        .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jl_metrosQua9))
-                            .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                                .addGap(5, 5, 5)
-                                .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jl_metrosQua11)
-                                    .addComponent(jl_metrosQua8))))
-                        .addGap(65, 65, 65))
-                    .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                        .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                                .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jl_banheiro1)
-                                    .addComponent(jl_Garagem1))
-                                .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jftf_GaragemPre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jl_QuantidadeGaragem))
-                                    .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jftf_BanheiroPre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(19, 19, 19)
-                                        .addComponent(jl_QuantidadeBanheiro)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jftf_TerraçoPre, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jftf_VarandaPre, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jftf_JardimPre, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(36, 36, 36))
-                            .addGroup(jPanel_PredioLayout.createSequentialGroup()
+                                .addComponent(jrb_Elevador))
+                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                .addComponent(jl_Escada)
+                                .addGap(24, 24, 24)
+                                .addComponent(jrb_Escada))
+                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
                                 .addComponent(jl_Andares)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                                        .addComponent(jftf_PicinaPre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(29, 29, 29)
-                                        .addComponent(jl_metrosQua12))
-                                    .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                                        .addComponent(jftf_Andar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jl_QuantidadeAndars)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 332, Short.MAX_VALUE)))
-                        .addComponent(jl_metrosQua10)
-                        .addGap(65, 65, 65))))
+                                .addComponent(jftf_Andar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jl_QuantidadeAndars)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
+                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                .addComponent(jl_Picina)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jftf_Picina, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jl_metrosQua5))
+                            .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                    .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jl_Jardim)
+                                        .addComponent(jl_Quintal))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jftf_Jardim, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jftf_Quintal, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jl_metrosQua1)
+                                        .addComponent(jl_metrosQua)))
+                                .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                    .addComponent(jl_terraço)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jftf_Terraço, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jl_metrosQua3)))
+                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                .addComponent(jl_AreaServi)
+                                .addGap(52, 52, 52)
+                                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                        .addComponent(jftf_Quadra, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jl_metrosQua6))
+                                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                        .addComponent(jftf_AreaSer, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jl_metrosQua4))))
+                            .addComponent(jl_QuadraEsp)
+                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                .addComponent(jl_Varanda)
+                                .addGap(102, 102, 102)
+                                .addComponent(jl_metrosQua11))
+                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                .addGap(95, 95, 95)
+                                .addComponent(jftf_VarandaPre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                .addComponent(jl_quarto)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jftf_Quarto, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jl_QuantidadeQuar))
+                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                .addComponent(jl_Cozinha)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jftf_Cozinha, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jl_QuantidadeCozi)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
-        jPanel_PredioLayout.setVerticalGroup(
-            jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                .addGap(41, 41, 41)
-                .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jftf_SalaPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jl_Sala1)
-                        .addComponent(jl_QuantidadeSa)
-                        .addComponent(jl_QuadraEsp1)
-                        .addComponent(jftf_QuadraEsporPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jl_metrosQua9))
-                .addGap(33, 33, 33)
-                .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jftf_QuartoPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jl_quarto1)
-                            .addComponent(jl_QuantidadeQuartos)))
-                    .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jrb_Escada)
-                        .addComponent(jl_Escada)))
-                .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel_PredioLayout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jl_Cozinha1)
-                            .addComponent(jftf_CozinhaPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jl_QuantidadeCozina)))
-                    .addGroup(jPanel_PredioLayout.createSequentialGroup()
+        jPanel_CasaLayout.setVerticalGroup(
+            jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jftf_Terraço, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jl_metrosQua3, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jl_terraço))
+                    .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jl_Sala)
+                        .addComponent(jftf_Sala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jl_QuantidadeSala, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jl_quarto)
+                            .addComponent(jftf_Quarto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jl_QuantidadeQuar, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jl_Elevador)
-                            .addComponent(jrb_Elevador))))
-                .addGap(30, 30, 30)
-                .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jftf_BanheiroPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jl_banheiro1)
-                        .addComponent(jl_QuantidadeBanheiro))
-                    .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jl_Varanda)
-                        .addComponent(jftf_VarandaPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jl_metrosQua11)))
-                .addGap(38, 38, 38)
-                .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jl_Garagem1)
-                        .addComponent(jftf_GaragemPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jl_QuantidadeGaragem)
-                        .addComponent(jl_Terraco))
-                    .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jl_metrosQua8, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jftf_TerraçoPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(39, 39, 39)
-                .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_PredioLayout.createSequentialGroup()
-                        .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jl_Cozinha)
+                            .addComponent(jftf_Cozinha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jl_QuantidadeCozi, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jl_Quintal)
+                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jftf_Quintal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jl_metrosQua, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(13, 13, 13)
+                                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jftf_Jardim, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jl_metrosQua1)
+                                    .addComponent(jl_Jardim))))))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jl_Picina)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_CasaLayout.createSequentialGroup()
+                            .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jftf_Picina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jl_metrosQua5))
+                            .addGap(1, 1, 1)))
+                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jl_banheiro)
+                            .addComponent(jftf_Banheiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jl_Quantidade1, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jl_Andares)
                             .addComponent(jftf_Andar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jl_QuantidadeAndars))
-                        .addGap(2, 2, 2))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jl_Jardim1)
-                        .addComponent(jftf_JardimPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jl_metrosQua10)))
-                .addGap(30, 30, 30)
-                .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jl_Picina1)
-                        .addComponent(jftf_PicinaPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jl_metrosQua12, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel_PredioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jl_AreaServi1)
-                        .addComponent(jftf_AreaSerPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jl_metrosQua7)))
-                .addContainerGap(63, Short.MAX_VALUE))
+                        .addGap(21, 21, 21)
+                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jl_Garagem)
+                            .addComponent(jftf_Garagem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jl_VagaGar, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jftf_Porão, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jl_metrosQua2, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jl_Porao))
+                        .addGap(20, 20, 20)
+                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jrb_Escada)
+                            .addComponent(jl_Escada))
+                        .addGap(23, 23, 23)
+                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jl_Elevador)
+                            .addComponent(jrb_Elevador)))
+                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jl_Varanda)
+                            .addComponent(jftf_VarandaPre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jl_metrosQua11))
+                        .addGap(30, 30, 30)
+                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jl_QuadraEsp)
+                            .addComponent(jftf_Quadra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jl_metrosQua6))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jl_AreaServi)
+                            .addComponent(jftf_AreaSer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jl_metrosQua4))))
+                .addContainerGap(84, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("Predio", jPanel_Predio);
+        jTabbedPane1.addTab("Imovel", jPanel_Casa);
 
         jLabel2.setText("Descrição imovel:");
 
@@ -891,8 +624,16 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
 
         jLabel4.setText("Dados do Imovel");
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/User-Add-48.png"))); // NOI18N
-        jButton1.setText("Cadrastar");
+        jbt_Cada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/House-48.png"))); // NOI18N
+        jbt_Cada.setText("Casa");
+        jbt_Cada.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbt_CadaActionPerformed(evt);
+            }
+        });
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Building-Add-48.png"))); // NOI18N
+        jButton1.setText("Apartamento");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -913,31 +654,35 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 632, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(87, 87, 87)
-                        .addComponent(jButton1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jExit, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addGap(105, 105, 105)
+                .addComponent(jbt_Cada)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(123, 123, 123)
+                .addComponent(jExit, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(64, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(272, 272, 272))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 632, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(5, 5, 5)
                 .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 445, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jExit, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jbt_Cada, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
 
         pack();
@@ -951,15 +696,11 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jExitActionPerformed
 
-    private void jtf_BairroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtf_BairroActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jtf_BairroActionPerformed
-
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton1ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jbt_CadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbt_CadaActionPerformed
         // TODO add your handling code here:
         Imovel imovel = new Imovel();
         // endereco
@@ -983,23 +724,8 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         imovel.setPicina(jftf_Picina.getText());
         imovel.setQuadraEsporte(jftf_Quadra.getText());
         imovel.setAreaServico(jftf_AreaSer.getText());
-        //predio
-        imovel.setSala(jftf_SalaPre.getText());
-        imovel.setQuartos(jftf_QuartoPre.getText());
-        imovel.setCozinha(jftf_CozinhaPre.getText());
-        imovel.setBanheiro(jftf_BanheiroPre.getText());
-        imovel.setGaragem(jftf_GaragemPre.getText());
-        imovel.setAndar(jftf_Andar.getText());
-        imovel.setTerraco(jftf_TerraçoPre.getText());
-        imovel.setPicina(jftf_PicinaPre.getText());
-        imovel.setQuadraEsporte(jftf_QuadraEsporPre.getText());
-        imovel.setEscada(buttonGroup1.getSelection().getActionCommand());
-        imovel.setElevador(buttonGroup1.getSelection().getActionCommand()); // sera?
-        imovel.setVaranda(jftf_VarandaPre.getText());
-        imovel.setTerraco(jftf_TerraçoPre.getText()); 
-        imovel.setJardim(jftf_JardimPre.getText());   
-        imovel.setAreaServico(jftf_AreaSerPre.getText());
-        
+      
+       
         
         JRadioButton radio;
           String str;
@@ -1015,6 +741,20 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         
         FormPrincipal.daoImovel.inserirImovel(imovel);
         JOptionPane.showMessageDialog(null, "Cliente cadastrado com sucesso!");
+    }//GEN-LAST:event_jbt_CadaActionPerformed
+
+    private void jtf_BairroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtf_BairroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtf_BairroActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        Imovel imovel = new Imovel(); 
+        //predio
+        imovel.setAndar(jftf_Andar.getText());
+        imovel.setEscada(buttonGroup1.getSelection().getActionCommand());
+        imovel.setElevador(buttonGroup1.getSelection().getActionCommand()); // sera?
+        imovel.setVaranda(jftf_VarandaPre.getText());
     }//GEN-LAST:event_jButton1ActionPerformed
 
        public void cadastrarImoveis()
@@ -1082,88 +822,58 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel_Casa;
     private javax.swing.JPanel jPanel_Descrição;
     private javax.swing.JPanel jPanel_Endereco;
-    private javax.swing.JPanel jPanel_Predio;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JButton jbt_Cada;
     private javax.swing.JComboBox<String> jcb_estado;
     private javax.swing.JFormattedTextField jftf_Andar;
     private javax.swing.JFormattedTextField jftf_AreaSer;
-    private javax.swing.JFormattedTextField jftf_AreaSerPre;
     private javax.swing.JFormattedTextField jftf_Banheiro;
-    private javax.swing.JFormattedTextField jftf_BanheiroPre;
     private javax.swing.JFormattedTextField jftf_Cozinha;
-    private javax.swing.JFormattedTextField jftf_CozinhaPre;
     private javax.swing.JFormattedTextField jftf_Garagem;
-    private javax.swing.JFormattedTextField jftf_GaragemPre;
     private javax.swing.JFormattedTextField jftf_Jardim;
-    private javax.swing.JFormattedTextField jftf_JardimPre;
     private javax.swing.JFormattedTextField jftf_Picina;
-    private javax.swing.JFormattedTextField jftf_PicinaPre;
     private javax.swing.JFormattedTextField jftf_Porão;
     private javax.swing.JFormattedTextField jftf_Quadra;
-    private javax.swing.JFormattedTextField jftf_QuadraEsporPre;
     private javax.swing.JFormattedTextField jftf_Quarto;
-    private javax.swing.JFormattedTextField jftf_QuartoPre;
     private javax.swing.JFormattedTextField jftf_Quintal;
     private javax.swing.JFormattedTextField jftf_Sala;
-    private javax.swing.JFormattedTextField jftf_SalaPre;
     private javax.swing.JFormattedTextField jftf_Terraço;
-    private javax.swing.JFormattedTextField jftf_TerraçoPre;
     private javax.swing.JFormattedTextField jftf_VarandaPre;
     private javax.swing.JLabel jl_Andares;
     private javax.swing.JLabel jl_AreaServi;
-    private javax.swing.JLabel jl_AreaServi1;
     private javax.swing.JLabel jl_Bairro;
     private javax.swing.JLabel jl_Complemento;
     private javax.swing.JLabel jl_Cozinha;
-    private javax.swing.JLabel jl_Cozinha1;
     private javax.swing.JLabel jl_Elevador;
     private javax.swing.JLabel jl_Endereco;
     private javax.swing.JLabel jl_Escada;
     private javax.swing.JLabel jl_Estado;
     private javax.swing.JLabel jl_Garagem;
-    private javax.swing.JLabel jl_Garagem1;
     private javax.swing.JLabel jl_Jardim;
-    private javax.swing.JLabel jl_Jardim1;
     private javax.swing.JLabel jl_Picina;
-    private javax.swing.JLabel jl_Picina1;
     private javax.swing.JLabel jl_Porao;
     private javax.swing.JLabel jl_QuadraEsp;
-    private javax.swing.JLabel jl_QuadraEsp1;
     private javax.swing.JLabel jl_Quantidade1;
     private javax.swing.JLabel jl_QuantidadeAndars;
-    private javax.swing.JLabel jl_QuantidadeBanheiro;
     private javax.swing.JLabel jl_QuantidadeCozi;
-    private javax.swing.JLabel jl_QuantidadeCozina;
-    private javax.swing.JLabel jl_QuantidadeGaragem;
     private javax.swing.JLabel jl_QuantidadeQuar;
-    private javax.swing.JLabel jl_QuantidadeQuartos;
-    private javax.swing.JLabel jl_QuantidadeSa;
     private javax.swing.JLabel jl_QuantidadeSala;
     private javax.swing.JLabel jl_Quintal;
     private javax.swing.JLabel jl_Sala;
-    private javax.swing.JLabel jl_Sala1;
-    private javax.swing.JLabel jl_Terraco;
     private javax.swing.JLabel jl_VagaGar;
     private javax.swing.JLabel jl_Varanda;
     private javax.swing.JLabel jl_banheiro;
-    private javax.swing.JLabel jl_banheiro1;
     private javax.swing.JLabel jl_metrosQua;
     private javax.swing.JLabel jl_metrosQua1;
-    private javax.swing.JLabel jl_metrosQua10;
     private javax.swing.JLabel jl_metrosQua11;
-    private javax.swing.JLabel jl_metrosQua12;
     private javax.swing.JLabel jl_metrosQua2;
     private javax.swing.JLabel jl_metrosQua3;
     private javax.swing.JLabel jl_metrosQua4;
     private javax.swing.JLabel jl_metrosQua5;
     private javax.swing.JLabel jl_metrosQua6;
-    private javax.swing.JLabel jl_metrosQua7;
-    private javax.swing.JLabel jl_metrosQua8;
-    private javax.swing.JLabel jl_metrosQua9;
     private javax.swing.JLabel jl_quarto;
-    private javax.swing.JLabel jl_quarto1;
     private javax.swing.JLabel jl_terraço;
     private javax.swing.JRadioButton jrb_Elevador;
     private javax.swing.JRadioButton jrb_Escada;

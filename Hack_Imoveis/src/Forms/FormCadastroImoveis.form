@@ -46,21 +46,23 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                  <Component id="jTabbedPane1" min="-2" pref="632" max="-2" attributes="0"/>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jExit" min="-2" pref="47" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace pref="29" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
+              <Component id="jbt_Cada" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jButton1" min="-2" pref="192" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
+              <Component id="jExit" min="-2" pref="47" max="-2" attributes="0"/>
+              <EmptySpace pref="64" max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               <Component id="jLabel4" min="-2" pref="128" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="272" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jTabbedPane1" min="-2" pref="632" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -69,14 +71,15 @@
           <Group type="102" attributes="0">
               <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
               <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Component id="jTabbedPane1" min="-2" pref="445" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jExit" min="-2" pref="47" max="-2" attributes="0"/>
+                  <Component id="jbt_Cada" min="-2" pref="36" max="-2" attributes="0"/>
                   <Component id="jButton1" min="-2" pref="36" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="23" max="32767" attributes="0"/>
+              <EmptySpace pref="17" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -313,8 +316,8 @@
         <Container class="javax.swing.JPanel" name="jPanel_Casa">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Casa">
-                <Property name="tabTitle" type="java.lang.String" value="Casa"/>
+              <JTabbedPaneConstraints tabName="Imovel">
+                <Property name="tabTitle" type="java.lang.String" value="Imovel"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -322,200 +325,272 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jl_AreaServi" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                                      <Component id="jftf_AreaSer" min="-2" pref="35" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jl_QuadraEsp" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jftf_Quadra" min="-2" pref="35" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jl_metrosQua6" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jl_metrosQua4" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Component id="jl_Picina" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jftf_Picina" min="-2" pref="35" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jl_metrosQua5" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jl_Sala" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
+                                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                                       <Component id="jftf_Sala" min="-2" pref="35" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jl_QuantidadeSala" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jl_quarto" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jl_banheiro" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jftf_Banheiro" min="-2" pref="35" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jl_Quantidade1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jl_Garagem" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jl_Porao" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="jftf_Garagem" min="-2" pref="35" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jl_VagaGar" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jftf_Porão" min="-2" pref="35" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jl_metrosQua2" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jl_Elevador" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jftf_Quarto" min="-2" pref="35" max="-2" attributes="0"/>
+                                      <Component id="jrb_Elevador" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jl_QuantidadeQuar" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jl_QuantidadeSala" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jl_Cozinha" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jftf_Cozinha" min="-2" pref="35" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jl_QuantidadeCozi" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jl_banheiro" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jftf_Banheiro" min="-2" pref="35" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jl_Quantidade1" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jl_Garagem" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jl_Porao" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jl_terraço" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jl_Jardim" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jl_Quintal" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jftf_Jardim" alignment="0" min="-2" pref="35" max="-2" attributes="0"/>
-                                          <Component id="jftf_Quintal" alignment="0" min="-2" pref="35" max="-2" attributes="0"/>
-                                      </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jl_Escada" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="jrb_Escada" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jl_Andares" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jftf_Andar" min="-2" pref="35" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jl_metrosQua1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jl_metrosQua" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      </Group>
+                                      <Component id="jl_QuantidadeAndars" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="102" attributes="0">
-                                      <Component id="jftf_Garagem" min="-2" pref="35" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="87" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jl_Picina" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jl_VagaGar" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jftf_Picina" min="-2" pref="35" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jl_metrosQua5" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Component id="jftf_Porão" min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jl_Jardim" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jl_Quintal" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jl_metrosQua2" min="-2" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jftf_Jardim" alignment="0" min="-2" pref="35" max="-2" attributes="0"/>
+                                              <Component id="jftf_Quintal" alignment="0" min="-2" pref="35" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jl_metrosQua1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jl_metrosQua" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
-                                      <Group type="102" alignment="1" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="jl_terraço" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
                                           <Component id="jftf_Terraço" min="-2" pref="35" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="jl_metrosQua3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jl_AreaServi" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="jftf_Quadra" min="-2" pref="35" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="jl_metrosQua6" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Component id="jftf_AreaSer" min="-2" pref="35" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="jl_metrosQua4" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Component id="jl_QuadraEsp" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jl_Varanda" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
+                                      <Component id="jl_metrosQua11" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="95" pref="95" max="-2" attributes="0"/>
+                                      <Component id="jftf_VarandaPre" min="-2" pref="35" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
+                              <EmptySpace min="45" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jl_quarto" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jftf_Quarto" min="-2" pref="35" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jl_QuantidadeQuar" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jl_Cozinha" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jftf_Cozinha" min="-2" pref="35" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jl_QuantidadeCozi" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jl_Sala" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jftf_Sala" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jl_QuantidadeSala" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jl_quarto" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jftf_Quarto" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jl_QuantidadeQuar" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jl_Cozinha" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jftf_Cozinha" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jl_QuantidadeCozi" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jl_banheiro" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jftf_Banheiro" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jl_Quantidade1" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jl_Garagem" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jftf_Garagem" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jl_VagaGar" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jftf_Porão" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jl_metrosQua2" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                          <Component id="jl_Porao" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jftf_Terraço" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jl_metrosQua3" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                          <Component id="jl_terraço" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jl_Quintal" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="jftf_Terraço" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jl_metrosQua3" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                              <Component id="jl_terraço" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="jl_Sala" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jftf_Sala" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jl_QuantidadeSala" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jftf_Quintal" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jl_metrosQua" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                                  <Component id="jl_quarto" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jftf_Quarto" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jl_QuantidadeQuar" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jftf_Jardim" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jl_metrosQua1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jl_Jardim" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jl_Cozinha" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jftf_Cozinha" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jl_QuantidadeCozi" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jl_Quintal" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="jftf_Quintal" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jl_metrosQua" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="jftf_Jardim" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jl_metrosQua1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jl_Jardim" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
                               </Group>
                           </Group>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jl_Picina" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jftf_Picina" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jl_metrosQua5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                              <Component id="jl_Picina" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jftf_Picina" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jl_metrosQua5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jl_banheiro" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jftf_Banheiro" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jl_Quantidade1" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jl_QuadraEsp" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jftf_Quadra" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jl_metrosQua6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jl_Andares" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jftf_Andar" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jl_QuantidadeAndars" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jl_Garagem" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jftf_Garagem" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jl_VagaGar" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jftf_Porão" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jl_metrosQua2" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                                  <Component id="jl_Porao" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jrb_Escada" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jl_Escada" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jl_Elevador" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jrb_Elevador" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jl_Varanda" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jftf_VarandaPre" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jl_metrosQua11" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jl_QuadraEsp" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jftf_Quadra" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jl_metrosQua6" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jl_AreaServi" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jftf_AreaSer" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jl_metrosQua4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jl_AreaServi" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jftf_AreaSer" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jl_metrosQua4" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace pref="50" max="32767" attributes="0"/>
+                      <EmptySpace pref="84" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -725,398 +800,22 @@
                 <Property name="text" type="java.lang.String" value="Quantidade"/>
               </Properties>
             </Component>
-          </SubComponents>
-        </Container>
-        <Container class="javax.swing.JPanel" name="jPanel_Predio">
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Predio">
-                <Property name="tabTitle" type="java.lang.String" value="Predio"/>
-              </JTabbedPaneConstraints>
-            </Constraint>
-          </Constraints>
-
-          <Layout>
-            <DimensionLayout dim="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jl_Picina1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="108" pref="108" max="-2" attributes="0"/>
-                                      <Component id="jftf_AreaSerPre" min="-2" pref="35" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="jl_AreaServi1" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                              <Component id="jl_metrosQua7" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jl_Sala1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jftf_SalaPre" min="-2" pref="35" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jl_QuantidadeSa" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace pref="82" max="32767" attributes="0"/>
-                                      <Component id="jl_QuadraEsp1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jftf_QuadraEsporPre" min="-2" pref="35" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" attributes="0">
-                                              <Component id="jl_quarto1" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jftf_QuartoPre" min="-2" pref="35" max="-2" attributes="0"/>
-                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jl_QuantidadeQuartos" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" attributes="0">
-                                              <Component id="jl_Cozinha1" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jftf_CozinhaPre" min="-2" pref="35" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                                              <Component id="jl_QuantidadeCozina" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <EmptySpace pref="191" max="32767" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" attributes="0">
-                                              <Component id="jl_Elevador" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jrb_Elevador" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" attributes="0">
-                                              <Component id="jl_Escada" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                                              <Component id="jrb_Escada" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Component id="jl_Varanda" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                              <Component id="jl_Jardim1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jl_Terraco" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jl_metrosQua9" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jl_metrosQua11" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jl_metrosQua8" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                              </Group>
-                              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jl_banheiro1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jl_Garagem1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" attributes="0">
-                                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                              <Component id="jftf_GaragemPre" min="-2" pref="35" max="-2" attributes="0"/>
-                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jl_QuantidadeGaragem" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jftf_BanheiroPre" min="-2" pref="35" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                                              <Component id="jl_QuantidadeBanheiro" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jftf_TerraçoPre" alignment="1" min="-2" pref="35" max="-2" attributes="0"/>
-                                          <Component id="jftf_VarandaPre" alignment="1" min="-2" pref="35" max="-2" attributes="0"/>
-                                          <Component id="jftf_JardimPre" alignment="1" min="-2" pref="35" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jl_Andares" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" attributes="0">
-                                              <Component id="jftf_PicinaPre" min="-2" pref="35" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                                              <Component id="jl_metrosQua12" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" attributes="0">
-                                              <Component id="jftf_Andar" min="-2" pref="35" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jl_QuantidadeAndars" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <EmptySpace pref="332" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Component id="jl_metrosQua10" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                  </Group>
-              </Group>
-            </DimensionLayout>
-            <DimensionLayout dim="1">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                              <Component id="jftf_SalaPre" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jl_Sala1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jl_QuantidadeSa" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jl_QuadraEsp1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jftf_QuadraEsporPre" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="jl_metrosQua9" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jftf_QuartoPre" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jl_quarto1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jl_QuantidadeQuartos" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                              <Component id="jrb_Escada" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jl_Escada" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jl_Cozinha1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jftf_CozinhaPre" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jl_QuantidadeCozina" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jl_Elevador" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jrb_Elevador" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                              <Component id="jftf_BanheiroPre" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jl_banheiro1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jl_QuantidadeBanheiro" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                              <Component id="jl_Varanda" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jftf_VarandaPre" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jl_metrosQua11" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                              <Component id="jl_Garagem1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jftf_GaragemPre" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jl_QuantidadeGaragem" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jl_Terraco" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                              <Component id="jl_metrosQua8" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                              <Component id="jftf_TerraçoPre" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jl_Andares" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jftf_Andar" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jl_QuantidadeAndars" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                              <Component id="jl_Jardim1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jftf_JardimPre" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jl_metrosQua10" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                              <Component id="jl_Picina1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jftf_PicinaPre" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jl_metrosQua12" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                              <Component id="jl_AreaServi1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jftf_AreaSerPre" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jl_metrosQua7" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace pref="63" max="32767" attributes="0"/>
-                  </Group>
-              </Group>
-            </DimensionLayout>
-          </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="jl_Varanda">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Varanda"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jl_Terraco">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Terra&#xe7;o"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jl_Elevador">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Elevador"/>
-              </Properties>
-            </Component>
             <Component class="javax.swing.JLabel" name="jl_Escada">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Escada"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jl_Sala1">
+            <Component class="javax.swing.JRadioButton" name="jrb_Escada">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Sala"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jl_quarto1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Quartos"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jl_Cozinha1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Cozinha"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jl_banheiro1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Banheiro"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jl_Garagem1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Garagem"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jl_Jardim1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Jardim"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jl_Picina1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Picina"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jl_AreaServi1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Area de servi&#xe7;o"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jl_QuadraEsp1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Quadra de esporte"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JFormattedTextField" name="jftf_SalaPre">
-              <Properties>
-                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroup1"/>
                 </Property>
+                <Property name="text" type="java.lang.String" value="Sim"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JFormattedTextField" name="jftf_QuartoPre">
+            <Component class="javax.swing.JLabel" name="jl_Elevador">
               <Properties>
-                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JFormattedTextField" name="jftf_CozinhaPre">
-              <Properties>
-                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JFormattedTextField" name="jftf_BanheiroPre">
-              <Properties>
-                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JFormattedTextField" name="jftf_GaragemPre">
-              <Properties>
-                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JFormattedTextField" name="jftf_Andar">
-              <Properties>
-                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jl_Andares">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Andares"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JFormattedTextField" name="jftf_PicinaPre">
-              <Properties>
-                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jl_metrosQua7">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="M&#xb2;"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JFormattedTextField" name="jftf_Terra&#xe7;oPre">
-              <Properties>
-                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jl_metrosQua8">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="M&#xb2;"/>
+                <Property name="text" type="java.lang.String" value="Elevador"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jrb_Elevador">
@@ -1127,36 +826,26 @@
                 <Property name="text" type="java.lang.String" value="Sim"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JFormattedTextField" name="jftf_AreaSerPre">
+            <Component class="javax.swing.JFormattedTextField" name="jftf_Andar">
               <Properties>
                 <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
                   <Format format="##" subtype="-1" type="5"/>
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jl_metrosQua9">
+            <Component class="javax.swing.JLabel" name="jl_QuantidadeAndars">
               <Properties>
-                <Property name="text" type="java.lang.String" value="M&#xb2;"/>
+                <Property name="text" type="java.lang.String" value="Quantidade"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JFormattedTextField" name="jftf_JardimPre">
+            <Component class="javax.swing.JLabel" name="jl_Andares">
               <Properties>
-                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
-                </Property>
+                <Property name="text" type="java.lang.String" value="Andares"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jl_metrosQua10">
+            <Component class="javax.swing.JLabel" name="jl_Varanda">
               <Properties>
-                <Property name="text" type="java.lang.String" value="M&#xb2;"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JRadioButton" name="jrb_Escada">
-              <Properties>
-                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="buttonGroup1"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Sim"/>
+                <Property name="text" type="java.lang.String" value="Varanda"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JFormattedTextField" name="jftf_VarandaPre">
@@ -1169,48 +858,6 @@
             <Component class="javax.swing.JLabel" name="jl_metrosQua11">
               <Properties>
                 <Property name="text" type="java.lang.String" value="M&#xb2;"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jl_QuantidadeSa">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Quantidade"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jl_QuantidadeQuartos">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Quantidade"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jl_QuantidadeCozina">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Quantidade"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jl_QuantidadeBanheiro">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Quantidade"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jl_QuantidadeGaragem">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Quantidade"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jl_QuantidadeAndars">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Quantidade"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jl_metrosQua12">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="M&#xb2;"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JFormattedTextField" name="jftf_QuadraEsporPre">
-              <Properties>
-                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
-                </Property>
               </Properties>
             </Component>
           </SubComponents>
@@ -1282,12 +929,23 @@
         <Property name="text" type="java.lang.String" value="Dados do Imovel"/>
       </Properties>
     </Component>
+    <Component class="javax.swing.JButton" name="jbt_Cada">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Icones/House-48.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Casa"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbt_CadaActionPerformed"/>
+      </Events>
+    </Component>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Icones/User-Add-48.png"/>
+          <Image iconType="3" name="/Icones/Building-Add-48.png"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Cadrastar"/>
+        <Property name="text" type="java.lang.String" value="Apartamento"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
