@@ -13,7 +13,7 @@ import java.util.Date;
  */
 public class Cartoes {
     private String nomeTitular ;
-    private int numeroCartao;
+    private String numeroCartao;
     private Date dataValidade;
     private int codigoVerificacao;
 
@@ -23,7 +23,7 @@ public class Cartoes {
     }
     
     
-    public Cartoes(String nomeTitular, int numeroCartao, Date dataValidade, int codigoVerificacao) {
+    public Cartoes(String nomeTitular, String numeroCartao, Date dataValidade, int codigoVerificacao) {
         this.nomeTitular = nomeTitular;
         this.numeroCartao = numeroCartao;
         this.dataValidade = dataValidade;
@@ -41,11 +41,11 @@ public class Cartoes {
         this.nomeTitular = nomeTitular;
     }
 
-    public int getNumeroCartao() {
+    public String getNumeroCartao() {
         return numeroCartao;
     }
 
-    public void setNumeroCartao(int numeroCartao) {
+    public void setNumeroCartao(String numeroCartao) {
         this.numeroCartao = numeroCartao;
     }
 

@@ -508,8 +508,6 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         cliente.setCpf(jftf_CPF.getText());
         cliente.setTelefone(jftf_Telefone.getText());
         cliente.setEstadoCivil(btnGrup.getSelection().getActionCommand());
-        String teste = jtf_Endereco.getText();
-        System.out.printf(teste);
         
         cliente.getEnderecoCli().setLogradouro(jtf_Endereco.getText());
         cliente.getEnderecoCli().setComplemento(jtf_Complemento.getText());
@@ -519,7 +517,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         cliente.getEnderecoCli().setCep(tfCep.getText());
         
         cliente.getCartaoCli().setNomeTitular(jtf_NomeTitular.getText());
-        cliente.getCartaoCli().setNumeroCartao(Integer.parseInt(jftf_NunCartao.getText()));
+        cliente.getCartaoCli().setNumeroCartao(jftf_NunCartao.getText());
         cliente.getCartaoCli().setNomeTitular(jDataValidade.getText());
         cliente.getCartaoCli().setNomeTitular(jCodigoValidacao.getText());
         
