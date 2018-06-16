@@ -5,7 +5,9 @@
  */
 package Forms;
 import Model.Imovel;
+import java.util.Enumeration;
 import javax.swing.JOptionPane;
+import javax.swing.JRadioButton;
 /**
  *
  * @author wagner
@@ -998,10 +1000,35 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         imovel.setJardim(jftf_JardimPre.getText());   
         imovel.setAreaServico(jftf_AreaSerPre.getText());
         
+        
+        JRadioButton radio;
+          String str;
+          Enumeration jr = buttonGroup1.getElements();
+             while ( jr.hasMoreElements() )
+              {
+                    radio = (JRadioButton) jr.nextElement();
+                    if (radio.isSelected())
+                      {
+                           str = radio.getText();
+                      }
+               }
+        
         FormPrincipal.daoImovel.inserirImovel(imovel);
         JOptionPane.showMessageDialog(null, "Cliente cadastrado com sucesso!");
     }//GEN-LAST:event_jButton1ActionPerformed
 
+       public void cadastrarImoveis()
+       {
+           Imovel imovel = null;
+           for(int i=1; i<10; i++)
+           {
+               imovel = new Imovel();
+               imovel.setNumeroImovel(1000+i);
+               imovel.setNome("fulando"+i);
+               
+           }
+               
+       }
     /**
      * @param args the command line arguments
      */
