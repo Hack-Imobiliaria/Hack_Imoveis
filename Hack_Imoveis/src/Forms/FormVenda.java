@@ -5,6 +5,10 @@
  */
 package Forms;
 
+import Model.Cliente;
+import javax.swing.JOptionPane;
+
+
 /**
  *
  * @author wagner
@@ -61,6 +65,11 @@ public class FormVenda extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jbt_Cpf.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Search-Find-48.png"))); // NOI18N
+        jbt_Cpf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbt_CpfActionPerformed(evt);
+            }
+        });
 
         jl_CPF.setText("CPF:");
 
@@ -337,9 +346,30 @@ public class FormVenda extends javax.swing.JFrame {
     }//GEN-LAST:event_jb_SairActionPerformed
 
     private void jb_CancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_CancelarActionPerformed
-        // TODO add your handling code here:
+        limpar();
     }//GEN-LAST:event_jb_CancelarActionPerformed
 
+    private void jbt_CpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbt_CpfActionPerformed
+        String cpf = jbt_Cpf.getText();
+            Cliente cliente = FormPrincipal.daoCliente.buscarCliente(cpf);
+            if (cliente != null)
+            {
+                Print_Endereco.setText(cliente.getEnderecoCli().getLogradouro());
+                Print_Nome.setText(cliente.getNome());
+                Print_Email.setText(cliente.getEmail());
+                Print_Telefone.setText(cliente.getTelefone());
+            }
+            else
+                JOptionPane.showMessageDialog(null, "Cliente não encontrado!");
+    }//GEN-LAST:event_jbt_CpfActionPerformed
+
+    private void limpar()
+    {       
+       Print_Endereco.setText("");
+       Print_Nome.setText("");
+       Print_Email.setText("");
+       Print_Telefone.setText("");
+    }
     /**
      * @param args the command line arguments
      */
