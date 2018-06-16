@@ -3,8 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/wagner/FACULDADE/Lab%20interface%20com%20usuario/TRABALHO-26-06-18/Hack_Imoveis/Hack_Imoveis/src/Forms/FormCadastroImoveis.java</file>
-            <file>file:/home/wagner/FACULDADE/Lab%20interface%20com%20usuario/TRABALHO-26-06-18/Hack_Imoveis/Hack_Imoveis/src/Forms/FormAluguel.java</file>
+            <file>file:/C:/Users/Dênner/Projetos/trabalho_giuliano/Hack_Imoveis/Hack_Imoveis/src/Forms/FormPrincipal.java</file>
+            <file>file:/C:/Users/Dênner/Projetos/trabalho_giuliano/Hack_Imoveis/Hack_Imoveis/src/Forms/FormCadastroImoveis.java</file>
+            <file>file:/C:/Users/Dênner/Projetos/trabalho_giuliano/Hack_Imoveis/Hack_Imoveis/src/Forms/FormCadastroCliente.java</file>
+            <file>file:/C:/Users/Dênner/Projetos/trabalho_giuliano/Hack_Imoveis/Hack_Imoveis/src/DAO/ClienteDAO.java</file>
+            <file>file:/C:/Users/Dênner/Projetos/trabalho_giuliano/Hack_Imoveis/Hack_Imoveis/src/DAO/AluguelDAO.java</file>
+            <file>file:/C:/Users/Dênner/Projetos/trabalho_giuliano/Hack_Imoveis/Hack_Imoveis/src/Model/Cliente.java</file>
         </group>
     </open-files>
 </project-private>
