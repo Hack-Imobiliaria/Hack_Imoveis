@@ -176,6 +176,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         btnGrup.add(RB_Viuvo);
         RB_Viuvo.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         RB_Viuvo.setText("Viúvo");
+        RB_Viuvo.setActionCommand("Viúvo");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -601,11 +602,28 @@ public class FormCadastroCliente extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Cliente cliente = new Cliente();
+        cliente.setNome(jtf_Nome.getText());
+        cliente.setCpf(jftf_CPF.getText());
+        cliente.setTelefone(jftf_Telefone.getText());
+        cliente.setEstadoCivil(btnGrup.getSelection().getActionCommand());
+        cliente.setEmail(jtf_Email.getText());
+        cliente.getEnderecoCli().setLogradouro(jtf_Endereco.getText());
+        cliente.getEnderecoCli().setComplemento(jtf_Complemento.getText());
+        cliente.getEnderecoCli().setBairro(jtf_Bairro.getText());
+        cliente.getEnderecoCli().setCidade(tfCidade.getText());
+        cliente.getEnderecoCli().setEstado(jComboBox1.getSelectedItem().toString());
+        cliente.getEnderecoCli().setCep(tfCep.getText());
+
+        cliente.getCartaoCli().setNomeTitular(jtf_NomeTitular.getText());
+        cliente.getCartaoCli().setNumeroCartao(jftf_NunCartao.getText());
+        cliente.getCartaoCli().setDataValidade(jDataValidade.getText());
+        cliente.getCartaoCli().setCodigoVerificacao(jCodigoValidacao.getText());
         String cpf = jftf_CPF.getText();
-        FormPrincipal.daoCliente.alterarCliente(cpf);
+        FormPrincipal.daoCliente.alterarCliente(cpf, cliente);
         this.limpar();
         JOptionPane.showMessageDialog(null, "Cliente alterado com sucesso!");
-        
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarActionPerformed
@@ -622,27 +640,32 @@ public class FormCadastroCliente extends javax.swing.JFrame {
             tfCidade.setText(cliente.getEnderecoCli().getCidade());
             tfCep.setText(cliente.getEnderecoCli().getCep());
             jComboBox1.setSelectedItem(cliente.getEnderecoCli().getEstado());
+            System.out.println(cliente.getEnderecoCli().getCep());
             String estadoCivil = cliente.getEstadoCivil();
             System.out.println(estadoCivil);
-            if(estadoCivil.equals("Solteiro")) {
-                RB_Viuvo.setSelected(true);
-            } if(estadoCivil.equals("Divorciado")) {
-                RB_Divorciado.setSelected(true);
-            } if(estadoCivil.equals("Viúvo")) {
-               RB_Viuvo.setSelected(true);
-            } if(estadoCivil.equals("Casado")) {
-                RB_Casado.setSelected(true);
-            } if(estadoCivil.equals("União Estável")) {
-                RB_Uniao.setSelected(true);
-            }
-
-            jComboBox1.setSelectedItem(cliente.getEnderecoCli().getEstado());            
+            jComboBox1.setSelectedItem(cliente.getEnderecoCli().getEstado());
             jtf_NomeTitular.setText(cliente.getCartaoCli().getNomeTitular());
             jftf_NunCartao.setText(cliente.getCartaoCli().getNumeroCartao());
             jDataValidade.setText(cliente.getCartaoCli().getDataValidade());
             jCodigoValidacao.setText(cliente.getCartaoCli().getCodigoVerificacao());
             jftf_CPF.requestFocus();
             jTabbedPane.setSelectedIndex(0);
+            
+            if (estadoCivil.equals("Solteiro")) {
+                RB_Solteiro.setSelected(true);
+            }
+            else if (estadoCivil.equals("Divorciado")) {
+                RB_Divorciado.setSelected(true);
+            }
+            else if (estadoCivil.equals("Viúvo")) {
+                RB_Viuvo.setSelected(true);
+            }
+            else if (estadoCivil.equals("Casado")) {
+                RB_Casado.setSelected(true);
+            }
+            else if (estadoCivil.equals("União Estável")) {
+                RB_Uniao.setSelected(true);
+            }            
         } else {
             JOptionPane.showMessageDialog(null, "Cliente não encontrado!");
         }
