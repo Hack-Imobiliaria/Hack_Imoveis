@@ -1,5 +1,6 @@
-/Hack_Imoveis/build/
-nbproject/private/
+/Hack_Imoveis/
+build/
+nbproject/private/ 
 build/
 nbbuild/
 dist/
