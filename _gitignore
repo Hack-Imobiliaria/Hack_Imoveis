@@ -1,8 +1,11 @@
-/Hack_Imoveis/build/
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
+/Hack_Imoveis/
+/Hack_Imoveis
+/build
+/nbproject
+/private
+/build
+/nbbuild
+/dist
+/nbdist
+/.nb-gradle/
 
