@@ -256,37 +256,37 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jl_terraço.setText("Terraço");
 
         try {
-            jftf_Sala.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_Sala.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
 
         try {
-            jftf_Quarto.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_Quarto.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
 
         try {
-            jftf_Cozinha.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_Cozinha.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
 
         try {
-            jftf_Garagem.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_Garagem.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
 
         try {
-            jftf_Banheiro.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_Banheiro.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
 
         try {
-            jftf_Quintal.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_Quintal.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
@@ -294,7 +294,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jl_metrosQua.setText("M²");
 
         try {
-            jftf_Jardim.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_Jardim.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
@@ -302,7 +302,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jl_metrosQua1.setText("M²");
 
         try {
-            jftf_Porão.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_Porão.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
@@ -310,7 +310,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jl_metrosQua2.setText("M²");
 
         try {
-            jftf_Terraço.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_Terraço.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
@@ -318,7 +318,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jl_metrosQua3.setText("M²");
 
         try {
-            jftf_AreaSer.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_AreaSer.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
@@ -326,7 +326,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jl_metrosQua4.setText("M²");
 
         try {
-            jftf_Picina.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_Picina.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
@@ -334,7 +334,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jl_metrosQua5.setText("M²");
 
         try {
-            jftf_Quadra.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_Quadra.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
@@ -362,7 +362,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jrb_Elevador.setText("Sim");
 
         try {
-            jftf_Andar.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_Andar.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
@@ -374,7 +374,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jl_Varanda.setText("Varanda");
 
         try {
-            jftf_VarandaPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##")));
+            jftf_VarandaPre.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
@@ -389,6 +389,11 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         });
 
         jcb_Apartamento.setText("Apartamento");
+        jcb_Apartamento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jcb_ApartamentoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel_CasaLayout = new javax.swing.GroupLayout(jPanel_Casa);
         jPanel_Casa.setLayout(jPanel_CasaLayout);
@@ -781,8 +786,24 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
     private void jcb_casaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcb_casaActionPerformed
         // TODO add your handling code here:
           if(!jcb_casa.isSelected()){
-            BTN_CASA.setEnabled(false);}
+            jbt_Apar.setEnabled(true);
+          }else
+          {
+              jbt_Apar.setEnabled(false);
+              BTN_CASA.requestFocus();
+          }          
     }//GEN-LAST:event_jcb_casaActionPerformed
+
+    private void jcb_ApartamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcb_ApartamentoActionPerformed
+        // TODO add your handling code here:
+         if(!jcb_Apartamento.isSelected()){
+            BTN_CASA.setEnabled(true);
+          }else
+          {
+              BTN_CASA.setEnabled(false);
+              jbt_Apar.requestFocus();
+          }
+    }//GEN-LAST:event_jcb_ApartamentoActionPerformed
 
        public void cadastrarImoveis()
        {

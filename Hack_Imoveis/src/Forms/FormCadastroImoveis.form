@@ -670,42 +670,42 @@
             <Component class="javax.swing.JFormattedTextField" name="jftf_Sala">
               <Properties>
                 <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
+                  <Format format="#" subtype="-1" type="5"/>
                 </Property>
               </Properties>
             </Component>
             <Component class="javax.swing.JFormattedTextField" name="jftf_Quarto">
               <Properties>
                 <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
+                  <Format format="#" subtype="-1" type="5"/>
                 </Property>
               </Properties>
             </Component>
             <Component class="javax.swing.JFormattedTextField" name="jftf_Cozinha">
               <Properties>
                 <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
+                  <Format format="#" subtype="-1" type="5"/>
                 </Property>
               </Properties>
             </Component>
             <Component class="javax.swing.JFormattedTextField" name="jftf_Garagem">
               <Properties>
                 <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
+                  <Format format="#" subtype="-1" type="5"/>
                 </Property>
               </Properties>
             </Component>
             <Component class="javax.swing.JFormattedTextField" name="jftf_Banheiro">
               <Properties>
                 <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
+                  <Format format="#" subtype="-1" type="5"/>
                 </Property>
               </Properties>
             </Component>
             <Component class="javax.swing.JFormattedTextField" name="jftf_Quintal">
               <Properties>
                 <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
+                  <Format format="#" subtype="-1" type="5"/>
                 </Property>
               </Properties>
             </Component>
@@ -717,7 +717,7 @@
             <Component class="javax.swing.JFormattedTextField" name="jftf_Jardim">
               <Properties>
                 <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
+                  <Format format="#" subtype="-1" type="5"/>
                 </Property>
               </Properties>
             </Component>
@@ -729,7 +729,7 @@
             <Component class="javax.swing.JFormattedTextField" name="jftf_Por&#xe3;o">
               <Properties>
                 <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
+                  <Format format="#" subtype="-1" type="5"/>
                 </Property>
               </Properties>
             </Component>
@@ -741,7 +741,7 @@
             <Component class="javax.swing.JFormattedTextField" name="jftf_Terra&#xe7;o">
               <Properties>
                 <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
+                  <Format format="#" subtype="-1" type="5"/>
                 </Property>
               </Properties>
             </Component>
@@ -753,7 +753,7 @@
             <Component class="javax.swing.JFormattedTextField" name="jftf_AreaSer">
               <Properties>
                 <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
+                  <Format format="#" subtype="-1" type="5"/>
                 </Property>
               </Properties>
             </Component>
@@ -765,7 +765,7 @@
             <Component class="javax.swing.JFormattedTextField" name="jftf_Picina">
               <Properties>
                 <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
+                  <Format format="#" subtype="-1" type="5"/>
                 </Property>
               </Properties>
             </Component>
@@ -777,7 +777,7 @@
             <Component class="javax.swing.JFormattedTextField" name="jftf_Quadra">
               <Properties>
                 <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
+                  <Format format="#" subtype="-1" type="5"/>
                 </Property>
               </Properties>
             </Component>
@@ -840,7 +840,7 @@
             <Component class="javax.swing.JFormattedTextField" name="jftf_Andar">
               <Properties>
                 <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
+                  <Format format="#" subtype="-1" type="5"/>
                 </Property>
               </Properties>
             </Component>
@@ -862,7 +862,7 @@
             <Component class="javax.swing.JFormattedTextField" name="jftf_VarandaPre">
               <Properties>
                 <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-                  <Format format="##" subtype="-1" type="5"/>
+                  <Format format="#" subtype="-1" type="5"/>
                 </Property>
               </Properties>
             </Component>
@@ -883,6 +883,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Apartamento"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcb_ApartamentoActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
