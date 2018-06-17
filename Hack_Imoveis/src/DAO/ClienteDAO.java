@@ -46,13 +46,13 @@ public class ClienteDAO {
         }
     }
     
-    public void alterarCliente(String cpf)
+    public void alterarCliente(String cpf, Cliente cliente)
     {
         Cliente cli = buscarCliente(cpf);
         if(cli != null)
         {
             int pos = lista.indexOf(cli);
-            lista.set(pos, cli);
+            lista.set(pos, cliente);
         }
     }
     

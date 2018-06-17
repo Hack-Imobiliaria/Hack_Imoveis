@@ -14,8 +14,8 @@ import java.util.Date;
 public class Cartoes {
     private String nomeTitular ;
     private String numeroCartao;
-    private Date dataValidade;
-    private int codigoVerificacao;
+    private String dataValidade;
+    private String codigoVerificacao;
 
     // construtor
 
@@ -23,7 +23,7 @@ public class Cartoes {
     }
     
     
-    public Cartoes(String nomeTitular, String numeroCartao, Date dataValidade, int codigoVerificacao) {
+    public Cartoes(String nomeTitular, String numeroCartao, String dataValidade, String codigoVerificacao) {
         this.nomeTitular = nomeTitular;
         this.numeroCartao = numeroCartao;
         this.dataValidade = dataValidade;
@@ -49,19 +49,19 @@ public class Cartoes {
         this.numeroCartao = numeroCartao;
     }
 
-    public Date getDataValidade() {
+    public String getDataValidade() {
         return dataValidade;
     }
 
-    public void setDataValidade(Date dataValidade) {
+    public void setDataValidade(String dataValidade) {
         this.dataValidade = dataValidade;
     }
 
-    public int getCodigoVerificacao() {
+    public String getCodigoVerificacao() {
         return codigoVerificacao;
     }
 
-    public void setCodigoVerificacao(int codigoVerificacao) {
+    public void setCodigoVerificacao(String codigoVerificacao) {
         this.codigoVerificacao = codigoVerificacao;
     }
     
