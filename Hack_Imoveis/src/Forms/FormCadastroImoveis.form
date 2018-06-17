@@ -47,9 +47,9 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
-              <Component id="jbt_Cada" min="-2" max="-2" attributes="0"/>
+              <Component id="BTN_CASA" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jButton1" min="-2" pref="192" max="-2" attributes="0"/>
+              <Component id="jbt_Apar" min="-2" pref="192" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
               <Component id="jExit" min="-2" pref="47" max="-2" attributes="0"/>
               <EmptySpace pref="64" max="32767" attributes="0"/>
@@ -76,8 +76,8 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jExit" min="-2" pref="47" max="-2" attributes="0"/>
-                  <Component id="jbt_Cada" min="-2" pref="36" max="-2" attributes="0"/>
-                  <Component id="jButton1" min="-2" pref="36" max="-2" attributes="0"/>
+                  <Component id="BTN_CASA" min="-2" pref="36" max="-2" attributes="0"/>
+                  <Component id="jbt_Apar" min="-2" pref="36" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="17" max="32767" attributes="0"/>
           </Group>
@@ -331,13 +331,6 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jl_Sala" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
-                                      <Component id="jftf_Sala" min="-2" pref="35" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jl_QuantidadeSala" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
                                       <Component id="jl_banheiro" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jftf_Banheiro" min="-2" pref="35" max="-2" attributes="0"/>
@@ -379,6 +372,18 @@
                                       <Component id="jftf_Andar" min="-2" pref="35" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jl_QuantidadeAndars" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jl_Sala" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jcb_casa" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" attributes="0">
+                                              <Component id="jftf_Sala" min="-2" pref="35" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jl_QuantidadeSala" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
                                   </Group>
                               </Group>
                               <EmptySpace pref="87" max="32767" attributes="0"/>
@@ -441,6 +446,7 @@
                                       <EmptySpace min="95" pref="95" max="-2" attributes="0"/>
                                       <Component id="jftf_VarandaPre" min="-2" pref="35" max="-2" attributes="0"/>
                                   </Group>
+                                  <Component id="jcb_Apartamento" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="45" max="32767" attributes="0"/>
                           </Group>
@@ -469,8 +475,13 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jcb_casa" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jcb_Apartamento" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="41" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                               <Component id="jftf_Terraço" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -484,7 +495,7 @@
                           </Group>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jl_quarto" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -590,7 +601,7 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace pref="84" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -860,6 +871,19 @@
                 <Property name="text" type="java.lang.String" value="M&#xb2;"/>
               </Properties>
             </Component>
+            <Component class="javax.swing.JCheckBox" name="jcb_casa">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Casa"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcb_casaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jcb_Apartamento">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Apartamento"/>
+              </Properties>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel_Descri&#xe7;&#xe3;o">
@@ -929,7 +953,7 @@
         <Property name="text" type="java.lang.String" value="Dados do Imovel"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jbt_Cada">
+    <Component class="javax.swing.JButton" name="BTN_CASA">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icones/House-48.png"/>
@@ -937,10 +961,10 @@
         <Property name="text" type="java.lang.String" value="Casa"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbt_CadaActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BTN_CASAActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="jbt_Apar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Icones/Building-Add-48.png"/>
@@ -948,7 +972,7 @@
         <Property name="text" type="java.lang.String" value="Apartamento"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbt_AparActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

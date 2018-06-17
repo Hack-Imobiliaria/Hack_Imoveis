@@ -97,13 +97,15 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jl_Varanda = new javax.swing.JLabel();
         jftf_VarandaPre = new javax.swing.JFormattedTextField();
         jl_metrosQua11 = new javax.swing.JLabel();
+        jcb_casa = new javax.swing.JCheckBox();
+        jcb_Apartamento = new javax.swing.JCheckBox();
         jPanel_Descrição = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jLabel4 = new javax.swing.JLabel();
-        jbt_Cada = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        BTN_CASA = new javax.swing.JButton();
+        jbt_Apar = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -379,6 +381,15 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
 
         jl_metrosQua11.setText("M²");
 
+        jcb_casa.setText("Casa");
+        jcb_casa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jcb_casaActionPerformed(evt);
+            }
+        });
+
+        jcb_Apartamento.setText("Apartamento");
+
         javax.swing.GroupLayout jPanel_CasaLayout = new javax.swing.GroupLayout(jPanel_Casa);
         jPanel_Casa.setLayout(jPanel_CasaLayout);
         jPanel_CasaLayout.setHorizontalGroup(
@@ -388,12 +399,6 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                 .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel_CasaLayout.createSequentialGroup()
                         .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                                .addComponent(jl_Sala)
-                                .addGap(43, 43, 43)
-                                .addComponent(jftf_Sala, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jl_QuantidadeSala))
                             .addGroup(jPanel_CasaLayout.createSequentialGroup()
                                 .addComponent(jl_banheiro)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -427,7 +432,16 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jftf_Andar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jl_QuantidadeAndars)))
+                                .addComponent(jl_QuantidadeAndars))
+                            .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                .addComponent(jl_Sala)
+                                .addGap(43, 43, 43)
+                                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jcb_casa)
+                                    .addGroup(jPanel_CasaLayout.createSequentialGroup()
+                                        .addComponent(jftf_Sala, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jl_QuantidadeSala)))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
                         .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel_CasaLayout.createSequentialGroup()
@@ -474,7 +488,8 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                                 .addComponent(jl_metrosQua11))
                             .addGroup(jPanel_CasaLayout.createSequentialGroup()
                                 .addGap(95, 95, 95)
-                                .addComponent(jftf_VarandaPre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jftf_VarandaPre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jcb_Apartamento))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel_CasaLayout.createSequentialGroup()
                         .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -494,8 +509,12 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         );
         jPanel_CasaLayout.setVerticalGroup(
             jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_CasaLayout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jcb_casa)
+                    .addComponent(jcb_Apartamento))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                 .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jftf_Terraço, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -586,7 +605,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                             .addComponent(jl_AreaServi)
                             .addComponent(jftf_AreaSer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jl_metrosQua4))))
-                .addContainerGap(84, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         jTabbedPane1.addTab("Imovel", jPanel_Casa);
@@ -624,19 +643,19 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
 
         jLabel4.setText("Dados do Imovel");
 
-        jbt_Cada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/House-48.png"))); // NOI18N
-        jbt_Cada.setText("Casa");
-        jbt_Cada.addActionListener(new java.awt.event.ActionListener() {
+        BTN_CASA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/House-48.png"))); // NOI18N
+        BTN_CASA.setText("Casa");
+        BTN_CASA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbt_CadaActionPerformed(evt);
+                BTN_CASAActionPerformed(evt);
             }
         });
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Building-Add-48.png"))); // NOI18N
-        jButton1.setText("Apartamento");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jbt_Apar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Building-Add-48.png"))); // NOI18N
+        jbt_Apar.setText("Apartamento");
+        jbt_Apar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jbt_AparActionPerformed(evt);
             }
         });
 
@@ -655,9 +674,9 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(105, 105, 105)
-                .addComponent(jbt_Cada)
+                .addComponent(BTN_CASA)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jbt_Apar, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(123, 123, 123)
                 .addComponent(jExit, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(64, Short.MAX_VALUE))
@@ -680,8 +699,8 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jExit, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jbt_Cada, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(BTN_CASA, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jbt_Apar, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
@@ -693,14 +712,14 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         FormPrincipal f = new FormPrincipal();
         f.setVisible(true);
         this.dispose();
-        
+      
     }//GEN-LAST:event_jExitActionPerformed
 
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton1ActionPerformed
 
-    private void jbt_CadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbt_CadaActionPerformed
+    private void BTN_CASAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_CASAActionPerformed
         // TODO add your handling code here:
         Imovel imovel = new Imovel();
         // endereco
@@ -712,19 +731,19 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         imovel.getEndereco().setCep(jtf_Cep.getText());
         imovel.getEndereco().setEstado(jcb_estado.getSelectedItem().toString());
         //casa
-        imovel.setSala(jftf_Sala.getText());
-        imovel.setQuartos(jftf_Quarto.getText());
-        imovel.setCozinha(jftf_Cozinha.getText());
-        imovel.setBanheiro(jftf_Banheiro.getText());
-        imovel.setGaragem(jftf_Garagem.getText());
-        imovel.setPorao(jftf_Porão.getText());
-        imovel.setTerraco(jftf_Terraço.getText());
-        imovel.setQuital(jftf_Quintal.getText());
-        imovel.setJardim(jftf_Jardim.getText());
-        imovel.setPicina(jftf_Picina.getText());
-        imovel.setQuadraEsporte(jftf_Quadra.getText());
-        imovel.setAreaServico(jftf_AreaSer.getText());
-      
+            imovel.setSala(jftf_Sala.getText());
+            imovel.setQuartos(jftf_Quarto.getText());
+            imovel.setCozinha(jftf_Cozinha.getText());
+            imovel.setBanheiro(jftf_Banheiro.getText());
+            imovel.setGaragem(jftf_Garagem.getText());
+            imovel.setPorao(jftf_Porão.getText());
+            imovel.setTerraco(jftf_Terraço.getText());
+            imovel.setQuital(jftf_Quintal.getText());
+            imovel.setJardim(jftf_Jardim.getText());
+            imovel.setPicina(jftf_Picina.getText());
+            imovel.setQuadraEsporte(jftf_Quadra.getText());
+            imovel.setAreaServico(jftf_AreaSer.getText());
+        
        
         
         JRadioButton radio;
@@ -741,21 +760,29 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         
         FormPrincipal.daoImovel.inserirImovel(imovel);
         JOptionPane.showMessageDialog(null, "Cliente cadastrado com sucesso!");
-    }//GEN-LAST:event_jbt_CadaActionPerformed
+    }//GEN-LAST:event_BTN_CASAActionPerformed
 
     private void jtf_BairroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtf_BairroActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jtf_BairroActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jbt_AparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbt_AparActionPerformed
         // TODO add your handling code here:
         Imovel imovel = new Imovel(); 
         //predio
+      
         imovel.setAndar(jftf_Andar.getText());
         imovel.setEscada(buttonGroup1.getSelection().getActionCommand());
         imovel.setElevador(buttonGroup1.getSelection().getActionCommand()); // sera?
         imovel.setVaranda(jftf_VarandaPre.getText());
-    }//GEN-LAST:event_jButton1ActionPerformed
+        
+    }//GEN-LAST:event_jbt_AparActionPerformed
+
+    private void jcb_casaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcb_casaActionPerformed
+        // TODO add your handling code here:
+          if(!jcb_casa.isSelected()){
+            BTN_CASA.setEnabled(false);}
+    }//GEN-LAST:event_jcb_casaActionPerformed
 
        public void cadastrarImoveis()
        {
@@ -808,8 +835,8 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BTN_CASA;
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jExit;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -825,7 +852,9 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JButton jbt_Cada;
+    private javax.swing.JButton jbt_Apar;
+    private javax.swing.JCheckBox jcb_Apartamento;
+    private javax.swing.JCheckBox jcb_casa;
     private javax.swing.JComboBox<String> jcb_estado;
     private javax.swing.JFormattedTextField jftf_Andar;
     private javax.swing.JFormattedTextField jftf_AreaSer;
