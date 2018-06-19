@@ -565,10 +565,6 @@ public class FormCadastroCliente extends javax.swing.JFrame {
     }//GEN-LAST:event_jftf_NunCartaoActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-<<<<<<< HEAD
-=======
-
->>>>>>> 51229f0d745c7c02d8ce0b4871306d3c5475c2df
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
