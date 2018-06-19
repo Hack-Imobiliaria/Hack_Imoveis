@@ -502,7 +502,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
     }//GEN-LAST:event_jftf_NunCartaoActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-       // TODO add your handling code here:
+
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -527,7 +527,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         
         FormPrincipal.daoCliente.inserirCliente(cliente);
         JOptionPane.showMessageDialog(null, "Cliente cadastrado com sucesso!");
-        //this.limpar();
+        //this.limpar(); 
         
         
         
