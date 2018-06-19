@@ -231,6 +231,11 @@ public class FormAluguel extends javax.swing.JFrame {
         }
 
         jbt_Cpf1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Search-Find-48.png"))); // NOI18N
+        jbt_Cpf1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbt_Cpf1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Delete-48.png"))); // NOI18N
         jButton2.setText("Cancelar");
@@ -454,6 +459,10 @@ public class FormAluguel extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Cliente não encontrado!");
         }
     }//GEN-LAST:event_jbt_CpfActionPerformed
+
+    private void jbt_Cpf1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbt_Cpf1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbt_Cpf1ActionPerformed
 
     /**
      * @param args the command line arguments
