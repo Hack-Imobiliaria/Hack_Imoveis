@@ -17,6 +17,7 @@ public class Cliente {
     private String estadoCivil;
     private Endereco enderecoCli;   // atual endereco do cliente
     private Cartoes cartaoCli;
+    private Contrato tipoDoContrato;
 
     public Cliente(String cpf, String nome, String telefone, String email, String estadoCivil, Endereco enderecoCli) {
         this.cpf = cpf;
@@ -30,6 +31,7 @@ public class Cliente {
     public Cliente() {
         enderecoCli = new Endereco();
         cartaoCli = new Cartoes();
+        tipoDoContrato = new Contrato();
     }
     
     // metodo toString
@@ -50,9 +52,16 @@ public class Cliente {
         return str;
         
     }
-
+    
+    public Contrato getTipoDoContrato() {
+        return tipoDoContrato;
+    }
 
 // metodos get set
+    public void setTipoDoContrato(Contrato tipoDoContrato) {    
+        this.tipoDoContrato = tipoDoContrato;
+    }
+
     public String getCpf() {
         return cpf;
     }

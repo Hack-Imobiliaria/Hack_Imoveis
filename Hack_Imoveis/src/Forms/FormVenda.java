@@ -6,7 +6,9 @@
 package Forms;
 
 import Model.Cliente;
+import Model.Imovel;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 
 /**
@@ -16,9 +18,10 @@ import javax.swing.JOptionPane;
  */
 public class FormVenda extends javax.swing.JFrame {
 
-    /**
-     * Creates new form FormPrincipal
-     */
+    DefaultTableModel modelo = null;
+    String nImovel =
+    Imovel imovel = FormPrincipal.daoImovel.buscarImovel();
+    
     public FormVenda() {
         initComponents();
         this.setLocationRelativeTo(null);
@@ -260,6 +263,7 @@ public class FormVenda extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+        jTable1.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(jTable1);
         if (jTable1.getColumnModel().getColumnCount() > 0) {
             jTable1.getColumnModel().getColumn(0).setResizable(false);
@@ -419,6 +423,11 @@ public class FormVenda extends javax.swing.JFrame {
        Print_Nome.setText("");
        Print_Email.setText("");
        Print_Telefone.setText("");
+    }
+    
+    private void inserirTabela(Cliente cliente)
+    {
+        modelo.addRow(new Object[]{cliente.getTipoDoContrato().getContratoAluguel(),cliente.getTipoDoContrato().getContratoCompra(),Imovel.class.      }     );
     }
     /**
      * @param args the command line arguments
