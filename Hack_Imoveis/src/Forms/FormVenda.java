@@ -7,6 +7,7 @@ package Forms;
 
 import Model.Cliente;
 import Model.Imovel;
+import Model.Venda;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -19,8 +20,7 @@ import javax.swing.table.DefaultTableModel;
 public class FormVenda extends javax.swing.JFrame {
 
     DefaultTableModel modelo = null;
-    String nImovel =
-    Imovel imovel = FormPrincipal.daoImovel.buscarImovel();
+    Venda tipoVenda = new Venda();
     
     public FormVenda() {
         initComponents();
@@ -427,7 +427,7 @@ public class FormVenda extends javax.swing.JFrame {
     
     private void inserirTabela(Cliente cliente)
     {
-        modelo.addRow(new Object[]{cliente.getTipoDoContrato().getContratoAluguel(),cliente.getTipoDoContrato().getContratoCompra(),Imovel.class.      }     );
+        modelo.addRow(new Object[]{tipoVenda.getListaAluguel() || tipoVenda.getListaVenda(),    }     );
     }
     /**
      * @param args the command line arguments
