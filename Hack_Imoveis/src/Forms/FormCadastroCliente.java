@@ -78,7 +78,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         jl_CodVerificacao = new javax.swing.JLabel();
         jCodigoValidacao = new javax.swing.JFormattedTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Cadastro Clientes");
 
         jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
@@ -502,8 +502,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
     }//GEN-LAST:event_jftf_NunCartaoActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        FormPrincipal f = new FormPrincipal();
-        f.setVisible(true);        // TODO add your handling code here:
+       // TODO add your handling code here:
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
