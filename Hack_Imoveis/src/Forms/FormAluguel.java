@@ -5,6 +5,9 @@
  */
 package Forms;
 
+import Model.Cliente;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author wagner
@@ -87,6 +90,11 @@ public class FormAluguel extends javax.swing.JFrame {
         }
 
         jbt_Cpf.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Search-Find-48.png"))); // NOI18N
+        jbt_Cpf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbt_CpfActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Buscar cliente");
 
@@ -418,12 +426,38 @@ public class FormAluguel extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jExitActionPerformed
+<<<<<<< HEAD
+        this.dispose();
+=======
           this.dispose();
+>>>>>>> 51229f0d745c7c02d8ce0b4871306d3c5475c2df
     }//GEN-LAST:event_jExitActionPerformed
 
     private void jmi_novoAluguelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmi_novoAluguelActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jmi_novoAluguelActionPerformed
+
+    private void jbt_CpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbt_CpfActionPerformed
+        String cpf = jftf_CPF.getText();
+        Cliente cliente = FormPrincipal.daoCliente.buscarCliente(cpf);
+        System.out.println(cliente);
+        if (cliente != null) {
+            jftf_CPF.setText(cliente.getCpf());
+            Print_Nome.setText(cliente.getNome());
+            Print_Telefone.setText(cliente.getTelefone());
+            Print_EstadoCivil.setText(cliente.getEstadoCivil());
+            
+            Print_Endereco.setText(cliente.getEnderecoCli().getLogradouro());
+            Print_Bairro.setText(cliente.getEnderecoCli().getBairro());
+            Print_Complemento.setText(cliente.getEnderecoCli().getComplemento());
+            Print_Cidade.setText(cliente.getEnderecoCli().getCidade());
+            Print_CEP.setText(cliente.getEnderecoCli().getCep());
+            Print_Estado.setText(cliente.getEnderecoCli().getEstado());
+            System.out.println(cliente.getEnderecoCli().getCep());
+        } else {
+            JOptionPane.showMessageDialog(null, "Cliente não encontrado!");
+        }
+    }//GEN-LAST:event_jbt_CpfActionPerformed
 
     /**
      * @param args the command line arguments

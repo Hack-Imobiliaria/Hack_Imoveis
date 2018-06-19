@@ -195,6 +195,14 @@ public class FormPrincipal extends javax.swing.JFrame {
         v.setVisible(true);
     }//GEN-LAST:event_jVendaActionPerformed
 
+<<<<<<< HEAD
+    private void jHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jHomeActionPerformed
+        FormPrincipal p = new FormPrincipal();
+        p.setVisible(true);
+    }//GEN-LAST:event_jHomeActionPerformed
+
+=======
+>>>>>>> 51229f0d745c7c02d8ce0b4871306d3c5475c2df
     private void jCadastroClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCadastroClienteActionPerformed
         FormCadastroCliente c = new FormCadastroCliente();
         c.setVisible(true);
