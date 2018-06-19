@@ -426,11 +426,7 @@ public class FormAluguel extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jExitActionPerformed
-<<<<<<< HEAD
         this.dispose();
-=======
-          this.dispose();
->>>>>>> 51229f0d745c7c02d8ce0b4871306d3c5475c2df
     }//GEN-LAST:event_jExitActionPerformed
 
     private void jmi_novoAluguelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmi_novoAluguelActionPerformed
