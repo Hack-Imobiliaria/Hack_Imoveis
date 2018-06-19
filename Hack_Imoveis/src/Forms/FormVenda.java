@@ -59,7 +59,7 @@ public class FormVenda extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jb_Cancelar = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Venda");
 
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -340,8 +340,6 @@ public class FormVenda extends javax.swing.JFrame {
     }//GEN-LAST:event_jFormattedTextField_CPFActionPerformed
 
     private void jb_SairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_SairActionPerformed
-        FormPrincipal f = new FormPrincipal();
-        f.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jb_SairActionPerformed
 

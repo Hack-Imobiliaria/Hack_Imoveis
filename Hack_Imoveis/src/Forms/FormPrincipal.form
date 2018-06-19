@@ -54,7 +54,6 @@
                       <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jVenda" alignment="0" min="-2" pref="47" max="-2" attributes="0"/>
-                          <Component id="jHome" alignment="1" min="-2" pref="47" max="-2" attributes="0"/>
                           <Component id="jCadastroCliente" alignment="1" min="-2" pref="47" max="-2" attributes="0"/>
                           <Component id="jCadastroImovel" alignment="1" min="-2" pref="47" max="-2" attributes="0"/>
                           <Component id="jAluguel" alignment="1" min="-2" pref="47" max="-2" attributes="0"/>
@@ -79,9 +78,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="122" max="-2" attributes="0"/>
-                      <Component id="jHome" min="-2" pref="47" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
                       <Component id="jVenda" min="-2" pref="47" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jCadastroCliente" min="-2" pref="47" max="-2" attributes="0"/>
@@ -130,19 +127,6 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
     </Container>
-    <Component class="javax.swing.JButton" name="jHome">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Icones/House-48.png"/>
-        </Property>
-        <Property name="focusable" type="boolean" value="false"/>
-        <Property name="horizontalTextPosition" type="int" value="0"/>
-        <Property name="verticalTextPosition" type="int" value="3"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jHomeActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JButton" name="jVenda">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">

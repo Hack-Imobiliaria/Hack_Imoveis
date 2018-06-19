@@ -83,7 +83,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         jl_CodVerificacao = new javax.swing.JLabel();
         jCodigoValidacao = new javax.swing.JFormattedTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Cadastro Clientes");
 
         jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
@@ -565,6 +565,10 @@ public class FormCadastroCliente extends javax.swing.JFrame {
     }//GEN-LAST:event_jftf_NunCartaoActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+<<<<<<< HEAD
+=======
+
+>>>>>>> 51229f0d745c7c02d8ce0b4871306d3c5475c2df
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -591,8 +595,6 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         FormPrincipal.daoCliente.inserirCliente(cliente);
         JOptionPane.showMessageDialog(null, "Cliente cadastrado com sucesso!");
         this.limpar();
-
-
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed

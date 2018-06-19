@@ -110,7 +110,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Cadastro Imoveis");
 
         jExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Logout-48.png"))); // NOI18N
@@ -714,8 +714,6 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jExitActionPerformed
-        FormPrincipal f = new FormPrincipal();
-        f.setVisible(true);
         this.dispose();
       
     }//GEN-LAST:event_jExitActionPerformed
