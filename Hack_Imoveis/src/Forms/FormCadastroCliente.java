@@ -565,8 +565,6 @@ public class FormCadastroCliente extends javax.swing.JFrame {
     }//GEN-LAST:event_jftf_NunCartaoActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        FormPrincipal f = new FormPrincipal();
-        f.setVisible(true);        // TODO add your handling code here:
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -629,6 +627,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
     private void BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarActionPerformed
         String cpf = Buscar_Cpf.getText();
         Cliente cliente = FormPrincipal.daoCliente.buscarCliente(cpf);
+        System.out.println(FormPrincipal.daoCliente.todosClientes());
         if (cliente != null) {
             jftf_CPF.setText(cliente.getCpf());
             jtf_Nome.setText(cliente.getNome());

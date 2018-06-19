@@ -212,25 +212,21 @@ public class FormPrincipal extends javax.swing.JFrame {
 
     private void jHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jHomeActionPerformed
         FormPrincipal p = new FormPrincipal();
-        this.dispose();
         p.setVisible(true);
     }//GEN-LAST:event_jHomeActionPerformed
 
     private void jCadastroClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCadastroClienteActionPerformed
         FormCadastroCliente c = new FormCadastroCliente();
-        this.dispose();
         c.setVisible(true);
     }//GEN-LAST:event_jCadastroClienteActionPerformed
 
     private void jCadastroImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCadastroImovelActionPerformed
         FormCadastroImoveis i = new FormCadastroImoveis();
-        this.dispose();
         i.setVisible(true);
     }//GEN-LAST:event_jCadastroImovelActionPerformed
 
     private void jAluguelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAluguelActionPerformed
         FormAluguel a = new FormAluguel();
-        this.dispose();
         a.setVisible(true);
     }//GEN-LAST:event_jAluguelActionPerformed
 
