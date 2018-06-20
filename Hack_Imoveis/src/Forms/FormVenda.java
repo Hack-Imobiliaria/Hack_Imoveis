@@ -491,7 +491,14 @@ public class FormVenda extends javax.swing.JFrame {
         SimpleDateFormat formatarData = new SimpleDateFormat("dd/MM/yyyy");
         formatarData.format(data);
         
-        modelo.addRow(new Object[]{imovel.getEndereco().getLogradouro(),data,imovel.getValorImovel()}     );
+        int numero_imovel = Integer.parseInt(jftf_Imovel.getText());
+        DefaultTableModel modelo = (DefaultTableModel) jTable1.getModel();
+        //Imovel imovel = FormPrincipal.daoImovel.buscarImovel(numero_imovel);
+        System.out.println(imovel);
+        Object[] dados = {imovel.getEndereco().getLogradouro(),data,imovel.getValorImovel()};
+        System.out.println(dados[0]);
+        modelo.addRow(dados);
+        
     }
     /**
      * @param args the command line arguments
