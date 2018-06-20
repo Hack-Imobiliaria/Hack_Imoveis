@@ -388,7 +388,7 @@
                   <Table columnCount="4" rowCount="0">
                     <Column editable="false" title="Tipo do Contrato" type="java.lang.Integer"/>
                     <Column editable="false" title="Endere&#xe7;o" type="java.lang.String"/>
-                    <Column editable="false" title="Tamanho" type="java.lang.String"/>
+                    <Column editable="false" title="Data" type="java.lang.String"/>
                     <Column editable="false" title="Valor" type="java.lang.Integer"/>
                   </Table>
                 </Property>

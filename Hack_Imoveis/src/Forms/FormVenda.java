@@ -245,7 +245,7 @@ public class FormVenda extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Tipo do Contrato", "Endereço", "Tamanho", "Valor"
+                "Tipo do Contrato", "Endereço", "Data", "Valor"
             }
         ) {
             Class[] types = new Class [] {
