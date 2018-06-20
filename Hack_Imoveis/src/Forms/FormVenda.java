@@ -8,6 +8,8 @@ package Forms;
 import Model.Cliente;
 import Model.Imovel;
 import Model.Venda;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -245,14 +247,14 @@ public class FormVenda extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Tipo do Contrato", "Endereço", "Data", "Valor"
+                "Endereço", "Data", "Valor"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class
+                java.lang.String.class, java.lang.String.class, java.lang.Integer.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false, false
+                false, false, false
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -269,7 +271,6 @@ public class FormVenda extends javax.swing.JFrame {
             jTable1.getColumnModel().getColumn(0).setResizable(false);
             jTable1.getColumnModel().getColumn(1).setResizable(false);
             jTable1.getColumnModel().getColumn(2).setResizable(false);
-            jTable1.getColumnModel().getColumn(3).setResizable(false);
         }
 
         jLabel9.setText("Informaçoes do Contrato");
@@ -425,9 +426,13 @@ public class FormVenda extends javax.swing.JFrame {
        Print_Telefone.setText("");
     }
     
-    private void inserirTabela(Cliente cliente)
+    private void inserirTabela(Imovel imovel)
     {
-        modelo.addRow(new Object[]{cliente.getCpf()    }     );
+        Date data = new Date();
+        SimpleDateFormat formatarData = new SimpleDateFormat("dd/MM/yyyy");
+        formatarData.format(data);
+        
+        modelo.addRow(new Object[]{imovel.getEndereco().getLogradouro(),data,imovel.getValorImovel()}     );
     }
     /**
      * @param args the command line arguments

@@ -913,6 +913,9 @@
                   <ComponentRef name="bntGru_TipoContrato"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Aluguel"/>
+                <Property name="actionCommand" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="&quot;aluguem&quot;" type="code"/>
+                </Property>
               </Properties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jrb_Compra">
@@ -921,6 +924,9 @@
                   <ComponentRef name="bntGru_TipoContrato"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Compra"/>
+                <Property name="actionCommand" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="&quot;Compra&quot;" type="code"/>
+                </Property>
               </Properties>
             </Component>
           </SubComponents>

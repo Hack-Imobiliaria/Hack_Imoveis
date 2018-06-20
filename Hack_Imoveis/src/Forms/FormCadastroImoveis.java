@@ -399,9 +399,11 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
 
         bntGru_TipoContrato.add(jrb_Aluguel);
         jrb_Aluguel.setText("Aluguel");
+        jrb_Aluguel.setActionCommand("aluguem");
 
         bntGru_TipoContrato.add(jrb_Compra);
         jrb_Compra.setText("Compra");
+        jrb_Compra.setActionCommand("Compra");
 
         javax.swing.GroupLayout jPanel_CasaLayout = new javax.swing.GroupLayout(jPanel_Casa);
         jPanel_Casa.setLayout(jPanel_CasaLayout);
@@ -754,6 +756,8 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                }
         
         FormPrincipal.daoImovel.inserirImovel(imovel);
+        System.out.println(FormPrincipal.daoImovel);
+        System.out.println("\n"+imovel);
         JOptionPane.showMessageDialog(null, "Cliente cadastrado com sucesso!");
     }//GEN-LAST:event_BTN_CASAActionPerformed
 
