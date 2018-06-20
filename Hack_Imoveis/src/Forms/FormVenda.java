@@ -259,7 +259,7 @@ public class FormVenda extends javax.swing.JFrame {
                 java.lang.String.class, java.lang.String.class, java.lang.Integer.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false
+                false, false, true
             };
 
             public Class getColumnClass(int columnIndex) {
