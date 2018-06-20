@@ -447,8 +447,14 @@
                                       <Component id="jftf_VarandaPre" min="-2" pref="35" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="jcb_Apartamento" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="jcb_Aluguel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jcb_Compra" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <EmptySpace min="45" max="32767" attributes="0"/>
+                              <EmptySpace pref="13" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -598,6 +604,13 @@
                                   <Component id="jl_AreaServi" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jftf_AreaSer" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jl_metrosQua4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jcb_Aluguel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jcb_Compra" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -886,6 +899,21 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcb_ApartamentoActionPerformed"/>
               </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Tipo do contrato"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jcb_Aluguel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Aluguel"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jcb_Compra">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Compra"/>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>

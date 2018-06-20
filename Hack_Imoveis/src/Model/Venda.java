@@ -16,19 +16,20 @@ public class Venda {
     private Cliente cliente;
     private float valorVenda;
     private Date dataVenda;
-    private List<Aluguel> lista; // mudar para imovle > listaAluguel
+    private List<Imovel> listaAluguel; // mudar para imovle > listaAluguel
     private List<Imovel> listaVenda;
 
     
 public Venda(){
     autoIncremento++;
-    lista = new ArrayList<Aluguel>();
+    listaAluguel = new ArrayList<Imovel>();
     listaVenda = new ArrayList<Imovel>();
     dataVenda = new Date();
 }
-    public void inserirAluguel(Aluguel aluguel)
+    public void inserirAluguel(Imovel aluguelImovel )
     {
-        lista.add(aluguel);
+        listaAluguel.add(aluguelImovel);
+    
     }
     
     public void inserirVenda(Imovel vendaImovel)
@@ -71,12 +72,12 @@ public static int getAutoIncremento() {
         this.dataVenda = dataVenda;
     }
 
-    public List<Aluguel> getLista() {
-        return lista;
+    public List<Imovel> getListaAluguel() {
+        return listaAluguel;
     }
 
-    public void setLista(List<Aluguel> lista) {
-        this.lista = lista;
+    public void setListaAluguel(List<Imovel> listaAluguel) {
+        this.listaAluguel = listaAluguel;
     }
 
     public List<Imovel> getListaVenda() {
