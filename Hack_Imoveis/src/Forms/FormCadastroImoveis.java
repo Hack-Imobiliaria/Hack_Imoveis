@@ -33,6 +33,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
+        bntGru_TipoContrato = new javax.swing.ButtonGroup();
         jExit = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel_Endereco = new javax.swing.JPanel();
@@ -100,12 +101,8 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jcb_casa = new javax.swing.JCheckBox();
         jcb_Apartamento = new javax.swing.JCheckBox();
         jLabel3 = new javax.swing.JLabel();
-        jcb_Aluguel = new javax.swing.JCheckBox();
-        jcb_Compra = new javax.swing.JCheckBox();
-        jPanel_Descrição = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        jrb_Aluguel = new javax.swing.JRadioButton();
+        jrb_Compra = new javax.swing.JRadioButton();
         jLabel4 = new javax.swing.JLabel();
         BTN_CASA = new javax.swing.JButton();
         jbt_Apar = new javax.swing.JButton();
@@ -187,7 +184,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                         .addGap(46, 46, 46))
                     .addGroup(jPanel_EnderecoLayout.createSequentialGroup()
                         .addComponent(jLabel7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
                         .addComponent(jtf_Cidade, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(97, 97, 97)
                         .addComponent(jLabel9)
@@ -400,9 +397,11 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
 
         jLabel3.setText("Tipo do contrato");
 
-        jcb_Aluguel.setText("Aluguel");
+        bntGru_TipoContrato.add(jrb_Aluguel);
+        jrb_Aluguel.setText("Aluguel");
 
-        jcb_Compra.setText("Compra");
+        bntGru_TipoContrato.add(jrb_Compra);
+        jrb_Compra.setText("Compra");
 
         javax.swing.GroupLayout jPanel_CasaLayout = new javax.swing.GroupLayout(jPanel_Casa);
         jPanel_Casa.setLayout(jPanel_CasaLayout);
@@ -456,7 +455,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                                         .addComponent(jftf_Sala, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jl_QuantidadeSala)))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
                         .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel_CasaLayout.createSequentialGroup()
                                 .addComponent(jl_Picina)
@@ -506,10 +505,10 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                             .addComponent(jcb_Apartamento)
                             .addComponent(jLabel3)
                             .addGroup(jPanel_CasaLayout.createSequentialGroup()
-                                .addComponent(jcb_Aluguel)
+                                .addComponent(jrb_Aluguel)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jcb_Compra)))
-                        .addContainerGap(13, Short.MAX_VALUE))
+                                .addComponent(jrb_Compra)))
+                        .addContainerGap(14, Short.MAX_VALUE))
                     .addGroup(jPanel_CasaLayout.createSequentialGroup()
                         .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel_CasaLayout.createSequentialGroup()
@@ -628,43 +627,12 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel_CasaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jcb_Aluguel)
-                            .addComponent(jcb_Compra))))
+                            .addComponent(jrb_Aluguel)
+                            .addComponent(jrb_Compra))))
                 .addContainerGap())
         );
 
         jTabbedPane1.addTab("Imovel", jPanel_Casa);
-
-        jLabel2.setText("Descrição imovel:");
-
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
-
-        javax.swing.GroupLayout jPanel_DescriçãoLayout = new javax.swing.GroupLayout(jPanel_Descrição);
-        jPanel_Descrição.setLayout(jPanel_DescriçãoLayout);
-        jPanel_DescriçãoLayout.setHorizontalGroup(
-            jPanel_DescriçãoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_DescriçãoLayout.createSequentialGroup()
-                .addGap(3, 3, 3)
-                .addGroup(jPanel_DescriçãoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1)
-                    .addGroup(jPanel_DescriçãoLayout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(428, 428, 428)))
-                .addContainerGap())
-        );
-        jPanel_DescriçãoLayout.setVerticalGroup(
-            jPanel_DescriçãoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_DescriçãoLayout.createSequentialGroup()
-                .addContainerGap(191, Short.MAX_VALUE)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(85, 85, 85))
-        );
-
-        jTabbedPane1.addTab("Descrição", jPanel_Descrição);
 
         jLabel4.setText("Dados do Imovel");
 
@@ -768,8 +736,10 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
             imovel.setAreaServico(jftf_AreaSer.getText());
         
        // tipo do contrato
-       jcb_Aluguel.isSelected();
-       jcb_Compra.isSelected();
+        imovel.setTipoContrato(bntGru_TipoContrato.getSelection().getActionCommand());
+  
+        // perguntar sobre colocar mais de um radio button na interface
+        // e se o JRadioButton vai ser utilizado
         
         JRadioButton radio;
           String str;
@@ -881,10 +851,10 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BTN_CASA;
+    private javax.swing.ButtonGroup bntGru_TipoContrato;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jExit;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel7;
@@ -893,15 +863,10 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel_Casa;
-    private javax.swing.JPanel jPanel_Descrição;
     private javax.swing.JPanel jPanel_Endereco;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JButton jbt_Apar;
-    private javax.swing.JCheckBox jcb_Aluguel;
     private javax.swing.JCheckBox jcb_Apartamento;
-    private javax.swing.JCheckBox jcb_Compra;
     private javax.swing.JCheckBox jcb_casa;
     private javax.swing.JComboBox<String> jcb_estado;
     private javax.swing.JFormattedTextField jftf_Andar;
@@ -952,6 +917,8 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
     private javax.swing.JLabel jl_metrosQua6;
     private javax.swing.JLabel jl_quarto;
     private javax.swing.JLabel jl_terraço;
+    private javax.swing.JRadioButton jrb_Aluguel;
+    private javax.swing.JRadioButton jrb_Compra;
     private javax.swing.JRadioButton jrb_Elevador;
     private javax.swing.JRadioButton jrb_Escada;
     private javax.swing.JTextField jtf_Bairro;
