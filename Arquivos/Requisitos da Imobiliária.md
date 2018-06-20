@@ -12,17 +12,16 @@
 ### Controle de clientes 
 
 + Cadastro das informações do cliente,
-  + Nome, CPF, Data de Nascimento, Endereço, Ocupação, **CEP**.
+  + Nome, CPF, Telefone, Email, Estado Civil, Endereço atual, CEP atual. Complemento, Cidade, Estado, Bairro, Numero da casa.
 
 ### Controle de Imóveis
 
 + Cadastro de Imóveis
-  + Nome, CEP, Endereço, Tamanho(Metros quadrados), Área de ocupação(Cidade ou Campo), Valor, Disponibilidade.
+  + Nome, CEP, Endereço, Tamanho(Metros quadrados), Área de ocupação(Cidade ou Campo), ValorImovel, NumeroImovel, Sala, Quartos, Cozinha, Banheiro, Garagem, Porao, Terraco, Quital, Jardim, Picina, QuadraEsporte, AreaServico, Andar, Varanda, Escada, Elevador, TipoContrato, TipoDoImovel.
+
 + Cadastro de Aluguel
   + Nome do Cliente, valor, Data do Aluguel, Duração do aluguel,
 + Cadastro de Venda
-
-
 
 ### Classes
 
@@ -42,6 +41,11 @@ _**Venda**_
 - _**formulario cadastro imovel**_
 - _**formula principal**_
 
+---
+
+---
 
 
+
+### Materiais de pesquisa
 
