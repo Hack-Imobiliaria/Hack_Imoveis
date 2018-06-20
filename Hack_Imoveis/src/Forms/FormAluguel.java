@@ -10,6 +10,7 @@ import Model.Venda;
 import Model.Imovel;
 import java.text.SimpleDateFormat;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -242,6 +243,11 @@ public class FormAluguel extends javax.swing.JFrame {
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
+        jftf_Imovel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jftf_ImovelActionPerformed(evt);
+            }
+        });
 
         Buscar_Imovel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Search-Find-48.png"))); // NOI18N
         Buscar_Imovel.addActionListener(new java.awt.event.ActionListener() {
@@ -346,15 +352,17 @@ public class FormAluguel extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jExit, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addComponent(jLabel3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jftf_Imovel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel4)))
-                            .addComponent(Buscar_Imovel, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(21, 21, 21)
+                                    .addComponent(jLabel4))
+                                .addGap(21, 21, 21))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(Buscar_Imovel, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -478,9 +486,13 @@ public class FormAluguel extends javax.swing.JFrame {
 
     private void Buscar_ImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Buscar_ImovelActionPerformed
         
-        int numero_imovel= Integer.parseInt(jftf_Imovel.getText());
+        int numero_imovel = Integer.parseInt(jftf_Imovel.getText());
+         DefaultTableModel modelo = (DefaultTableModel) jTable1.getModel();
         Imovel imovel = FormPrincipal.daoImovel.buscarImovel(numero_imovel);
         System.out.println(imovel);
+        Object[] dados = {imovel.getNome(),imovel.getNumeroImovel(),imovel.getAndar()};
+        System.out.println(dados[0]);
+        modelo.addRow(dados);
         
         
         
@@ -493,6 +505,10 @@ public class FormAluguel extends javax.swing.JFrame {
         SimpleDateFormat formatarData = new SimpleDateFormat("dd/MM/yyyy");
         String dataFormatada = formatarData.format(venda.getDataVenda());
     }//GEN-LAST:event_jb_PagamentoDinheiroActionPerformed
+
+    private void jftf_ImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jftf_ImovelActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jftf_ImovelActionPerformed
 
     /**
      * @param args the command line arguments

@@ -28,10 +28,10 @@ public class ImovelDAO {
     public Imovel buscarImovel(int numero)
     {
         Imovel imovel = null;
-        for(Imovel imo: lista)
+        for(int i =0; i<lista.size();i++)
         {
-            if(imo.getNumeroImovel() == numero)
-                imovel = imo;
+            if(lista.get(i).getNumeroImovel() == numero)
+                imovel = lista.get(i);
         }
         
         return imovel;
