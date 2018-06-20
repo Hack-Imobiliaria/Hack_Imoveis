@@ -31,8 +31,9 @@ public class Imovel {
     private String escada;
     private String elevador;
     private String tipoContrato;
+    private String tipoDoImovel;
 
-    public Imovel(Endereco endereco, float valorImovel, String nome, String sala, String quartos, String cozinha, String banheiro, String garagem, String porao, String terraco, String quital, String jardim, String picina, String quadraEsporte, String areaServico, String andar, String varanda, String escada, String elevador, String tipoContrato) {
+    public Imovel(Endereco endereco, float valorImovel, String nome, String sala, String quartos, String cozinha, String banheiro, String garagem, String porao, String terraco, String quital, String jardim, String picina, String quadraEsporte, String areaServico, String andar, String varanda, String escada, String elevador, String tipoContrato, String tipoDoImovel) {
         this.endereco = endereco;
         this.valorImovel = valorImovel;
         this.nome = nome;
@@ -53,6 +54,7 @@ public class Imovel {
         this.escada = escada;
         this.elevador = elevador;
         this.tipoContrato = tipoContrato;
+        this.tipoDoImovel = tipoDoImovel;
     }
     public Imovel(){
         endereco = new Endereco();
@@ -83,8 +85,17 @@ public class Imovel {
         str = str + "\n:Possui Escadas -->"+escada;
         str = str + "\n:Possui Elevador -->"+elevador;
         str = str + "\n:Tipo do Contrato ==>"+tipoContrato +"<==";
+        str = str + "\n:Tipo do Imovel ==>"+tipoDoImovel +"<==";
         
         return str;
+    }
+
+    public String getTipoDoImovel() {
+        return tipoDoImovel;
+    }
+
+    public void setTipoDoImovel(String tipoDoImovel) {
+        this.tipoDoImovel = tipoDoImovel;
     }
 
     public String getTipoContrato() {

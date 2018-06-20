@@ -14,7 +14,7 @@ import javax.swing.JRadioButton;
  * @author denner
  */
 public class FormCadastroImoveis extends javax.swing.JFrame {
-
+     Imovel imovel = new Imovel(); 
     /**
      * Creates new form FormPrincipal
      */
@@ -34,6 +34,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
         bntGru_TipoContrato = new javax.swing.ButtonGroup();
+        btnGrup_tipoDoContrato = new javax.swing.ButtonGroup();
         jExit = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel_Endereco = new javax.swing.JPanel();
@@ -355,11 +356,13 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
 
         buttonGroup1.add(jrb_Escada);
         jrb_Escada.setText("Sim");
+        jrb_Escada.setActionCommand("Sim");
 
         jl_Elevador.setText("Elevador");
 
         buttonGroup1.add(jrb_Elevador);
         jrb_Elevador.setText("Sim");
+        jrb_Elevador.setActionCommand("Sim");
 
         try {
             jftf_Andar.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#")));
@@ -381,14 +384,18 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
 
         jl_metrosQua11.setText("M²");
 
+        btnGrup_tipoDoContrato.add(jcb_casa);
         jcb_casa.setText("Casa");
+        jcb_casa.setActionCommand("Casa");
         jcb_casa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jcb_casaActionPerformed(evt);
             }
         });
 
+        btnGrup_tipoDoContrato.add(jcb_Apartamento);
         jcb_Apartamento.setText("Apartamento");
+        jcb_Apartamento.setActionCommand("Apartamento");
         jcb_Apartamento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jcb_ApartamentoActionPerformed(evt);
@@ -739,7 +746,8 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         
        // tipo do contrato
         imovel.setTipoContrato(bntGru_TipoContrato.getSelection().getActionCommand());
-  
+        imovel.setTipoDoImovel(btnGrup_tipoDoContrato.getSelection().getActionCommand());
+        
         // perguntar sobre colocar mais de um radio button na interface
         // e se o JRadioButton vai ser utilizado
         
@@ -767,7 +775,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
 
     private void jbt_AparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbt_AparActionPerformed
         // TODO add your handling code here:
-        Imovel imovel = new Imovel(); 
+        
         //predio
       
         imovel.setAndar(jftf_Andar.getText());
@@ -856,6 +864,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BTN_CASA;
     private javax.swing.ButtonGroup bntGru_TipoContrato;
+    private javax.swing.ButtonGroup btnGrup_tipoDoContrato;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jExit;
     private javax.swing.JLabel jLabel1;
