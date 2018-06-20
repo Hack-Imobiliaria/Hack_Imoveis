@@ -6,6 +6,8 @@
     </Component>
     <Component class="javax.swing.ButtonGroup" name="bntGru_TipoContrato">
     </Component>
+    <Component class="javax.swing.ButtonGroup" name="btnGrup_tipoDoContrato">
+    </Component>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="jMenu1">
@@ -50,9 +52,7 @@
           <Group type="102" attributes="0">
               <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
               <Component id="BTN_CASA" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jbt_Apar" min="-2" pref="192" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="327" max="-2" attributes="0"/>
               <Component id="jExit" min="-2" pref="47" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
@@ -79,7 +79,6 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jExit" min="-2" pref="47" max="-2" attributes="0"/>
                   <Component id="BTN_CASA" min="-2" pref="36" max="-2" attributes="0"/>
-                  <Component id="jbt_Apar" min="-2" pref="36" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="17" max="32767" attributes="0"/>
           </Group>
@@ -860,6 +859,9 @@
                   <ComponentRef name="buttonGroup1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Sim"/>
+                <Property name="actionCommand" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="&quot;Sim&quot;" type="code"/>
+                </Property>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jl_Elevador">
@@ -873,6 +875,9 @@
                   <ComponentRef name="buttonGroup1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Sim"/>
+                <Property name="actionCommand" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="&quot;Sim&quot;" type="code"/>
+                </Property>
               </Properties>
             </Component>
             <Component class="javax.swing.JFormattedTextField" name="jftf_Andar">
@@ -911,7 +916,13 @@
             </Component>
             <Component class="javax.swing.JCheckBox" name="jcb_casa">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="btnGrup_tipoDoContrato"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Casa"/>
+                <Property name="actionCommand" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="&quot;Casa&quot;" type="code"/>
+                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcb_casaActionPerformed"/>
@@ -919,7 +930,13 @@
             </Component>
             <Component class="javax.swing.JCheckBox" name="jcb_Apartamento">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="btnGrup_tipoDoContrato"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Apartamento"/>
+                <Property name="actionCommand" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="&quot;Apartamento&quot;" type="code"/>
+                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcb_ApartamentoActionPerformed"/>
@@ -963,24 +980,10 @@
     </Component>
     <Component class="javax.swing.JButton" name="BTN_CASA">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Icones/House-48.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Casa"/>
+        <Property name="text" type="java.lang.String" value="Cadrastrar"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BTN_CASAActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="jbt_Apar">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Icones/Building-Add-48.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Apartamento"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbt_AparActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
