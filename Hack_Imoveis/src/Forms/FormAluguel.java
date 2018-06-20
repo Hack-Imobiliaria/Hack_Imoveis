@@ -20,7 +20,7 @@ public class FormAluguel extends javax.swing.JFrame {
 
     private Venda venda = null;
     private Cliente cliente = null;
-    private Imovel imovel = null
+    private Imovel imovel = null;
     
     public FormAluguel() {
         initComponents();
@@ -267,14 +267,14 @@ public class FormAluguel extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Nome do Cliente", "Tipo de Imovel", "Endereço", "Valor"
+                "Nome do Cliente", "Tipo de Imovel", "Endereço", "Valor", "Data do aluguel"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false, false
+                false, false, false, false, false
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -292,6 +292,7 @@ public class FormAluguel extends javax.swing.JFrame {
             jTable1.getColumnModel().getColumn(1).setResizable(false);
             jTable1.getColumnModel().getColumn(2).setResizable(false);
             jTable1.getColumnModel().getColumn(3).setResizable(false);
+            jTable1.getColumnModel().getColumn(4).setResizable(false);
         }
 
         jExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Logout-48.png"))); // NOI18N
@@ -485,8 +486,8 @@ public class FormAluguel extends javax.swing.JFrame {
         // TODO add your handling code here:
         venda = new Venda();
         Venda.setAutoIncremento(Venda.getAutoIncremento()+1);
-        SimpleDateFormat formatoData = new SimpleDateFormat("dd/MM/yyyy");
-        String dataFormatada = formatoData(venda.getDataVenda());
+        SimpleDateFormat formatarData = new SimpleDateFormat("dd/MM/yyyy");
+        String dataFormatada = formatarData.format(venda.getDataVenda());
     }//GEN-LAST:event_jb_PagamentoDinheiroActionPerformed
 
     /**
