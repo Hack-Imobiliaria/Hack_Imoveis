@@ -8,6 +8,8 @@
     </Component>
     <Component class="javax.swing.ButtonGroup" name="btnGrup_tipoDoContrato">
     </Component>
+    <Component class="javax.swing.ButtonGroup" name="btn_group_tImovel">
+    </Component>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="jMenu1">
@@ -917,7 +919,7 @@
             <Component class="javax.swing.JCheckBox" name="jcb_casa">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="btnGrup_tipoDoContrato"/>
+                  <ComponentRef name="btn_group_tImovel"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Casa"/>
                 <Property name="actionCommand" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
@@ -931,7 +933,7 @@
             <Component class="javax.swing.JCheckBox" name="jcb_Apartamento">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="btnGrup_tipoDoContrato"/>
+                  <ComponentRef name="btn_group_tImovel"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Apartamento"/>
                 <Property name="actionCommand" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">

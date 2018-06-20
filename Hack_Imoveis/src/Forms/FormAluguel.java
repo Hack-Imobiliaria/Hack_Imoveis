@@ -67,7 +67,6 @@ public class FormAluguel extends javax.swing.JFrame {
         jftf_Imovel = new javax.swing.JFormattedTextField();
         Buscar_Imovel = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jb_CompraCartao = new javax.swing.JButton();
         jb_PagamentoDinheiro = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -259,8 +258,6 @@ public class FormAluguel extends javax.swing.JFrame {
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Delete-48.png"))); // NOI18N
         jButton2.setText("Cancelar");
 
-        jb_CompraCartao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Debit-Card-48.png"))); // NOI18N
-
         jb_PagamentoDinheiro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Donate -48.png"))); // NOI18N
         jb_PagamentoDinheiro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -273,14 +270,14 @@ public class FormAluguel extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Tipo de Imovel", "Endereço", "Valor"
+                "Nome do Imovel", "Tipo de Imovel", "Valor"
             }
         ) {
             Class[] types = new Class [] {
                 java.lang.String.class, java.lang.String.class, java.lang.Integer.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false
+                false, false, true
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -339,8 +336,6 @@ public class FormAluguel extends javax.swing.JFrame {
                         .addComponent(jb_PagamentoDinheiro, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(73, 73, 73)
                         .addComponent(jButton2)
-                        .addGap(97, 97, 97)
-                        .addComponent(jb_CompraCartao)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jExit, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
@@ -366,9 +361,7 @@ public class FormAluguel extends javax.swing.JFrame {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jb_CompraCartao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jButton2)
                             .addComponent(jb_PagamentoDinheiro, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -487,10 +480,10 @@ public class FormAluguel extends javax.swing.JFrame {
     private void Buscar_ImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Buscar_ImovelActionPerformed
         
         int numero_imovel = Integer.parseInt(jftf_Imovel.getText());
-         DefaultTableModel modelo = (DefaultTableModel) jTable1.getModel();
+        DefaultTableModel modelo = (DefaultTableModel) jTable1.getModel();
         Imovel imovel = FormPrincipal.daoImovel.buscarImovel(numero_imovel);
         System.out.println(imovel);
-        Object[] dados = {imovel.getNome(),imovel.getNumeroImovel(),imovel.getAndar()};
+        Object[] dados = {imovel.getNome(),imovel.getTipoDoImovel(),imovel.getAndar()};
         System.out.println(dados[0]);
         modelo.addRow(dados);
         
@@ -499,11 +492,7 @@ public class FormAluguel extends javax.swing.JFrame {
     }//GEN-LAST:event_Buscar_ImovelActionPerformed
 
     private void jb_PagamentoDinheiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_PagamentoDinheiroActionPerformed
-        // TODO add your handling code here:
-        venda = new Venda();
-        Venda.setAutoIncremento(Venda.getAutoIncremento()+1);
-        SimpleDateFormat formatarData = new SimpleDateFormat("dd/MM/yyyy");
-        String dataFormatada = formatarData.format(venda.getDataVenda());
+        
     }//GEN-LAST:event_jb_PagamentoDinheiroActionPerformed
 
     private void jftf_ImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jftf_ImovelActionPerformed
@@ -571,7 +560,6 @@ public class FormAluguel extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JButton jb_CompraCartao;
     private javax.swing.JLabel jb_Nome;
     private javax.swing.JButton jb_PagamentoDinheiro;
     private javax.swing.JButton jbt_Cpf;

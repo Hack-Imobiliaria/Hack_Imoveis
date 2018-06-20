@@ -35,6 +35,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         buttonGroup1 = new javax.swing.ButtonGroup();
         bntGru_TipoContrato = new javax.swing.ButtonGroup();
         btnGrup_tipoDoContrato = new javax.swing.ButtonGroup();
+        btn_group_tImovel = new javax.swing.ButtonGroup();
         jExit = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel_Endereco = new javax.swing.JPanel();
@@ -405,7 +406,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
 
         jl_metrosQua11.setText("M²");
 
-        btnGrup_tipoDoContrato.add(jcb_casa);
+        btn_group_tImovel.add(jcb_casa);
         jcb_casa.setText("Casa");
         jcb_casa.setActionCommand("Casa");
         jcb_casa.addActionListener(new java.awt.event.ActionListener() {
@@ -414,7 +415,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
             }
         });
 
-        btnGrup_tipoDoContrato.add(jcb_Apartamento);
+        btn_group_tImovel.add(jcb_Apartamento);
         jcb_Apartamento.setText("Apartamento");
         jcb_Apartamento.setActionCommand("Apartamento");
         jcb_Apartamento.addActionListener(new java.awt.event.ActionListener() {
@@ -764,7 +765,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         
        // tipo do contrato
         imovel.setTipoContrato(bntGru_TipoContrato.getSelection().getActionCommand());
-        imovel.setTipoDoImovel(btnGrup_tipoDoContrato.getSelection().getActionCommand());
+        imovel.setTipoDoImovel(btn_group_tImovel.getSelection().getActionCommand());
         
         // perguntar sobre colocar mais de um radio button na interface
         // como pega o evento de apenas um radio ou checkbox sem o uso do grupo de botao
@@ -872,6 +873,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
     private javax.swing.JButton BTN_CASA;
     private javax.swing.ButtonGroup bntGru_TipoContrato;
     private javax.swing.ButtonGroup btnGrup_tipoDoContrato;
+    private javax.swing.ButtonGroup btn_group_tImovel;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jExit;
     private javax.swing.JLabel jLabel1;
