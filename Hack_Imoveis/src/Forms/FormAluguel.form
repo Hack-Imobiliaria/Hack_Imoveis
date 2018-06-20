@@ -181,31 +181,43 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jl_Bairro" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="Print_Bairro" max="32767" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="Print_Cidade" min="-2" pref="164" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
                                       <Component id="jl_EstadoCivil" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="Print_EstadoCivil" max="32767" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="Print_EstadoCivil" min="-2" pref="204" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="263" max="-2" attributes="0"/>
                                       <Component id="jl_Estado" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="Print_Estado" min="-2" pref="159" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="171" max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jl_Telefone" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="Print_Telefone" min="-2" pref="237" max="-2" attributes="0"/>
-                                      <EmptySpace pref="256" max="32767" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                       <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="Print_CEP" min="-2" pref="182" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="jl_Bairro" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="Print_Bairro" max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="jl_Complemento" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Print_Complemento" min="-2" pref="110" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="Print_Estado" min="-2" pref="159" max="-2" attributes="0"/>
+                                                  <Component id="Print_Cidade" min="-2" pref="164" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace min="-2" pref="128" max="-2" attributes="0"/>
@@ -218,22 +230,12 @@
                                       <Component id="Print_Nome" min="-2" pref="358" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jl_Endereco" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="Print_TipoContrato" min="-2" pref="175" max="-2" attributes="0"/>
+                                      <Component id="Print_Endereco" min="-2" pref="462" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jl_Endereco" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="Print_Endereco" max="32767" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jl_Complemento" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="Print_Complemento" min="-2" pref="110" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="122" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -251,26 +253,30 @@
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="Print_Endereco" alignment="0" min="-2" pref="15" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jl_Endereco" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jl_Complemento" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="jl_Endereco" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="Print_Complemento" min="-2" pref="15" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="Print_Complemento" alignment="3" min="-2" pref="15" max="-2" attributes="0"/>
+                              <Component id="jl_Complemento" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="jl_Bairro" alignment="0" max="32767" attributes="0"/>
                           <Component id="Print_Bairro" alignment="0" max="32767" attributes="0"/>
-                          <Component id="Print_Cidade" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="Print_Cidade" alignment="3" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="jl_EstadoCivil" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jl_Estado" alignment="0" max="32767" attributes="0"/>
                           <Component id="Print_EstadoCivil" alignment="0" max="32767" attributes="0"/>
-                          <Component id="Print_Estado" alignment="0" max="32767" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="Print_Estado" alignment="3" max="32767" attributes="0"/>
+                              <Component id="jl_Estado" alignment="3" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -281,12 +287,7 @@
                               <Component id="Print_Telefone" alignment="3" min="-2" pref="15" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="Print_TipoContrato" alignment="3" min="-2" pref="15" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace pref="49" max="32767" attributes="0"/>
+                      <EmptySpace pref="70" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -297,12 +298,12 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="11" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Cidade:"/>
+                <Property name="text" type="java.lang.String" value="Cidade"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jl_Estado">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Estado:"/>
+                <Property name="text" type="java.lang.String" value="Estado"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel9">
@@ -310,63 +311,83 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="11" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="CEP:"/>
+                <Property name="text" type="java.lang.String" value="CEP"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jb_Nome">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Nome:"/>
+                <Property name="text" type="java.lang.String" value="Nome"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jl_Telefone">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Telefone:"/>
+                <Property name="text" type="java.lang.String" value="Telefone"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jl_EstadoCivil">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Estado Civil:"/>
+                <Property name="text" type="java.lang.String" value="Estado Civil"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jl_Endereco">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Endereco:"/>
+                <Property name="text" type="java.lang.String" value="Endereco"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jl_Bairro">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Bairro:"/>
+                <Property name="text" type="java.lang.String" value="Bairro"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jl_Complemento">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Complemento:"/>
+                <Property name="text" type="java.lang.String" value="Complemento"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="Print_Endereco">
-            </Component>
-            <Component class="javax.swing.JLabel" name="Print_Complemento">
-            </Component>
-            <Component class="javax.swing.JLabel" name="Print_Bairro">
-            </Component>
-            <Component class="javax.swing.JLabel" name="Print_Cidade">
-            </Component>
-            <Component class="javax.swing.JLabel" name="Print_Estado">
-            </Component>
-            <Component class="javax.swing.JLabel" name="Print_CEP">
-            </Component>
-            <Component class="javax.swing.JLabel" name="Print_EstadoCivil">
-            </Component>
-            <Component class="javax.swing.JLabel" name="Print_Telefone">
-            </Component>
-            <Component class="javax.swing.JLabel" name="Print_Nome">
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Tipo de Contrato"/>
+                <Property name="text" type="java.lang.String" value=":"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="Print_TipoContrato">
+            <Component class="javax.swing.JLabel" name="Print_Complemento">
+              <Properties>
+                <Property name="text" type="java.lang.String" value=":"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Print_Bairro">
+              <Properties>
+                <Property name="text" type="java.lang.String" value=":"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Print_Cidade">
+              <Properties>
+                <Property name="text" type="java.lang.String" value=":"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Print_Estado">
+              <Properties>
+                <Property name="text" type="java.lang.String" value=":"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Print_CEP">
+              <Properties>
+                <Property name="text" type="java.lang.String" value=":"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Print_EstadoCivil">
+              <Properties>
+                <Property name="text" type="java.lang.String" value=":"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Print_Telefone">
+              <Properties>
+                <Property name="text" type="java.lang.String" value=":"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Print_Nome">
+              <Properties>
+                <Property name="text" type="java.lang.String" value=":"/>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>
@@ -509,6 +530,9 @@
                   <Image iconType="3" name="/Icones/Donate -48.png"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jb_PagamentoDinheiroActionPerformed"/>
+              </Events>
             </Component>
             <Container class="javax.swing.JScrollPane" name="jScrollPane1">
               <AuxValues>
@@ -520,27 +544,15 @@
                 <Component class="javax.swing.JTable" name="jTable1">
                   <Properties>
                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                      <Table columnCount="6" rowCount="0">
+                      <Table columnCount="4" rowCount="0">
                         <Column editable="false" title="Nome do Cliente" type="java.lang.String"/>
                         <Column editable="false" title="Tipo de Imovel" type="java.lang.String"/>
                         <Column editable="false" title="Endere&#xe7;o" type="java.lang.String"/>
-                        <Column editable="false" title="Data do Aluguel" type="java.lang.String"/>
                         <Column editable="false" title="Valor" type="java.lang.Integer"/>
-                        <Column editable="false" title="Descri&#xe7;&#xe3;o imovel" type="java.lang.Object"/>
                       </Table>
                     </Property>
                     <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                       <TableColumnModel selectionModel="0">
-                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
-                          <Title/>
-                          <Editor/>
-                          <Renderer/>
-                        </Column>
-                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
-                          <Title/>
-                          <Editor/>
-                          <Renderer/>
-                        </Column>
                         <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
                           <Title/>
                           <Editor/>

@@ -427,7 +427,7 @@ public class FormVenda extends javax.swing.JFrame {
     
     private void inserirTabela(Cliente cliente)
     {
-        modelo.addRow(new Object[]{tipoVenda.getListaAluguel() || tipoVenda.getListaVenda(),    }     );
+        modelo.addRow(new Object[]{cliente.getCpf()    }     );
     }
     /**
      * @param args the command line arguments
