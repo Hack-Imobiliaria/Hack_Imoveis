@@ -422,7 +422,7 @@
                                               <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <Component id="jbt_Cpf1" min="-2" pref="54" max="-2" attributes="0"/>
+                                      <Component id="Buscar_Imovel" min="-2" pref="54" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
@@ -462,7 +462,7 @@
                                           <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <Component id="jbt_Cpf1" min="-2" pref="37" max="-2" attributes="0"/>
+                                  <Component id="Buscar_Imovel" min="-2" pref="37" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                               <Component id="jScrollPane1" min="-2" pref="132" max="-2" attributes="0"/>
@@ -499,14 +499,14 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jbt_Cpf1">
+            <Component class="javax.swing.JButton" name="Buscar_Imovel">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Icones/Search-Find-48.png"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbt_Cpf1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Buscar_ImovelActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JButton" name="jButton2">
@@ -544,26 +544,14 @@
                 <Component class="javax.swing.JTable" name="jTable1">
                   <Properties>
                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                      <Table columnCount="5" rowCount="0">
-                        <Column editable="false" title="Nome do Cliente" type="java.lang.String"/>
+                      <Table columnCount="3" rowCount="0">
                         <Column editable="false" title="Tipo de Imovel" type="java.lang.String"/>
                         <Column editable="false" title="Endere&#xe7;o" type="java.lang.String"/>
                         <Column editable="false" title="Valor" type="java.lang.Integer"/>
-                        <Column editable="false" title="Data do aluguel" type="java.lang.String"/>
                       </Table>
                     </Property>
                     <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                       <TableColumnModel selectionModel="0">
-                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
-                          <Title/>
-                          <Editor/>
-                          <Renderer/>
-                        </Column>
-                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
-                          <Title/>
-                          <Editor/>
-                          <Renderer/>
-                        </Column>
                         <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
                           <Title/>
                           <Editor/>

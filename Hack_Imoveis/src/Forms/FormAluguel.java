@@ -64,7 +64,7 @@ public class FormAluguel extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jftf_Imovel = new javax.swing.JFormattedTextField();
-        jbt_Cpf1 = new javax.swing.JButton();
+        Buscar_Imovel = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jb_CompraCartao = new javax.swing.JButton();
         jb_PagamentoDinheiro = new javax.swing.JButton();
@@ -243,10 +243,10 @@ public class FormAluguel extends javax.swing.JFrame {
             ex.printStackTrace();
         }
 
-        jbt_Cpf1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Search-Find-48.png"))); // NOI18N
-        jbt_Cpf1.addActionListener(new java.awt.event.ActionListener() {
+        Buscar_Imovel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Search-Find-48.png"))); // NOI18N
+        Buscar_Imovel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbt_Cpf1ActionPerformed(evt);
+                Buscar_ImovelActionPerformed(evt);
             }
         });
 
@@ -267,14 +267,14 @@ public class FormAluguel extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Nome do Cliente", "Tipo de Imovel", "Endereço", "Valor", "Data do aluguel"
+                "Tipo de Imovel", "Endereço", "Valor"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class
+                java.lang.String.class, java.lang.String.class, java.lang.Integer.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false
+                false, false, false
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -291,8 +291,6 @@ public class FormAluguel extends javax.swing.JFrame {
             jTable1.getColumnModel().getColumn(0).setResizable(false);
             jTable1.getColumnModel().getColumn(1).setResizable(false);
             jTable1.getColumnModel().getColumn(2).setResizable(false);
-            jTable1.getColumnModel().getColumn(3).setResizable(false);
-            jTable1.getColumnModel().getColumn(4).setResizable(false);
         }
 
         jExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Logout-48.png"))); // NOI18N
@@ -325,7 +323,7 @@ public class FormAluguel extends javax.swing.JFrame {
                                         .addContainerGap()
                                         .addComponent(jLabel3)
                                         .addGap(69, 69, 69)))
-                                .addComponent(jbt_Cpf1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(Buscar_Imovel, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addContainerGap()
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 900, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -355,7 +353,7 @@ public class FormAluguel extends javax.swing.JFrame {
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jftf_Imovel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel4)))
-                            .addComponent(jbt_Cpf1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Buscar_Imovel, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(21, 21, 21)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -478,9 +476,15 @@ public class FormAluguel extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jbt_CpfActionPerformed
 
-    private void jbt_Cpf1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbt_Cpf1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jbt_Cpf1ActionPerformed
+    private void Buscar_ImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Buscar_ImovelActionPerformed
+        
+        int numero_imovel= Integer.parseInt(jftf_Imovel.getText());
+        Imovel imovel = FormPrincipal.daoImovel.buscarImovel(numero_imovel);
+        System.out.println(imovel);
+        
+        
+        
+    }//GEN-LAST:event_Buscar_ImovelActionPerformed
 
     private void jb_PagamentoDinheiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_PagamentoDinheiroActionPerformed
         // TODO add your handling code here:
@@ -527,6 +531,7 @@ public class FormAluguel extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Buscar_Imovel;
     private javax.swing.JLabel Print_Bairro;
     private javax.swing.JLabel Print_CEP;
     private javax.swing.JLabel Print_Cidade;
@@ -554,7 +559,6 @@ public class FormAluguel extends javax.swing.JFrame {
     private javax.swing.JLabel jb_Nome;
     private javax.swing.JButton jb_PagamentoDinheiro;
     private javax.swing.JButton jbt_Cpf;
-    private javax.swing.JButton jbt_Cpf1;
     private javax.swing.JFormattedTextField jftf_CPF;
     private javax.swing.JFormattedTextField jftf_Imovel;
     private javax.swing.JLabel jl_Bairro;
