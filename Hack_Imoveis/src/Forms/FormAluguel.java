@@ -5,10 +5,12 @@
  */
 package Forms;
 
+import Model.Aluguel;
 import Model.Cliente;
 import Model.Venda;
 import Model.Imovel;
 import java.text.SimpleDateFormat;
+import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -69,7 +71,7 @@ public class FormAluguel extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jb_PagamentoDinheiro = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jTabela_Imovel = new javax.swing.JTable();
         jExit = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -265,7 +267,7 @@ public class FormAluguel extends javax.swing.JFrame {
             }
         });
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jTabela_Imovel.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -288,12 +290,12 @@ public class FormAluguel extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jTable1.getTableHeader().setReorderingAllowed(false);
-        jScrollPane1.setViewportView(jTable1);
-        if (jTable1.getColumnModel().getColumnCount() > 0) {
-            jTable1.getColumnModel().getColumn(0).setResizable(false);
-            jTable1.getColumnModel().getColumn(1).setResizable(false);
-            jTable1.getColumnModel().getColumn(2).setResizable(false);
+        jTabela_Imovel.getTableHeader().setReorderingAllowed(false);
+        jScrollPane1.setViewportView(jTabela_Imovel);
+        if (jTabela_Imovel.getColumnModel().getColumnCount() > 0) {
+            jTabela_Imovel.getColumnModel().getColumn(0).setResizable(false);
+            jTabela_Imovel.getColumnModel().getColumn(1).setResizable(false);
+            jTabela_Imovel.getColumnModel().getColumn(2).setResizable(false);
         }
 
         jExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Logout-48.png"))); // NOI18N
@@ -480,7 +482,7 @@ public class FormAluguel extends javax.swing.JFrame {
     private void Buscar_ImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Buscar_ImovelActionPerformed
         
         int numero_imovel = Integer.parseInt(jftf_Imovel.getText());
-        DefaultTableModel modelo = (DefaultTableModel) jTable1.getModel();
+        DefaultTableModel modelo = (DefaultTableModel) jTabela_Imovel.getModel();
         Imovel imovel = FormPrincipal.daoImovel.buscarImovel(numero_imovel);
         System.out.println(imovel);
         Object[] dados = {imovel.getNome(),imovel.getTipoDoImovel(),imovel.getAndar()};
@@ -492,7 +494,31 @@ public class FormAluguel extends javax.swing.JFrame {
     }//GEN-LAST:event_Buscar_ImovelActionPerformed
 
     private void jb_PagamentoDinheiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_PagamentoDinheiroActionPerformed
+            
+            System.out.println(jftf_CPF.getText());
         
+            Aluguel aluguel = new Aluguel();
+            int indiceLinha =  jTabela_Imovel.getSelectedRow();
+            //aluguel.getClineteAlu().setCpf(jftf_CPF.getText());    
+            //aluguel.getClineteAlu().setNome(Print_Nome.getText());
+            //aluguel.getClineteAlu().setTelefone(Print_Telefone.getText());
+            //aluguel.getClineteAlu().setEstadoCivil(Print_EstadoCivil.getText());
+            
+            aluguel.getEnderecoCli().setLogradouro(Print_Endereco.getText());
+            aluguel.getEnderecoCli().setBairro(Print_Bairro.getText());
+            aluguel.getEnderecoCli().setComplemento(Print_Complemento.getText());
+            aluguel.getEnderecoCli().setCidade(Print_Cidade.getText());
+            aluguel.getEnderecoCli().setCep(Print_CEP.getText());
+            aluguel.getEnderecoCli().setEstado(Print_Estado.getText());
+            
+            aluguel.getImovel().setNome((String) jTabela_Imovel.getValueAt(indiceLinha, 1));
+            aluguel.getImovel().setTipoDoImovel((String) jTabela_Imovel.getValueAt(indiceLinha, 2));
+            aluguel.setValorAlugel((float) jTabela_Imovel.getValueAt(indiceLinha, 3));
+            FormPrincipal.daoAluguel.inserirAluguel(aluguel);
+            JOptionPane.showMessageDialog(null, "Aluguel registrado com sucesso!");
+            //this.limpar();
+            List<Aluguel> alu = FormPrincipal.daoAluguel.todosAluguels();
+            System.out.println(alu);
     }//GEN-LAST:event_jb_PagamentoDinheiroActionPerformed
 
     private void jftf_ImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jftf_ImovelActionPerformed
@@ -559,7 +585,7 @@ public class FormAluguel extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTabela_Imovel;
     private javax.swing.JLabel jb_Nome;
     private javax.swing.JButton jb_PagamentoDinheiro;
     private javax.swing.JButton jbt_Cpf;
