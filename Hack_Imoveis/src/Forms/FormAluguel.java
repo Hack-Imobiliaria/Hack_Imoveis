@@ -487,7 +487,9 @@ public class FormAluguel extends javax.swing.JFrame {
     private void Buscar_ImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Buscar_ImovelActionPerformed
         
         int numero_imovel = Integer.parseInt(jftf_Imovel.getText());
-         DefaultTableModel modelo = (DefaultTableModel) jTable1.getModel();
+        
+        DefaultTableModel modelo = (DefaultTableModel) jTable1.getModel();
+         
         Imovel imovel = FormPrincipal.daoImovel.buscarImovel(numero_imovel);
         System.out.println(imovel);
         Object[] dados = {imovel.getNome(),imovel.getNumeroImovel(),imovel.getAndar()};

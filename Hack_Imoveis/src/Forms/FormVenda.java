@@ -9,7 +9,9 @@ import Model.Cliente;
 import Model.Imovel;
 import Model.Venda;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -69,6 +71,9 @@ public class FormVenda extends javax.swing.JFrame {
         jb_CompraCartao = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jb_Cancelar = new javax.swing.JButton();
+        Buscar_Imovel = new javax.swing.JButton();
+        jftf_Imovel = new javax.swing.JFormattedTextField();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Venda");
@@ -328,6 +333,26 @@ public class FormVenda extends javax.swing.JFrame {
                 .addGap(49, 49, 49))
         );
 
+        Buscar_Imovel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Search-Find-48.png"))); // NOI18N
+        Buscar_Imovel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Buscar_ImovelActionPerformed(evt);
+            }
+        });
+
+        try {
+            jftf_Imovel.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("####")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        jftf_Imovel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jftf_ImovelActionPerformed(evt);
+            }
+        });
+
+        jLabel5.setText("Numero do Imovel");
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -340,26 +365,42 @@ public class FormVenda extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(12, 12, 12)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 997, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(25, 47, Short.MAX_VALUE))
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(199, 199, 199)
                 .addComponent(jb_Sair, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(316, 316, 316)
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jftf_Imovel, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Buscar_Imovel, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(12, 12, 12)
                 .addComponent(jLabel9)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jftf_Imovel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5))
+                        .addGap(9, 9, 9))
+                    .addComponent(Buscar_Imovel, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                    .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(12, 12, 12)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, Short.MAX_VALUE)
                         .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                    .addGroup(jPanel3Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jb_Sair))))
         );
@@ -413,10 +454,28 @@ public class FormVenda extends javax.swing.JFrame {
                 Print_NCartao1.setText(cliente.getCartaoCli().getNumeroCartao());
                 Print_NomeTitular.setText(cliente.getCartaoCli().getNomeTitular());
                 Print_DataValidade.setText(cliente.getCartaoCli().getDataValidade());
+                
+                
             }
             else
                 JOptionPane.showMessageDialog(null, "Cliente não encontrado!");
     }//GEN-LAST:event_jbt_CpfActionPerformed
+
+    private void Buscar_ImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Buscar_ImovelActionPerformed
+        int numeroImovel = Integer.parseInt(jftf_Imovel.getText());
+        
+       List<Imovel> ven = new ArrayList<Imovel>();
+       ven = FormPrincipal.daoImovel.todosImovels();
+        for(Imovel imovel: ven)
+        {
+            inserirTabela(imovel);
+        }
+
+    }//GEN-LAST:event_Buscar_ImovelActionPerformed
+
+    private void jftf_ImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jftf_ImovelActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jftf_ImovelActionPerformed
 
     private void limpar()
     {       
@@ -471,6 +530,7 @@ public class FormVenda extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Buscar_Imovel;
     private javax.swing.JLabel Print_DataValidade;
     private javax.swing.JLabel Print_Email;
     private javax.swing.JLabel Print_Endereco;
@@ -483,6 +543,7 @@ public class FormVenda extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
@@ -497,6 +558,7 @@ public class FormVenda extends javax.swing.JFrame {
     private javax.swing.JButton jb_Sair;
     private javax.swing.JButton jbt_Cpf;
     private javax.swing.JFormattedTextField jftf_CPF;
+    private javax.swing.JFormattedTextField jftf_Imovel;
     private javax.swing.JLabel jl_CPF;
     private javax.swing.JLabel jl_Email;
     private javax.swing.JLabel jl_Endereco;
