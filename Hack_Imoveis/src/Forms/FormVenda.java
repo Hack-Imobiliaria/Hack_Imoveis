@@ -24,7 +24,7 @@ import javax.swing.table.DefaultTableModel;
 public class FormVenda extends javax.swing.JFrame {
 
     DefaultTableModel modelo = null;
-    Venda tipoVenda = new Venda();
+    Venda venda = new Venda();
     
     public FormVenda() {
         initComponents();
@@ -68,7 +68,6 @@ public class FormVenda extends javax.swing.JFrame {
         jb_Sair = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jb_PagamentoDinheiro = new javax.swing.JButton();
-        jb_CompraCartao = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jb_Cancelar = new javax.swing.JButton();
         Buscar_Imovel = new javax.swing.JButton();
@@ -290,8 +289,11 @@ public class FormVenda extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
 
         jb_PagamentoDinheiro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Donate -48.png"))); // NOI18N
-
-        jb_CompraCartao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Debit-Card-48.png"))); // NOI18N
+        jb_PagamentoDinheiro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_PagamentoDinheiroActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Finalizar Compra");
 
@@ -307,28 +309,26 @@ public class FormVenda extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jb_PagamentoDinheiro, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(80, 80, 80)
-                .addComponent(jb_Cancelar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
-                .addComponent(jb_CompraCartao)
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(186, 186, 186))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jb_PagamentoDinheiro, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(80, 80, 80)
+                        .addComponent(jb_Cancelar))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(89, 89, 89)
+                        .addComponent(jLabel1)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jb_PagamentoDinheiro, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jb_CompraCartao)
                     .addComponent(jb_Cancelar))
                 .addGap(49, 49, 49))
         );
@@ -369,7 +369,7 @@ public class FormVenda extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(199, 199, 199)
+                .addGap(360, 360, 360)
                 .addComponent(jb_Sair, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(316, 316, 316)
@@ -477,12 +477,24 @@ public class FormVenda extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jftf_ImovelActionPerformed
 
+    private void jb_PagamentoDinheiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_PagamentoDinheiroActionPerformed
+        // TODO add your handling code here:
+        
+        FormPrincipal.daoVenda.inserirVenda(venda);
+        JOptionPane.showMessageDialog(null, "Venda realizada com sucesso!!!");
+        
+    }//GEN-LAST:event_jb_PagamentoDinheiroActionPerformed
+
     private void limpar()
     {       
        Print_Endereco.setText("");
        Print_Nome.setText("");
        Print_Email.setText("");
        Print_Telefone.setText("");
+       Print_NomeTitular.setText("");
+       Print_NCartao1.setText("");
+       Print_DataValidade.setText("");
+       limparTabela();
     }
     
     private void inserirTabela(Imovel imovel)
@@ -499,6 +511,14 @@ public class FormVenda extends javax.swing.JFrame {
         System.out.println(dados[0]);
         modelo.addRow(dados);
         
+    }
+    
+    private void limparTabela()
+    {
+        for(int i = jTable1.getRowCount() -1; i >= 0; i--)
+        {
+            modelo.removeRow(i);
+        }
     }
     /**
      * @param args the command line arguments
@@ -560,7 +580,6 @@ public class FormVenda extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JButton jb_Cancelar;
-    private javax.swing.JButton jb_CompraCartao;
     private javax.swing.JButton jb_PagamentoDinheiro;
     private javax.swing.JButton jb_Sair;
     private javax.swing.JButton jbt_Cpf;
