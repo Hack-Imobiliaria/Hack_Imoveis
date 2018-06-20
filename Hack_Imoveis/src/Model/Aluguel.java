@@ -19,8 +19,11 @@ public class Aluguel {
     //private Endereco endereco; // objeto endereco 
     private List<Cliente> alugeulCliente; // lista de cliente que aluga imoveil
     private Imovel imovel;
+    private Cliente clienteAlu;
+    private Endereco enderecoAlu;
     private float valorAlugel;
     private float diasAlugados;
+    
 
 //metodo da class aluguem 
     public void calcularValorAlugel()
@@ -61,6 +64,20 @@ public class Aluguel {
     }
      public int getNumero() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+     public Endereco getEnderecoCli() {
+        return enderecoAlu;
+    }
+
+    public void setEnderecoAlu(Endereco enderecoCli) {
+        this.enderecoAlu = enderecoCli;
+    }
+    public Cliente getClineteAlu() {
+        return clienteAlu;
+    }
+
+    public void setClienteAlu(Cliente clienteAlu) {
+        this.clienteAlu = clienteAlu;
     }
 
 

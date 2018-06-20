@@ -19,7 +19,7 @@ public class AluguelDAO {
     public AluguelDAO() {
         lista = new ArrayList<Aluguel>();
     }
-    public void inserirVenda(Aluguel aluguel)
+    public void inserirAluguel(Aluguel aluguel)
     {
         lista.add(aluguel);
     }
