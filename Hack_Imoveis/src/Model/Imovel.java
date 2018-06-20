@@ -32,10 +32,11 @@ public class Imovel {
     private String elevador;
     private String tipoContrato;
 
-    public Imovel(Endereco endereco, float valorImovel, String nome, String sala, String quartos, String cozinha, String banheiro, String garagem, String porao, String terraco, String quital, String jardim, String picina, String quadraEsporte, String areaServico, String andar, String varanda, String escada, String elevador, String tipoContrato) {
+    public Imovel(Endereco endereco, float valorImovel, String nome, int numeroImovel, String sala, String quartos, String cozinha, String banheiro, String garagem, String porao, String terraco, String quital, String jardim, String picina, String quadraEsporte, String areaServico, String andar, String varanda, String escada, String elevador, String tipoContrato) {
         this.endereco = endereco;
         this.valorImovel = valorImovel;
         this.nome = nome;
+        this.numeroImovel = numeroImovel;
         this.sala = sala;
         this.quartos = quartos;
         this.cozinha = cozinha;
@@ -66,6 +67,7 @@ public class Imovel {
         str = str + "\n:endereço -->"+endereco;
         str = str + "\n:Valor do Imovel -->"+valorImovel;
         str = str + "\n:Nome -->"+nome;
+        str = str + "\n:Numero -->"+numeroImovel;
         str = str + "\n:Quantidade de Salas -->"+sala;
         str = str + "\n:Quantidade de Quartos -->"+quartos;
         str = str + "\n:Quantidade de Cozinhas -->"+cozinha;

@@ -51,6 +51,8 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jtf_Endereco = new javax.swing.JTextField();
         jl_Endereco = new javax.swing.JLabel();
         jtf_NomeImov = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jftf_Imovel = new javax.swing.JFormattedTextField();
         jPanel_Casa = new javax.swing.JPanel();
         jl_quarto = new javax.swing.JLabel();
         jl_Sala = new javax.swing.JLabel();
@@ -157,6 +159,19 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
 
         jl_Endereco.setText("Endereco:");
 
+        jLabel5.setText("Numero do Imovel");
+
+        try {
+            jftf_Imovel.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("####")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        jftf_Imovel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jftf_ImovelActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel_EnderecoLayout = new javax.swing.GroupLayout(jPanel_Endereco);
         jPanel_Endereco.setLayout(jPanel_EnderecoLayout);
         jPanel_EnderecoLayout.setHorizontalGroup(
@@ -171,8 +186,13 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                         .addGap(26, 26, 26)
                         .addGroup(jPanel_EnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jtf_Bairro, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jtf_Complemento, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel_EnderecoLayout.createSequentialGroup()
+                                .addComponent(jtf_Complemento, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jftf_Imovel, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap())
                     .addGroup(jPanel_EnderecoLayout.createSequentialGroup()
                         .addGroup(jPanel_EnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
@@ -184,7 +204,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                         .addGap(46, 46, 46))
                     .addGroup(jPanel_EnderecoLayout.createSequentialGroup()
                         .addComponent(jLabel7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
                         .addComponent(jtf_Cidade, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(97, 97, 97)
                         .addComponent(jLabel9)
@@ -212,10 +232,12 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                 .addGroup(jPanel_EnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jl_Bairro)
                     .addComponent(jtf_Bairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
                 .addGroup(jPanel_EnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jl_Complemento)
-                    .addComponent(jtf_Complemento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jtf_Complemento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jftf_Imovel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5))
                 .addGap(55, 55, 55)
                 .addGroup(jPanel_EnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
@@ -674,7 +696,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                 .addComponent(jbt_Apar, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(123, 123, 123)
                 .addComponent(jExit, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(64, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -722,7 +744,8 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         imovel.getEndereco().setComplemento(jtf_Complemento.getText());
         imovel.getEndereco().setCidade(jtf_Cidade.getText());
         imovel.getEndereco().setCep(jtf_Cep.getText());
-        imovel.getEndereco().setEstado(jcb_estado.getSelectedItem().toString());
+        imovel.getEndereco().setEstado(jcb_estado.getSelectedItem().toString()); 
+        imovel.getEndereco().setNumero(Integer.parseInt(jftf_Imovel.getText()));
         //casa
             imovel.setSala(jftf_Sala.getText());
             imovel.setQuartos(jftf_Quarto.getText());
@@ -736,6 +759,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
             imovel.setPicina(jftf_Picina.getText());
             imovel.setQuadraEsporte(jftf_Quadra.getText());
             imovel.setAreaServico(jftf_AreaSer.getText());
+            imovel.setNumeroImovel(Integer.parseInt(jftf_Imovel.getText()));
         
        // tipo do contrato
         imovel.setTipoContrato(bntGru_TipoContrato.getSelection().getActionCommand());
@@ -803,6 +827,10 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
           }
     }//GEN-LAST:event_jcb_ApartamentoActionPerformed
 
+    private void jftf_ImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jftf_ImovelActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jftf_ImovelActionPerformed
+
        public void cadastrarImoveis()
        {
            Imovel imovel = null;
@@ -861,6 +889,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
@@ -878,6 +907,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField jftf_Banheiro;
     private javax.swing.JFormattedTextField jftf_Cozinha;
     private javax.swing.JFormattedTextField jftf_Garagem;
+    private javax.swing.JFormattedTextField jftf_Imovel;
     private javax.swing.JFormattedTextField jftf_Jardim;
     private javax.swing.JFormattedTextField jftf_Picina;
     private javax.swing.JFormattedTextField jftf_Porão;
