@@ -9,7 +9,9 @@ import Model.Cliente;
 import Model.Imovel;
 import Model.Venda;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -22,7 +24,7 @@ import javax.swing.table.DefaultTableModel;
 public class FormVenda extends javax.swing.JFrame {
 
     DefaultTableModel modelo = null;
-    Venda tipoVenda = new Venda();
+    Venda venda = new Venda();
     
     public FormVenda() {
         initComponents();
@@ -66,9 +68,11 @@ public class FormVenda extends javax.swing.JFrame {
         jb_Sair = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jb_PagamentoDinheiro = new javax.swing.JButton();
-        jb_CompraCartao = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jb_Cancelar = new javax.swing.JButton();
+        Buscar_Imovel = new javax.swing.JButton();
+        jftf_Imovel = new javax.swing.JFormattedTextField();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Venda");
@@ -254,7 +258,7 @@ public class FormVenda extends javax.swing.JFrame {
                 java.lang.String.class, java.lang.String.class, java.lang.Integer.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false
+                false, false, true
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -285,8 +289,11 @@ public class FormVenda extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
 
         jb_PagamentoDinheiro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Donate -48.png"))); // NOI18N
-
-        jb_CompraCartao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Debit-Card-48.png"))); // NOI18N
+        jb_PagamentoDinheiro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_PagamentoDinheiroActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Finalizar Compra");
 
@@ -302,31 +309,49 @@ public class FormVenda extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jb_PagamentoDinheiro, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(80, 80, 80)
-                .addComponent(jb_Cancelar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
-                .addComponent(jb_CompraCartao)
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(186, 186, 186))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jb_PagamentoDinheiro, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(80, 80, 80)
+                        .addComponent(jb_Cancelar))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(89, 89, 89)
+                        .addComponent(jLabel1)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jb_PagamentoDinheiro, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jb_CompraCartao)
                     .addComponent(jb_Cancelar))
                 .addGap(49, 49, 49))
         );
+
+        Buscar_Imovel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Search-Find-48.png"))); // NOI18N
+        Buscar_Imovel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Buscar_ImovelActionPerformed(evt);
+            }
+        });
+
+        try {
+            jftf_Imovel.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("####")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        jftf_Imovel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jftf_ImovelActionPerformed(evt);
+            }
+        });
+
+        jLabel5.setText("Numero do Imovel");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -340,26 +365,42 @@ public class FormVenda extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(12, 12, 12)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 997, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(25, 47, Short.MAX_VALUE))
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(199, 199, 199)
+                .addGap(360, 360, 360)
                 .addComponent(jb_Sair, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(316, 316, 316)
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jftf_Imovel, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Buscar_Imovel, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(12, 12, 12)
                 .addComponent(jLabel9)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jftf_Imovel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5))
+                        .addGap(9, 9, 9))
+                    .addComponent(Buscar_Imovel, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                    .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(12, 12, 12)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, Short.MAX_VALUE)
                         .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                    .addGroup(jPanel3Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jb_Sair))))
         );
@@ -413,10 +454,36 @@ public class FormVenda extends javax.swing.JFrame {
                 Print_NCartao1.setText(cliente.getCartaoCli().getNumeroCartao());
                 Print_NomeTitular.setText(cliente.getCartaoCli().getNomeTitular());
                 Print_DataValidade.setText(cliente.getCartaoCli().getDataValidade());
+                
+                
             }
             else
                 JOptionPane.showMessageDialog(null, "Cliente não encontrado!");
     }//GEN-LAST:event_jbt_CpfActionPerformed
+
+    private void Buscar_ImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Buscar_ImovelActionPerformed
+        int numeroImovel = Integer.parseInt(jftf_Imovel.getText());
+        
+       List<Imovel> ven = new ArrayList<Imovel>();
+       ven = FormPrincipal.daoImovel.todosImovels();
+        for(Imovel imovel: ven)
+        {
+            inserirTabela(imovel);
+        }
+
+    }//GEN-LAST:event_Buscar_ImovelActionPerformed
+
+    private void jftf_ImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jftf_ImovelActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jftf_ImovelActionPerformed
+
+    private void jb_PagamentoDinheiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_PagamentoDinheiroActionPerformed
+        // TODO add your handling code here:
+        
+        FormPrincipal.daoVenda.inserirVenda(venda);
+        JOptionPane.showMessageDialog(null, "Venda realizada com sucesso!!!");
+        
+    }//GEN-LAST:event_jb_PagamentoDinheiroActionPerformed
 
     private void limpar()
     {       
@@ -424,6 +491,10 @@ public class FormVenda extends javax.swing.JFrame {
        Print_Nome.setText("");
        Print_Email.setText("");
        Print_Telefone.setText("");
+       Print_NomeTitular.setText("");
+       Print_NCartao1.setText("");
+       Print_DataValidade.setText("");
+       limparTabela();
     }
     
     private void inserirTabela(Imovel imovel)
@@ -432,7 +503,22 @@ public class FormVenda extends javax.swing.JFrame {
         SimpleDateFormat formatarData = new SimpleDateFormat("dd/MM/yyyy");
         formatarData.format(data);
         
-        modelo.addRow(new Object[]{imovel.getEndereco().getLogradouro(),data,imovel.getValorImovel()}     );
+        int numero_imovel = Integer.parseInt(jftf_Imovel.getText());
+        DefaultTableModel modelo = (DefaultTableModel) jTable1.getModel();
+        //Imovel imovel = FormPrincipal.daoImovel.buscarImovel(numero_imovel);
+        System.out.println(imovel);
+        Object[] dados = {imovel.getEndereco().getLogradouro(),data,imovel.getValorImovel()};
+        System.out.println(dados[0]);
+        modelo.addRow(dados);
+        
+    }
+    
+    private void limparTabela()
+    {
+        for(int i = jTable1.getRowCount() -1; i >= 0; i--)
+        {
+            modelo.removeRow(i);
+        }
     }
     /**
      * @param args the command line arguments
@@ -471,6 +557,7 @@ public class FormVenda extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Buscar_Imovel;
     private javax.swing.JLabel Print_DataValidade;
     private javax.swing.JLabel Print_Email;
     private javax.swing.JLabel Print_Endereco;
@@ -483,6 +570,7 @@ public class FormVenda extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
@@ -492,11 +580,11 @@ public class FormVenda extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JButton jb_Cancelar;
-    private javax.swing.JButton jb_CompraCartao;
     private javax.swing.JButton jb_PagamentoDinheiro;
     private javax.swing.JButton jb_Sair;
     private javax.swing.JButton jbt_Cpf;
     private javax.swing.JFormattedTextField jftf_CPF;
+    private javax.swing.JFormattedTextField jftf_Imovel;
     private javax.swing.JLabel jl_CPF;
     private javax.swing.JLabel jl_Email;
     private javax.swing.JLabel jl_Endereco;
