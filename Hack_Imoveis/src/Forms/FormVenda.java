@@ -451,9 +451,6 @@ public class FormVenda extends javax.swing.JFrame {
                 Print_Nome.setText(cliente.getNome());
                 Print_Email.setText(cliente.getEmail());
                 Print_Telefone.setText(cliente.getTelefone());
-                Print_NCartao1.setText(cliente.getCartaoCli().getNumeroCartao());
-                Print_NomeTitular.setText(cliente.getCartaoCli().getNomeTitular());
-                Print_DataValidade.setText(cliente.getCartaoCli().getDataValidade());
                 
                 
             }
