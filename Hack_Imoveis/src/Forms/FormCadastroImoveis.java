@@ -55,6 +55,9 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         jtf_NomeImov = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jftf_Imovel = new javax.swing.JFormattedTextField();
+        jbt_BuscarImovel = new javax.swing.JButton();
+        jl_BucarNImovel = new javax.swing.JLabel();
+        jftf_BuscaImovel = new javax.swing.JFormattedTextField();
         jPanel_Casa = new javax.swing.JPanel();
         jl_quarto = new javax.swing.JLabel();
         jl_Sala = new javax.swing.JLabel();
@@ -173,6 +176,26 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
             }
         });
 
+        jbt_BuscarImovel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/Search-Find-48.png"))); // NOI18N
+        jbt_BuscarImovel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbt_BuscarImovelActionPerformed(evt);
+            }
+        });
+
+        jl_BucarNImovel.setText("Buscar numero do Imovel");
+
+        try {
+            jftf_BuscaImovel.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("####")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        jftf_BuscaImovel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jftf_BuscaImovelActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel_EnderecoLayout = new javax.swing.GroupLayout(jPanel_Endereco);
         jPanel_Endereco.setLayout(jPanel_EnderecoLayout);
         jPanel_EnderecoLayout.setHorizontalGroup(
@@ -216,7 +239,13 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                         .addComponent(jl_Estado)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jcb_estado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel_EnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jl_BucarNImovel, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jftf_BuscaImovel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jbt_BuscarImovel, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(34, 34, 34))))
         );
         jPanel_EnderecoLayout.setVerticalGroup(
             jPanel_EnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -233,7 +262,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                 .addGroup(jPanel_EnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jl_Bairro)
                     .addComponent(jtf_Bairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                 .addGroup(jPanel_EnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jl_Complemento)
                     .addComponent(jtf_Complemento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -245,11 +274,20 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
                     .addComponent(jtf_Cep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jtf_Cidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9))
-                .addGap(39, 39, 39)
-                .addGroup(jPanel_EnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jl_Estado)
-                    .addComponent(jcb_estado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(76, 76, 76))
+                .addGroup(jPanel_EnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel_EnderecoLayout.createSequentialGroup()
+                        .addGap(39, 39, 39)
+                        .addGroup(jPanel_EnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel_EnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jl_Estado)
+                                .addComponent(jcb_estado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jbt_BuscarImovel, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel_EnderecoLayout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addComponent(jl_BucarNImovel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jftf_BuscaImovel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(63, 63, 63))
         );
 
         jTabbedPane1.addTab("Endereço", jPanel_Endereco);
@@ -819,18 +857,41 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jftf_ImovelActionPerformed
 
-       public void cadastrarImoveis()
-       {
-           Imovel imovel = null;
-           for(int i=1; i<10; i++)
-           {
-               imovel = new Imovel();
-               imovel.setNumeroImovel(1000+i);
-               imovel.setNome("fulando"+i);
-               
-           }
-               
-       }
+    private void jftf_BuscaImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jftf_BuscaImovelActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jftf_BuscaImovelActionPerformed
+
+    private void jbt_BuscarImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbt_BuscarImovelActionPerformed
+        // TODO add your handling code here:
+        int nImovel = Integer.parseInt(jftf_Imovel.getText());
+        imovel = FormPrincipal.daoImovel.buscarImovel(nImovel);
+        if(imovel !=null)
+        {
+            jtf_NomeImov.setText(imovel.getNome());
+            jtf_Endereco.setText(imovel.getEndereco().getLogradouro());
+            jtf_Bairro.setText(imovel.getEndereco().getBairro());
+            jtf_Complemento.setText(imovel.getEndereco().getComplemento());            
+            jtf_Cidade.setText(imovel.getEndereco().getCidade());
+            jtf_Cep.setText(imovel.getEndereco().getCep());
+
+            jftf_Sala.setText(imovel.getSala());
+            jftf_Quarto.setText(imovel.getQuartos());
+            jftf_Cozinha.setText(imovel.getCozinha());
+            jftf_Terraço.setText(imovel.getTerraco());
+            jftf_Quintal.setText(imovel.getQuital());
+            jftf_Jardim.setText(imovel.getJardim());
+            jftf_Picina.setText(imovel.getPicina());
+            jftf_Andar.setText(imovel.getAndar());
+            jftf_VarandaPre.setText(imovel.getVaranda());
+            jftf_Garagem.setText(imovel.getGaragem());
+            jftf_Quadra.setText(imovel.getQuadraEsporte());
+            jftf_Porão.setText(imovel.getPorao());
+            jftf_AreaSer.setText(imovel.getAreaServico());
+        }
+        
+    }//GEN-LAST:event_jbt_BuscarImovelActionPerformed
+
+      
     /**
      * @param args the command line arguments
      */
@@ -888,12 +949,14 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel_Casa;
     private javax.swing.JPanel jPanel_Endereco;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JButton jbt_BuscarImovel;
     private javax.swing.JCheckBox jcb_Apartamento;
     private javax.swing.JCheckBox jcb_casa;
     private javax.swing.JComboBox<String> jcb_estado;
     private javax.swing.JFormattedTextField jftf_Andar;
     private javax.swing.JFormattedTextField jftf_AreaSer;
     private javax.swing.JFormattedTextField jftf_Banheiro;
+    private javax.swing.JFormattedTextField jftf_BuscaImovel;
     private javax.swing.JFormattedTextField jftf_Cozinha;
     private javax.swing.JFormattedTextField jftf_Garagem;
     private javax.swing.JFormattedTextField jftf_Imovel;
@@ -909,6 +972,7 @@ public class FormCadastroImoveis extends javax.swing.JFrame {
     private javax.swing.JLabel jl_Andares;
     private javax.swing.JLabel jl_AreaServi;
     private javax.swing.JLabel jl_Bairro;
+    private javax.swing.JLabel jl_BucarNImovel;
     private javax.swing.JLabel jl_Complemento;
     private javax.swing.JLabel jl_Cozinha;
     private javax.swing.JLabel jl_Elevador;

@@ -25,8 +25,13 @@ public class FormVenda extends javax.swing.JFrame {
 
     DefaultTableModel modelo = null;
     Venda venda = new Venda();
-    private String cpf ;
+    
+   
     Cliente cliente = new Cliente();
+    private String cpf ;
+   
+    Imovel numeroVenda = new Imovel();
+    private int numeroImovel;
     
     public FormVenda() {
         initComponents();
@@ -399,7 +404,7 @@ public class FormVenda extends javax.swing.JFrame {
 
     private void jbt_CpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbt_CpfActionPerformed
             cpf = jftf_CPF.getText();
-            Cliente cliente = FormPrincipal.daoCliente.buscarCliente(cpf);
+            cliente = FormPrincipal.daoCliente.buscarCliente(cpf);
             if (cliente != null)
             {
                 Print_Endereco.setText(cliente.getEnderecoCli().getLogradouro());
@@ -407,18 +412,25 @@ public class FormVenda extends javax.swing.JFrame {
                 Print_Email.setText(cliente.getEmail());
                 Print_Telefone.setText(cliente.getTelefone());
                 
-                
+             JOptionPane.showMessageDialog(null, "Cliente encontrado!");   
             }
             else
                 JOptionPane.showMessageDialog(null, "Cliente não encontrado!");
+            System.out.println("\n #####################"+cliente);
     }//GEN-LAST:event_jbt_CpfActionPerformed
 
     private void Buscar_ImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Buscar_ImovelActionPerformed
-        int numeroImovel = Integer.parseInt(jftf_Imovel.getText());
-       
-        Imovel numeroVenda = FormPrincipal.daoImovel.buscarImovel(numeroImovel);
-        System.out.println(numeroVenda);
-        inserirTabela(numeroVenda);
+        
+        
+       if(jftf_Imovel.getText().trim().length() != 0){
+           numeroImovel = Integer.parseInt(jftf_Imovel.getText());
+             numeroVenda = FormPrincipal.daoImovel.buscarImovel(numeroImovel);
+            inserirTabela(numeroVenda);// numeroVenda é meu Imovel
+            JOptionPane.showMessageDialog(null,"Imovel encontrador");
+       }else
+       {
+           JOptionPane.showMessageDialog(null,"Imovel não encontrado digite o numero do Imovel","Atenção! ", JOptionPane.ERROR_MESSAGE);
+       }
         
     }//GEN-LAST:event_Buscar_ImovelActionPerformed
 
@@ -428,9 +440,17 @@ public class FormVenda extends javax.swing.JFrame {
 
     private void jb_PagamentoDinheiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_PagamentoDinheiroActionPerformed
         // TODO add your handling code here:
+        //venda = ;
+        if(jftf_CPF.getText().trim().length() !=0 && jftf_Imovel.getText().trim().length() != 0){
+            System.out.println("\n >>>>>>>>>>>>>>>>>>> ESEE E O CARA"+ numeroVenda+" AQUI <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
+            System.out.println("\n ############################> "+ cliente+" AQUI <###############################");
+            FormPrincipal.daoVenda.inserirVenda(venda);
+            JOptionPane.showMessageDialog(null, "Venda realizada com sucesso!!!");
+        }else
+        {
+            JOptionPane.showMessageDialog(null,"Imovel e Cliente não encontrado digite o numero do Imovel e o CPF do Cliente","Atenção! ", JOptionPane.ERROR_MESSAGE);
+        }
         
-        FormPrincipal.daoVenda.inserirVenda(venda);
-        JOptionPane.showMessageDialog(null, "Venda realizada com sucesso!!!");
         
     }//GEN-LAST:event_jb_PagamentoDinheiroActionPerformed
 
@@ -449,12 +469,10 @@ public class FormVenda extends javax.swing.JFrame {
         SimpleDateFormat formatarData = new SimpleDateFormat("dd/MM/yyyy");
         formatarData.format(data);
         
-        int numero_imovel = Integer.parseInt(jftf_Imovel.getText());
+        //int numero_imovel = Integer.parseInt(jftf_Imovel.getText());
         DefaultTableModel modelo = (DefaultTableModel) jTable1.getModel();
         //Imovel imovel = FormPrincipal.daoImovel.buscarImovel(numero_imovel);
-        System.out.println(imovel);
         Object[] dados = {imovel.getEndereco().getLogradouro(),data,imovel.getValorImovel()};
-        System.out.println(dados[0]);
         modelo.addRow(dados);
         
     }
