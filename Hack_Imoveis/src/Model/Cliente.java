@@ -16,7 +16,6 @@ public class Cliente {
     private String email;
     private String estadoCivil;
     private Endereco enderecoCli;   // atual endereco do cliente
-    private Cartoes cartaoCli;
     private Contrato tipoDoContrato;
 
     public Cliente(String cpf, String nome, String telefone, String email, String estadoCivil, Endereco enderecoCli) {
@@ -30,7 +29,6 @@ public class Cliente {
 
     public Cliente() {
         enderecoCli = new Endereco();
-        cartaoCli = new Cartoes();
         tipoDoContrato = new Contrato();
     }
     
@@ -108,12 +106,6 @@ public class Cliente {
 
     public void setEnderecoCli(Endereco enderecoCli) {
         this.enderecoCli = enderecoCli;
-    }
-    public Cartoes getCartaoCli() {
-        return cartaoCli;
-    }
-    public void setCartaoCli(Cartoes cartaoCli) {
-        this.cartaoCli = cartaoCli;
     }
     
    

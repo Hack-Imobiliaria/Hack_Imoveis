@@ -582,11 +582,6 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         cliente.getEnderecoCli().setEstado(jComboBox1.getSelectedItem().toString());
         cliente.getEnderecoCli().setCep(tfCep.getText());
 
-        cliente.getCartaoCli().setNomeTitular(jtf_NomeTitular.getText());
-        cliente.getCartaoCli().setNumeroCartao(jftf_NunCartao.getText());
-        cliente.getCartaoCli().setDataValidade(jDataValidade.getText());
-        cliente.getCartaoCli().setCodigoVerificacao(jCodigoValidacao.getText());
-
         System.out.println(cliente);
         FormPrincipal.daoCliente.inserirCliente(cliente);
         JOptionPane.showMessageDialog(null, "Cliente cadastrado com sucesso!");
@@ -610,11 +605,7 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         cliente.getEnderecoCli().setCidade(tfCidade.getText());
         cliente.getEnderecoCli().setEstado(jComboBox1.getSelectedItem().toString());
         cliente.getEnderecoCli().setCep(tfCep.getText());
-
-        cliente.getCartaoCli().setNomeTitular(jtf_NomeTitular.getText());
-        cliente.getCartaoCli().setNumeroCartao(jftf_NunCartao.getText());
-        cliente.getCartaoCli().setDataValidade(jDataValidade.getText());
-        cliente.getCartaoCli().setCodigoVerificacao(jCodigoValidacao.getText());
+        
         String cpf = jftf_CPF.getText();
         FormPrincipal.daoCliente.alterarCliente(cpf, cliente);
         this.limpar();
@@ -641,10 +632,6 @@ public class FormCadastroCliente extends javax.swing.JFrame {
             String estadoCivil = cliente.getEstadoCivil();
             System.out.println(estadoCivil);
             jComboBox1.setSelectedItem(cliente.getEnderecoCli().getEstado());
-            jtf_NomeTitular.setText(cliente.getCartaoCli().getNomeTitular());
-            jftf_NunCartao.setText(cliente.getCartaoCli().getNumeroCartao());
-            jDataValidade.setText(cliente.getCartaoCli().getDataValidade());
-            jCodigoValidacao.setText(cliente.getCartaoCli().getCodigoVerificacao());
             jftf_CPF.requestFocus();
             jTabbedPane.setSelectedIndex(0);
             

@@ -496,29 +496,34 @@ public class FormAluguel extends javax.swing.JFrame {
     private void jb_PagamentoDinheiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_PagamentoDinheiroActionPerformed
             
             System.out.println(jftf_CPF.getText());
+            System.out.println(jftf_CPF.getText());
+            System.out.println(jftf_CPF.getText());
+            System.out.println(jftf_CPF.getText());
         
             Aluguel aluguel = new Aluguel();
-            int indiceLinha =  jTabela_Imovel.getSelectedRow();
-            //aluguel.getClineteAlu().setCpf(jftf_CPF.getText());    
-            //aluguel.getClineteAlu().setNome(Print_Nome.getText());
-            //aluguel.getClineteAlu().setTelefone(Print_Telefone.getText());
-            //aluguel.getClineteAlu().setEstadoCivil(Print_EstadoCivil.getText());
             
-            aluguel.getEnderecoCli().setLogradouro(Print_Endereco.getText());
-            aluguel.getEnderecoCli().setBairro(Print_Bairro.getText());
-            aluguel.getEnderecoCli().setComplemento(Print_Complemento.getText());
-            aluguel.getEnderecoCli().setCidade(Print_Cidade.getText());
-            aluguel.getEnderecoCli().setCep(Print_CEP.getText());
-            aluguel.getEnderecoCli().setEstado(Print_Estado.getText());
+            String cpf = jftf_CPF.getText();
+           // System.out.println(cliente.getCpf());
+            aluguel.getClineteAlu().setCpf("teste");    
+            aluguel.getClineteAlu().setNome("teste");
+            aluguel.getClineteAlu().setTelefone("teste");
+            aluguel.getClineteAlu().setEstadoCivil("teste");
             
-            aluguel.getImovel().setNome((String) jTabela_Imovel.getValueAt(indiceLinha, 1));
-            aluguel.getImovel().setTipoDoImovel((String) jTabela_Imovel.getValueAt(indiceLinha, 2));
-            aluguel.setValorAlugel((float) jTabela_Imovel.getValueAt(indiceLinha, 3));
+            aluguel.getEnderecoCli().setLogradouro("teste");
+            aluguel.getEnderecoCli().setBairro("teste");
+            aluguel.getEnderecoCli().setComplemento("teste");
+            aluguel.getEnderecoCli().setCidade("teste");
+            aluguel.getEnderecoCli().setCep(jftf_CPF.getText());
+            aluguel.getEnderecoCli().setEstado(jftf_CPF.getText());
+            
+            aluguel.getImovel().setNome(jftf_CPF.getText());
+            aluguel.getImovel().setTipoDoImovel(jftf_CPF.getText());
+            //aluguel.setValorAlugel(imovel.getAndar());
             FormPrincipal.daoAluguel.inserirAluguel(aluguel);
             JOptionPane.showMessageDialog(null, "Aluguel registrado com sucesso!");
             //this.limpar();
-            List<Aluguel> alu = FormPrincipal.daoAluguel.todosAluguels();
-            System.out.println(alu);
+            //List<Aluguel> alu = FormPrincipal.daoAluguel.todosAluguels();
+            //System.out.println(alu);
     }//GEN-LAST:event_jb_PagamentoDinheiroActionPerformed
 
     private void jftf_ImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jftf_ImovelActionPerformed
