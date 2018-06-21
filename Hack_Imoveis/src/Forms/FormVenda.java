@@ -460,14 +460,11 @@ public class FormVenda extends javax.swing.JFrame {
 
     private void Buscar_ImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Buscar_ImovelActionPerformed
         int numeroImovel = Integer.parseInt(jftf_Imovel.getText());
+       
+        Imovel numeroVenda = FormPrincipal.daoImovel.buscarImovel(numeroImovel);
+        System.out.println(numeroVenda);
+        inserirTabela(numeroVenda);
         
-       List<Imovel> ven = new ArrayList<Imovel>();
-       ven = FormPrincipal.daoImovel.todosImovels();
-        for(Imovel imovel: ven)
-        {
-            inserirTabela(imovel);
-        }
-
     }//GEN-LAST:event_Buscar_ImovelActionPerformed
 
     private void jftf_ImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jftf_ImovelActionPerformed
