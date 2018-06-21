@@ -441,10 +441,13 @@ public class FormVenda extends javax.swing.JFrame {
     private void jb_PagamentoDinheiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_PagamentoDinheiroActionPerformed
         // TODO add your handling code here:
         //venda = ;
-        if(jftf_CPF.getText().trim().length() !=0 && jftf_Imovel.getText().trim().length() != 0){
-            System.out.println("\n >>>>>>>>>>>>>>>>>>> ESEE E O CARA"+ numeroVenda+" AQUI <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
-            System.out.println("\n ############################> "+ cliente+" AQUI <###############################");
+        if(jftf_CPF.getText().trim().length() !=0 && jftf_Imovel.getText().trim().length() != 0){        
+            FormPrincipal.daoCliente.inserirCliente(cliente);
+            FormPrincipal.daoImovel.inserirImovel(numeroVenda);
+            
+            
             FormPrincipal.daoVenda.inserirVenda(venda);
+            System.out.println("\n >>>>>>>>>>>>>>>>>>> ESSA e sua Venda "+ venda+" AQUI <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
             JOptionPane.showMessageDialog(null, "Venda realizada com sucesso!!!");
         }else
         {
