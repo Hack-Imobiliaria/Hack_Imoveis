@@ -25,6 +25,8 @@ public class FormVenda extends javax.swing.JFrame {
 
     DefaultTableModel modelo = null;
     Venda venda = new Venda();
+    private String cpf ;
+    Cliente cliente = new Cliente();
     
     public FormVenda() {
         initComponents();
@@ -54,12 +56,6 @@ public class FormVenda extends javax.swing.JFrame {
         Print_Telefone = new javax.swing.JLabel();
         jl_Email = new javax.swing.JLabel();
         Print_Email = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        Print_NomeTitular = new javax.swing.JLabel();
-        Print_DataValidade = new javax.swing.JLabel();
-        Print_NCartao1 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -117,18 +113,6 @@ public class FormVenda extends javax.swing.JFrame {
 
         Print_Email.setText(":");
 
-        jLabel2.setText("Nome do titular do Cartão");
-
-        jLabel3.setText("Numero do Cartão");
-
-        jLabel4.setText("Data de Validade Cartão");
-
-        Print_NomeTitular.setText(":");
-
-        Print_DataValidade.setText(":");
-
-        Print_NCartao1.setText(":");
-
         javax.swing.GroupLayout jPanel_DadoClienteLayout = new javax.swing.GroupLayout(jPanel_DadoCliente);
         jPanel_DadoCliente.setLayout(jPanel_DadoClienteLayout);
         jPanel_DadoClienteLayout.setHorizontalGroup(
@@ -152,57 +136,28 @@ public class FormVenda extends javax.swing.JFrame {
                         .addComponent(jl_Telefone)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Print_Telefone, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel_DadoClienteLayout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Print_NomeTitular, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel_DadoClienteLayout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Print_NCartao1, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel_DadoClienteLayout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Print_DataValidade, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(187, Short.MAX_VALUE))
+                .addContainerGap(546, Short.MAX_VALUE))
         );
         jPanel_DadoClienteLayout.setVerticalGroup(
             jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel_DadoClienteLayout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addGroup(jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel_DadoClienteLayout.createSequentialGroup()
-                        .addGroup(jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Print_NomeTitular)
-                            .addComponent(jLabel2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(Print_NCartao1))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(Print_DataValidade)))
-                    .addGroup(jPanel_DadoClienteLayout.createSequentialGroup()
-                        .addGroup(jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jl_Endereco)
-                            .addComponent(Print_Endereco))
-                        .addGap(6, 6, 6)
-                        .addGroup(jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jl_Nome, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Print_Nome))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jl_Email)
-                            .addComponent(Print_Email))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jl_Telefone)
-                            .addComponent(Print_Telefone))
-                        .addGap(0, 1, Short.MAX_VALUE)))
-                .addContainerGap())
+                .addGroup(jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jl_Endereco)
+                    .addComponent(Print_Endereco))
+                .addGap(6, 6, 6)
+                .addGroup(jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jl_Nome, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Print_Nome))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jl_Email)
+                    .addComponent(Print_Email))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel_DadoClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jl_Telefone)
+                    .addComponent(Print_Telefone))
+                .addGap(13, 13, 13))
         );
 
         jLabel8.setText("Dados Cliente");
@@ -443,7 +398,7 @@ public class FormVenda extends javax.swing.JFrame {
     }//GEN-LAST:event_jb_CancelarActionPerformed
 
     private void jbt_CpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbt_CpfActionPerformed
-        String cpf = jftf_CPF.getText();
+            cpf = jftf_CPF.getText();
             Cliente cliente = FormPrincipal.daoCliente.buscarCliente(cpf);
             if (cliente != null)
             {
@@ -485,9 +440,6 @@ public class FormVenda extends javax.swing.JFrame {
        Print_Nome.setText("");
        Print_Email.setText("");
        Print_Telefone.setText("");
-       Print_NomeTitular.setText("");
-       Print_NCartao1.setText("");
-       Print_DataValidade.setText("");
        limparTabela();
     }
     
@@ -552,18 +504,12 @@ public class FormVenda extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Buscar_Imovel;
-    private javax.swing.JLabel Print_DataValidade;
     private javax.swing.JLabel Print_Email;
     private javax.swing.JLabel Print_Endereco;
-    private javax.swing.JLabel Print_NCartao1;
     private javax.swing.JLabel Print_Nome;
-    private javax.swing.JLabel Print_NomeTitular;
     private javax.swing.JLabel Print_Telefone;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;

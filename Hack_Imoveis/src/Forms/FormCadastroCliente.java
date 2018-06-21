@@ -72,16 +72,6 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         tfCidade = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         tfCep = new javax.swing.JFormattedTextField();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jtf_NomeTitular = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jftf_NunCartao = new javax.swing.JFormattedTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jDataValidade = new javax.swing.JFormattedTextField();
-        jLabel4 = new javax.swing.JLabel();
-        jl_CodVerificacao = new javax.swing.JLabel();
-        jCodigoValidacao = new javax.swing.JFormattedTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Cadastro Clientes");
@@ -410,94 +400,6 @@ public class FormCadastroCliente extends javax.swing.JFrame {
 
         jTabbedPane.addTab("Endereço", jPanel_Endereco);
 
-        jLabel1.setText("Nome do titular:");
-
-        jLabel2.setText("Numero do Cartão:");
-
-        try {
-            jftf_NunCartao.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("####-####-####-####")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        jftf_NunCartao.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jftf_NunCartaoActionPerformed(evt);
-            }
-        });
-
-        jLabel3.setText("Data de Validade");
-
-        try {
-            jDataValidade.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/####")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icones/prepaid-card-in-a-hand.png"))); // NOI18N
-
-        jl_CodVerificacao.setText("Codigo de verificação:");
-
-        try {
-            jCodigoValidacao.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jtf_NomeTitular, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jftf_NunCartao, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jDataValidade, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jl_CodVerificacao)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jCodigoValidacao)
-                                .addGap(38, 38, 38)))))
-                .addContainerGap(221, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jtf_NomeTitular, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jftf_NunCartao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jDataValidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(4, 4, 4)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jl_CodVerificacao)
-                    .addComponent(jCodigoValidacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(35, Short.MAX_VALUE))
-        );
-
-        jTabbedPane.addTab("Cartões", jPanel1);
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -559,10 +461,6 @@ public class FormCadastroCliente extends javax.swing.JFrame {
     private void jtf_BairroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtf_BairroActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jtf_BairroActionPerformed
-
-    private void jftf_NunCartaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jftf_NunCartaoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jftf_NunCartaoActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         this.dispose();
@@ -677,10 +575,6 @@ public class FormCadastroCliente extends javax.swing.JFrame {
         btnGrup.clearSelection();
         jTabbedPane.setSelectedIndex(0);
 
-        jtf_NomeTitular.setText("");
-        jftf_NunCartao.setText("");
-        jDataValidade.setText("");
-        jCodigoValidacao.setText("");
 
     }
 
@@ -733,17 +627,10 @@ public class FormCadastroCliente extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JFormattedTextField jCodigoValidacao;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JFormattedTextField jDataValidade;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel_DadosPessoais;
@@ -751,12 +638,10 @@ public class FormCadastroCliente extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane;
     private javax.swing.JLabel jb_Nome;
     private javax.swing.JFormattedTextField jftf_CPF;
-    private javax.swing.JFormattedTextField jftf_NunCartao;
     private javax.swing.JFormattedTextField jftf_Telefone;
     private javax.swing.JLabel jl_Bairro;
     private javax.swing.JLabel jl_CPF;
     private javax.swing.JLabel jl_CPF1;
-    private javax.swing.JLabel jl_CodVerificacao;
     private javax.swing.JLabel jl_Complemento;
     private javax.swing.JLabel jl_Endereco;
     private javax.swing.JLabel jl_Estado;
@@ -767,7 +652,6 @@ public class FormCadastroCliente extends javax.swing.JFrame {
     private javax.swing.JTextField jtf_Email;
     private javax.swing.JTextField jtf_Endereco;
     private javax.swing.JTextField jtf_Nome;
-    private javax.swing.JTextField jtf_NomeTitular;
     private javax.swing.JFormattedTextField tfCep;
     private javax.swing.JTextField tfCidade;
     // End of variables declaration//GEN-END:variables
